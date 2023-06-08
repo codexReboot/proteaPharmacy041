@@ -172,6 +172,7 @@ body {
 .logo__text {
 	
 	&--devName {
+		color: $cf-white;
 		font-family: 'Alegreya', serif;
 		font-size: clamp(1.6rem, 5vw, 2.5rem);
 		font-weight: 900;
@@ -182,17 +183,6 @@ body {
             2px 2px 2px rgba(0, 0, 0, .7),
             3px 3px 2px rgba(0, 0, 0, .7),
             4px 4px 2px rgba(0, 0, 0, .7);
-	}
-
-	&--devNameFirstLetter {
-		font-size: clamp(2.5rem, 7vw, 3.5rem);
-	}
-
-	&--devDesc {
-		font-family: 'Caveat', cursive;
-		font-size: clamp(1.25rem, 4vw, 2rem);
-		letter-spacing: 1px;
-		line-height: 1;
 	}
 }
 

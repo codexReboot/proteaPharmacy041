@@ -16,7 +16,7 @@ const navItem5 = document.querySelector('.navItem5');
 
 const profilePhoto = document.querySelector('.profilePhoto');
 const logo = document.querySelector('.logo');
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbarSection');
 const navFrame = document.querySelector('.navFrame');
 
 let height = navbar.offsetHeight;

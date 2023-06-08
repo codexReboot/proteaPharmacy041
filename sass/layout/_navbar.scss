@@ -1,9 +1,9 @@
 .navbarSection {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgba(0, 0, 0, .4);
+    background-color: $cp-dark;
 
     padding: .75rem clamp(2rem, 6.5vw, 4rem);
 
