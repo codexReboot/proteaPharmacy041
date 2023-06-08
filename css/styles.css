@@ -131,11 +131,11 @@ a {
 }
 
 body {
-  color: #f0f0f0;
+  color: #1E2020;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .primaryHeading {
@@ -274,38 +274,15 @@ body {
 }
 
 .footer {
-  text-align: center;
-}
-.footer__figure--figcaption-name {
-  font-family: "Alegreya", serif;
-  font-size: clamp(3rem, 11.3vw, 6rem);
-  font-weight: 900;
-  letter-spacing: 2px;
-  line-height: 1;
-}
-.footer__figure--figcaption-name-firstLetter {
-  font-size: clamp(5rem, 15vw, 9rem);
-}
-.footer__figure--figcaption-dev {
-  font-family: "Caveat", cursive;
-  font-size: clamp(1.8rem, 6.8vw, 3.5rem);
-  font-weight: 400;
-  letter-spacing: 2px;
-  line-height: 0.8;
-}
-.footer__legalNotices--headingH2 {
-  font-size: clamp(2.2rem, 7vw, 3rem);
-}
-.footer__legalNotices--paragraph {
-  font-size: clamp(1.8rem, 6vw, 2.5rem);
-}
-
-.form {
-  color: #03427C;
-}
-.form__inputContainer {
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
   font-weight: 700;
+  line-height: 1.2;
+}
+.footer__legal {
+  color: #CD4536;
+}
+.footer__copyright {
+  color: #6CB347;
 }
 
 .u-center-text {
@@ -765,23 +742,17 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #1E2020;
-  padding: 6rem 2rem 0rem;
+  padding: 2rem;
+  gap: 1rem;
 }
-.footer > * {
-  margin-bottom: 4rem;
-}
-.footer__figure {
+.footer__copyright {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-.footer__figure--img {
-  border: 5px solid #f0f0f0;
-  border-radius: 50%;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
-  width: clamp(8rem, 40vw, 18rem);
 }
 
 .header {
