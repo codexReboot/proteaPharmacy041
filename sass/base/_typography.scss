@@ -1,0 +1,254 @@
+// font-family: 'Alegreya', serif;
+// font-family: 'Alegreya SC', serif;
+// font-family: 'Caveat', cursive;
+// font-family: 'Caveat Brush', cursive;
+// font-family: 'Lato', sans-serif;
+
+body {
+	color: $cf-white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.primaryHeading {
+	text-align: center;
+
+	&__headline {
+		font-family: 'Alegreya', serif;;
+		font-size: clamp(3rem, 11.3vw, 6rem);
+		font-weight: 900;
+		letter-spacing: 2px;
+		line-height: 1;
+		text-shadow: 
+            1px 1px 2px rgba(0, 0, 0, .7),
+            2px 2px 2px rgba(0, 0, 0, .7),
+            3px 3px 2px rgba(0, 0, 0, .7),
+            4px 4px 2px rgba(0, 0, 0, .7);     
+	}
+
+	&__headline-firstLetter {
+		font-size: clamp(5rem, 15vw, 9rem);
+	}
+
+	&__subheading {
+		font-family: 'Caveat', cursive;
+		font-size: clamp(1.8rem, 6.8vw, 3.5rem);
+		font-weight: 400;
+		letter-spacing: 2px;
+		line-height: 0.8;
+	}
+
+	&__paragraph {
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+		text-align: center;
+	}
+}
+
+.headingH2Container {
+	&__headingH2 {
+		color: $cf-blue;
+		font-family: 'Alegreya SC', serif;
+		font-size: clamp(calc(2.6rem + 3vh - 2rem), 11vw, calc(6.2rem + 3vh - 2rem));
+		// font-size: clamp(3.5rem, 11.3vw, 6.5rem);
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: 4px;
+		text-shadow: 4px 4px 2px rgba(0, 0, 0, .8);
+		// text-shadow: 
+		//         1px 0px 2px $cp-darkGrey,
+		//         2px -1px 2px $cp-darkGrey,
+		//         3px -1px 2px $cp-darkGrey,
+		//         4px -1px 2px $cp-darkGrey;     
+	}
+	 &__subheadingH2 {
+	 	color: $cf-red;
+		font-family: 'Caveat', cursive;
+		// font-size: clamp(calc(1.8rem + 3vh - 2rem), 6.6vw, calc(3.5rem + 3vh - 2rem));
+		font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+		// font-size: clamp(2rem, 6.8vw, 3.7rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;
+	 }
+}
+
+.headingH3Container {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	&__headingH3 {
+		color: $cf-white;
+		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: 2px;
+
+		&--blue {
+			color: $cf-darkBlue ;
+		}
+	}
+
+	&__headingH3--blue {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+	}
+
+	 &__subheadingH3 {
+	 	color: $cf-red;
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 1px;
+	 }
+}
+
+.paragraph {
+	color:  $cf-darkBlue;
+	font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+	font-weight: 700;
+	text-align: center;
+
+	&--white {
+		color: $cf-white;
+	}
+
+	&--projects {
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+		text-align: center;
+	}
+
+	&--skills {
+		color:  $cf-darkRed;
+		text-align: center;
+	}
+
+	&--contactItem {
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+		text-align: center;
+	}
+}
+
+.btn {
+	font-weight:900;
+	letter-spacing: 1px;
+
+	&--primary-white {
+		color: $cf-red;
+		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+	}
+
+	&--primary-white-btn {
+		color: $cf-red;
+		//font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
+	}
+
+	&--primary-blue {
+		color: $cf-white;
+		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+	}
+
+	&--primary-blue-btn {
+		color: $cf-white;
+		//font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
+	}
+
+	&--secondary {
+		color: $cf-white;
+		font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
+	}
+
+	&--secondary-btn {
+		color: $cf-white;
+		//font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+	}
+}
+
+
+
+.logo__text {
+	
+	&--devName {
+		font-family: 'Alegreya', serif;
+		font-size: clamp(1.6rem, 5vw, 2.5rem);
+		font-weight: 900;
+		letter-spacing: 2px;
+		line-height: 1;
+		text-shadow: 
+            1px 1px 2px rgba(0, 0, 0, .7),
+            2px 2px 2px rgba(0, 0, 0, .7),
+            3px 3px 2px rgba(0, 0, 0, .7),
+            4px 4px 2px rgba(0, 0, 0, .7);
+	}
+
+	&--devNameFirstLetter {
+		font-size: clamp(2.5rem, 7vw, 3.5rem);
+	}
+
+	&--devDesc {
+		font-family: 'Caveat', cursive;
+		font-size: clamp(1.25rem, 4vw, 2rem);
+		letter-spacing: 1px;
+		line-height: 1;
+	}
+}
+
+.header	{
+	
+}
+
+.hero {
+
+}
+
+
+.about {
+	
+	&__section {
+		text-align: justify;
+	}
+}
+
+.footer {
+	text-align: center;
+	
+	&__figure--figcaption-name {
+		font-family: 'Alegreya', serif;;
+		font-size: clamp(3rem, 11.3vw, 6rem);
+		font-weight: 900;
+		letter-spacing: 2px;
+		line-height: 1;
+	}
+	&__figure--figcaption-name-firstLetter {
+		font-size: clamp(5rem, 15vw, 9rem);
+	}
+	&__figure--figcaption-dev {
+		font-family: 'Caveat', cursive;
+		font-size: clamp(1.8rem, 6.8vw, 3.5rem);
+		font-weight: 400;
+		letter-spacing: 2px;
+		line-height: 0.8;
+	}
+	&__legalNotices--headingH2 {
+		font-size: clamp(2.2rem, 7vw, 3rem);
+	}
+	&__legalNotices--paragraph {
+		font-size: clamp(1.8rem, 6vw, 2.5rem);
+	}
+}
+
+
+
+
+
+.form {
+	color: $cf-darkBlue;
+
+	&__inputContainer {
+		font-size: clamp(1.6rem, 5vw, 2.4rem);
+		font-weight: 700;
+	}
+}
