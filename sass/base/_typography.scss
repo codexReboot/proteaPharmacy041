@@ -13,36 +13,25 @@ body {
 }
 
 .primaryHeading {
+	color: $cf-white;
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 1px;
 	text-align: center;
 
 	&__headline {
-		font-family: 'Alegreya', serif;;
-		font-size: clamp(3rem, 11.3vw, 6rem);
-		font-weight: 900;
-		letter-spacing: 2px;
-		line-height: 1;
-		text-shadow: 
-            1px 1px 2px rgba(0, 0, 0, .7),
-            2px 2px 2px rgba(0, 0, 0, .7),
-            3px 3px 2px rgba(0, 0, 0, .7),
-            4px 4px 2px rgba(0, 0, 0, .7);     
+	font-size: 2.1rem;
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1;     
 	}
 
-	&__headline-firstLetter {
-		font-size: clamp(5rem, 15vw, 9rem);
+	&__headline--prot {
+		color: $cp-red;
 	}
 
-	&__subheading {
-		font-family: 'Caveat', cursive;
-		font-size: clamp(1.8rem, 6.8vw, 3.5rem);
-		font-weight: 400;
-		letter-spacing: 2px;
-		line-height: 0.8;
-	}
-
-	&__paragraph {
-		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
-		text-align: center;
+	&__headline--phar {
+		color: $cp-green;
 	}
 }
 
@@ -203,7 +192,7 @@ body {
 }
 
 .footer {
-	font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+	font-size: 1.4rem;
 	font-weight: 700;
 	line-height: 1.2;
 	
