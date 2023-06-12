@@ -553,7 +553,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background: linear-gradient(135deg, #f0f0f0 45%, #55F5FF);
   padding: 0 0 1rem 0;
   gap: 0.5rem;
