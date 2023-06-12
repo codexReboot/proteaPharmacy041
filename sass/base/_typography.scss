@@ -14,24 +14,40 @@ body {
 
 .primaryHeading {
 	color: $cf-white;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-align: center;
 
-	&__headline {
-	font-size: 2.1rem;
+	&__intro {
+		font-size: 1.3rem;
+	}
+
+	&__headlineText {
+	font-size: 2.2rem;
 	font-weight: 900;
 	letter-spacing: 2px;
 	line-height: 1;     
 	}
 
-	&__headline--prot {
+	&__headlineText--prot {
 		color: $cp-red;
 	}
 
-	&__headline--phar {
+	&__headlineText--phar {
 		color: $cp-green;
+	}
+
+	&__byline {
+		color: $cf-white;
+		font-size: 1rem;
+		font-weight: 400;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	&__paragraph {
+		font-size: 1.2rem;
 	}
 }
 
