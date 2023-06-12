@@ -171,6 +171,81 @@
     }
 }
 
+.navListSecondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1rem;
+
+    &__navItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__navLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // color: transparent;
+        // font-size: 2.5rem;
+        // font-weight: 900;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+
+        background-image: url("/img/bgAnimateTextWallpaper.png");
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        
+        gap: 1rem;
+
+        position: relative;
+        z-index: 100;
+        transition: all .4s;
+    }
+
+    &__navLink::after {
+        content: "";
+        background-color: #C1121F;
+        
+        height: 2px;
+        width: 99%;
+        
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        z-index: -100;
+        
+        transform: scaleX(0);
+        transform-origin: left;
+
+        transition: transform 0s;
+    }
+
+    &__navLink:hover::after {
+        transform: scaleX(1);
+        transition: .4s ease-in;
+    }
+
+    &__navLink:hover {
+        animation: animateNavLink .4s ease-in 1 forwards;
+    }
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+
+        &--rightArrow {
+            height: 12px;
+            width: 12px;
+        }
+    }
+}
+
 .navList--navListMoveIn {
   animation: animateNavListContainerMoveIn .4s ease-out forwards;
 }
