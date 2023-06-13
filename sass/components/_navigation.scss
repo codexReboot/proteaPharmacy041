@@ -174,10 +174,13 @@
 .navListSecondary {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
-    gap: 1rem;
+    min-height: 55vh;
+
+    padding: 1.5rem 2rem;
+    gap: 1.25rem;
 
     &__navItem {
         display: flex;
@@ -196,12 +199,12 @@
         // background-clip: text;
         // -webkit-background-clip: text;
 
-        background-image: url("/img/bgAnimateTextWallpaper.png");
-        background-size: 200%;
-        background-repeat: no-repeat;
-        background-position: 100%;
+        // background-image: url("/img/NavLinkBG.png");
+        // background-size: 200%;
+        // background-repeat: no-repeat;
+        // background-position: 100%;
         
-        gap: 1rem;
+        gap: .5rem;
 
         position: relative;
         z-index: 100;
@@ -210,8 +213,7 @@
 
     &__navLink::after {
         content: "";
-        background-color: #C1121F;
-        
+        background-color: $cp-darkBlue;
         height: 2px;
         width: 99%;
         
@@ -221,7 +223,7 @@
         z-index: -100;
         
         transform: scaleX(0);
-        transform-origin: left;
+        transform-origin: center;
 
         transition: transform 0s;
     }
@@ -236,8 +238,9 @@
     }
 
     &__icon {
-        height: 20px;
-        width: 20px;
+        background-color: transparent;
+        height: 16px;
+        width: 16px;
 
         &--rightArrow {
             height: 12px;
