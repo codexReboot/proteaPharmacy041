@@ -127,6 +127,11 @@ body {
   line-height: 1.5;
 }
 
+.navbarSection {
+  color: #f0f0f0;
+  font-size: 1.2rem;
+}
+
 .primaryHeading {
   color: #f0f0f0;
   font-size: 1.2rem;
@@ -494,11 +499,6 @@ body {
   background-color: #00162a;
   padding: 1.5rem 1rem;
   gap: 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 200;
 }
 .primaryHeading__headAndBylineContainer {
   display: flex;
@@ -717,7 +717,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 55vh;
-  padding: 19rem 2rem 1.5rem;
+  padding: 1.5rem 2rem 1.5rem;
   gap: 1.25rem;
 }
 .navListSecondary__navItem {
@@ -836,11 +836,13 @@ body {
   background-color: #00162a;
   padding: 1.5rem 1rem;
   gap: 0.5rem;
+  opacity: 1;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  transition: opacity 0.6s;
 }
 .footer__copyright {
   display: flex;
@@ -902,11 +904,11 @@ body {
 }
 
 .navbarSection {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1E2020;
-  padding: 0.75rem clamp(2rem, 6.5vw, 4rem);
+  background-color: #00162a;
+  padding: 1.5rem 1rem;
   position: -webkit-sticky;
   position: fixed;
   top: 0;
@@ -917,8 +919,8 @@ body {
 }
 
 .navbar--background {
-  background: linear-gradient(to bottom right, #cd4536 5%, rgba(128, 13, 0, 0.8) 20%, rgba(0, 22, 42, 0.9) 75%, rgba(85, 245, 255, 0.6));
-  border-bottom: 1px solid #d7d7d7;
+  background-color: #00162a;
+  border-bottom: 1px solid #6CB347;
 }
 
 .sidebar {

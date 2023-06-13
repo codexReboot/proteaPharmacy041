@@ -1,11 +1,11 @@
 .navbarSection {
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background-color: $cp-dark;
+    background-color: $cp-darkBlue;
 
-    padding: .75rem clamp(2rem, 6.5vw, 4rem);
+    padding: 1.5rem 1rem;
 
     position: -webkit-sticky;
     position: fixed;
@@ -20,6 +20,6 @@
 }
 
 .navbar--background {
-    background: linear-gradient(to bottom right, rgba($cp-red, 1) 5%, rgba($cp-darkRed, .8) 20%, rgba($cp-darkBlue, .9) 75%, rgba($cp-blue, .6));
-    border-bottom: 1px solid $cp-lightGrey;
+    background-color: $cp-darkBlue;
+    border-bottom: 1px solid $cp-green;
 }

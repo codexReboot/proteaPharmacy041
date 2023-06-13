@@ -19,6 +19,9 @@ const logo = document.querySelector('.logo');
 const navbar = document.querySelector('.navbarSection');
 const navFrame = document.querySelector('.navFrame');
 
+const footer = document.querySelector('.footer');
+
+
 let height = navbar.offsetHeight;
 navFrame.style.height = `${height}px`;
 
@@ -104,14 +107,28 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 window.onscroll = () => {
-  if(window.scrollY > 300) {
+  if(window.scrollY > 200) {
+    footer.style.opacity = 0;
+    
     logo.style.visibility = "visible";
     logo.style.opacity = "1";
     navbar.classList.add('navbar--background');
 
-  } else if(window.scrollY < 300 && hamburgerMenu.classList.contains('navList--displayNone')){
+    setTimeout(() => {
+      footer.style.position = "static";
+      footer.style.opacity = 1;
+
+    }, 601);
+
+  } else if(window.scrollY < 200 && hamburgerMenu.classList.contains('navList--displayNone')){
+    footer.style.position = "fixed";
+    footer.style.opacity = 0;
+    footer.style.opacity = 1;
+
     logo.style.visibility = "hidden";
     logo.style.opacity = "0";
     navbar.classList.remove('navbar--background');
+
+    
   }
 }
