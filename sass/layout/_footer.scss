@@ -8,6 +8,13 @@
 
     padding: 1.5rem 1rem;
     gap: .5rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
     
     &__copyright {
         display: flex;
