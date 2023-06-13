@@ -49,14 +49,14 @@
 
     &__hr {
         border: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, rgba($cp-darkBlue, 0.75) 20%, rgba($cp-darkBlue, 0.4) 40%, rgba(0,0,0,0) 60%);
+        height: 1px;
+        background-image: linear-gradient(to right, rgba($cp-darkBlue, 0.75) 20%, rgba($cp-darkBlue, 0.4) 60%, rgba(0,0,0,0) 95%);
         margin: .15rem 0 .5rem;
     }
 
     &__subheadingH2 {
-        margin-left: clamp(3rem, 12vw, 12rem);
-       //margin-left: 5rem;
+    //     margin-left: clamp(3rem, 12vw, 12rem);
+    //    //margin-left: 5rem;
     }    
 }
 

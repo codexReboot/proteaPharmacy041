@@ -1,0 +1,8 @@
+.sidebar {
+    background-color: $cp-white;
+    padding: 0 1rem 0;
+
+    & > * {
+        margin-bottom: 4rem;
+    }
+}
