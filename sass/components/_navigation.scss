@@ -1,14 +1,32 @@
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: .5rem;
+
+    &__landlineContainer, &__whatsappContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: .5rem;
+    }
+
+    &__icon {
+        height: 14px;
+        width: 14px;
+    }
+}
+
 .hamburgerBtn {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    // background: linear-gradient(to right, rgba($cp-dark, .3) 40%, transparent, rgba($cp-dark, .5) 40%, rgba($cp-dark, .5) 60%, transparent);
-
     border: none;
     background-color: transparent;
 
-    // width: clamp(4.2rem, 10vw, 5.2rem);
     width: 3rem;
     height: 4.6rem;
 
@@ -63,13 +81,13 @@
         transform: translateY(2px);
     }
 
-    .navbar > & > &__hamburgerBar--right {
+    .navbarSection > & > &__hamburgerBar--right {
     transform: rotate(135deg);
     height: 4px;
     top: 50%;
     }
 
-    .navbar > & > &__hamburgerBar--left {
+    .navbarSection > & > &__hamburgerBar--left {
     transform: rotate(-135deg);
     height: 4px;
     top: 50%;
