@@ -74,7 +74,7 @@ body {
 	&__headingH2 {
 		color: $cf-darkBlue;
 		font-family: 'Montserrat', sans-serif;;
-		font-size: 2rem;
+		font-size: 2.2rem;
 		font-weight: 700;
 		line-height: 1;
 		letter-spacing: 2px;     
@@ -90,58 +90,49 @@ body {
 }
 
 .headingH3Container {
-	font-family: 'Lato', sans-serif;
 	text-align: center;
 	&__headingH3 {
-		color: $cf-white;
-		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-		font-weight: 900;
-		line-height: 1;
-		letter-spacing: 2px;
-
-		&--blue {
-			color: $cf-darkBlue ;
-		}
-	}
-
-	&__headingH3--blue {
 		color: $cf-darkBlue;
-		font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
-	}
-
-	 &__subheadingH3 {
-	 	color: $cf-red;
-		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
-		font-weight: 400;
+		font-family: 'Montserrat', sans-serif;;
+		font-size: 1.8rem;
+		font-weight: 700;
 		line-height: 1;
-		letter-spacing: 1px;
-	 }
+		letter-spacing: 1px;     
+	}
+	 
 }
+
+.headingH4Container {
+	text-align: center;
+	&__headingH4 {
+		color: $cf-darkBlue;
+		font-family: 'Montserrat', sans-serif;;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;     
+	}
+}
+
+.headingH5Container {
+	text-align: center;
+	&__headingH5 {
+		color: $cf-darkBlue;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.3rem;
+		font-weight: 600;  
+		line-height: 1;
+		letter-spacing: 1px;   
+	}
+}
+
+
 
 .paragraph {
 	color:  $cf-darkBlue;
-	font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
-	font-weight: 700;
+	font-size: 1.2rem;
+	font-weight: 400;
 	text-align: center;
-
-	&--white {
-		color: $cf-white;
-	}
-
-	&--projects {
-		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
-		text-align: center;
-	}
-
-	&--skills {
-		color:  $cf-darkRed;
-		text-align: center;
-	}
-
-	&--contactItem {
-		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
-		text-align: center;
-	}
 }
 
 .btn {

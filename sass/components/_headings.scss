@@ -7,14 +7,7 @@
     background-color: $cp-darkBlue;
 
     padding: 1.5rem 1rem;
-    gap: 1rem;
-
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: 200;
-    
+    gap: 1rem;    
 
     &__headAndBylineContainer {
         display: flex;
@@ -51,8 +44,6 @@
 }
 
 .headingH2Container {
-    margin: 0 0 2rem;
-
     &__hr {
         border: 0;
         height: 1px;
@@ -61,45 +52,5 @@
     }
 
     &__subheadingH2 {
-    //     margin-left: clamp(3rem, 12vw, 12rem);
-    //    //margin-left: 5rem;
     }    
-}
-
-.headingH3Container {
-    margin: 0 0 2rem;
-
-    &--contactInfo {
-        margin-top: 8rem;
-    }
-
-    &--messageMe {
-        margin: 8rem 0 0;
-    }
-
-    &__hr {
-        border: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-white, 0.4) 35%, rgba($cp-white, 0.75) 50%, rgba($cp-white, 0.4) 75%, rgba(0,0,0,0) 90%);
-        margin: .75rem 0;
-    }
-
-    &__hr--blue {
-        border: 0;
-        height: 3px;
-        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
-        margin: .75rem auto;
-    }
-
-    &__subheadingH3 {
-        // margin-left: clamp(3rem, 12vw, 12rem);
-    }    
-}
-
-.headingH3Container--skills {
-    margin: 0 0 0rem;  
-}
-
-.headingH4 {
-    margin-bottom: $mb-h4;
 }
