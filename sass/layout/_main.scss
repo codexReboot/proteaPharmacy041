@@ -69,4 +69,37 @@
 
     gap: 3rem;
 
+    &__paragraph--dispensary {
+        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../../img/dispensary/ProteaApteekDispensary.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        border-radius: $br-m;
+        box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
+
+        padding: 2.5rem;
+    }
+
+    &__paragraph--counterMeds {
+        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        border-radius: $br-m;
+        box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
+
+        padding: 2.5rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1rem;
+    }
+
 }

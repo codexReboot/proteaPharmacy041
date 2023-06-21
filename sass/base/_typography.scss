@@ -133,6 +133,12 @@ body {
 	font-size: 1.2rem;
 	font-weight: 400;
 	text-align: center;
+
+	&--dispensary, &--counterMeds {
+		color:  $cf-white;
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
 }
 
 .btn {
