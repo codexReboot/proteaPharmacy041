@@ -242,6 +242,9 @@ body {
   font-weight: 400;
   letter-spacing: 1px;
 }
+.paragraph--detail {
+  font-weight: 900;
+}
 
 .btn {
   font-weight: 900;
@@ -278,10 +281,6 @@ body {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
-}
-
-.about__section {
-  text-align: justify;
 }
 
 .footer {
@@ -906,7 +905,7 @@ body {
   gap: 3rem;
 }
 .dispensarySection__paragraph--dispensary {
-  background: linear-gradient(to bottom, rgba(30, 32, 32, 0.8) 65%, rgba(30, 32, 32, 0.2) 95%), url("../../img/dispensary/ProteaApteekDispensary.webp");
+  background: linear-gradient(to bottom, rgba(30, 32, 32, 0.8) 65%, rgba(30, 32, 32, 0.2) 95%), url("../img/dispensary/ProteaApteekDispensary.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -915,7 +914,7 @@ body {
   padding: 2.5rem;
 }
 .dispensarySection__paragraph--counterMeds {
-  background: linear-gradient(to bottom, rgba(30, 32, 32, 0.8) 65%, rgba(30, 32, 32, 0.2) 95%), url("../../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
+  background: linear-gradient(to bottom, rgba(30, 32, 32, 0.8) 65%, rgba(30, 32, 32, 0.2) 95%), url("../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -929,6 +928,45 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   gap: 1rem;
+}
+
+.contactUsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.contactUsSection > * {
+  margin-bottom: 4rem;
+}
+.contactUsSection__contactNumbersAndEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.contactUsSection__contactNumbersAndEmail > * {
+  margin-bottom: 3rem;
+}
+.contactUsSection__contactDetailsPharmacy, .contactUsSection__contactDetailsPharmacists, .contactUsSection__contactDetailsClinic, .contactUsSection__contactDetailsAccounts, .contactUsSection__contactDetailsMedicalAids {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+.contactUsSection__pharmacist, .contactUsSection__staffMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.25rem;
+}
+.contactUsSection__contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .navbarSection {

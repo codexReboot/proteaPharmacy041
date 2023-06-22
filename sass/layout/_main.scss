@@ -70,7 +70,7 @@
     gap: 3rem;
 
     &__paragraph--dispensary {
-        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../../img/dispensary/ProteaApteekDispensary.webp");
+        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../img/dispensary/ProteaApteekDispensary.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -82,7 +82,7 @@
     }
 
     &__paragraph--counterMeds {
-        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
+        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -102,4 +102,56 @@
         gap: 1rem;
     }
 
+}
+
+.contactUsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    & > * {
+        margin-bottom: 4rem;
+    }
+
+    &__contactNumbersAndEmail {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        & > * {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__contactDetailsPharmacy, 
+    &__contactDetailsPharmacists, 
+    &__contactDetailsClinic, 
+    &__contactDetailsAccounts, 
+    &__contactDetailsMedicalAids {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1.5rem;
+    }
+
+    &__pharmacist, &__staffMember {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: .25rem;
+    }
+
+    &__contactItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .3rem;
+    }
 }
