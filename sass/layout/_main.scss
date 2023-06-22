@@ -167,27 +167,9 @@
     }
 
     &__googleMapsContainer {
-        // background: linear-gradient(to bottom, rgba($cp-dark, .9) 30%, transparent);
-        width: 100%;
-
-
-        
-        position: relative;
-    }
-
-    &__googleMapsContainer::before {
-        content: "none";
-        background: linear-gradient(to top, rgba($cp-dark, .9) 10%, rgba($cp-dark, .7) 25%, transparent 55%);
-        width: 100%;
-        height: 100%;
         border: 2px solid $cp-green;
         box-shadow: $bs-dark;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        z-index: 10;
+        width: 100%;
     }
 
     &__googleMaps {
