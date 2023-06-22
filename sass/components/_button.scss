@@ -22,6 +22,15 @@
         padding: .125em 1em;
     }
 
+    &--primary-blue-contactForm {
+        border: 1px solid $cp-grey;
+        border-radius: $br-sm;
+        box-shadow: $bs-btn;
+        background-color: $cp-darkBlue;
+        width: 100%;
+        padding: .55em 2em;
+    }
+
     &--primary-blue-btn {
         background-color: $cp-darkBlue;
         padding: .125em 1em;
@@ -65,6 +74,14 @@
     &--primary-blue {
         background-color: $cp-darkBlue;
         padding: .125em 1em;
+    }
+
+    &--primary-blue-contactForm {
+        border: 1px solid $cp-grey;
+        border-radius: $br-sm;
+        box-shadow: $bs-btn;
+        background-color: $cp-darkBlue;
+        padding: .55em 2em;
     }
 
     &--primary-blue-btn {

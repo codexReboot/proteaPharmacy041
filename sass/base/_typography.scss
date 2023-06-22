@@ -143,6 +143,11 @@ body {
 	&--detail {
 		font-weight: 900;
 	}
+
+	&--contactForm {
+		font-weight: 900;
+		text-align: left;
+	}
 }
 
 .btn {
@@ -163,6 +168,11 @@ body {
 	&--primary-blue {
 		color: $cf-white;
 		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+	}
+
+	&--primary-blue-contactForm {
+		color: $cf-white;
+		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
 	}
 
 	&--primary-blue-btn {
