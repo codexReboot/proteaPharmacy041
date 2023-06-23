@@ -44,6 +44,8 @@
 }
 
 .headingH2Container {
+    position: relative;
+
     &__hr {
         border: 0;
         height: 1px;
@@ -53,4 +55,8 @@
 
     &__subheadingH2 {
     }    
+}
+
+.headingH3Container {
+    position: relative;
 }
