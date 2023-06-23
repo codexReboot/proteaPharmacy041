@@ -93,13 +93,12 @@ body {
 	text-align: center;
 	&__headingH3 {
 		color: $cf-darkBlue;
-		font-family: 'Montserrat', sans-serif;;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 1.9rem;
 		font-weight: 700;
 		line-height: 1;
 		letter-spacing: 1px;     
-	}
-	 
+	}	 
 }
 
 .headingH4Container {
@@ -134,10 +133,13 @@ body {
 	font-weight: 400;
 	text-align: center;
 
-	&--dispensary, &--counterMeds {
+	&--dispensary, &--counterMeds, &--clinicHero {
 		color:  $cf-white;
 		font-weight: 400;
 		letter-spacing: 1px;
+	}
+
+	&--clinicContent {
 	}
 
 	&--detail {
