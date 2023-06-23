@@ -158,7 +158,29 @@
             margin-bottom: .125rem;
         }
     }
+}
 
+.importantInfoSection {
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 3rem;
+
+    &__linksList {
+        & > * {
+            margin-bottom: .75rem;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .25rem;
+    }
 }
 
 .contactUsSection {
