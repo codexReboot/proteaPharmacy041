@@ -236,6 +236,29 @@
         gap: .3rem;
     }
 
+    &__contactTradingHours {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap:2.5rem;
+    }
+
+    &__tradingHoursDetails {
+        & > * {
+            margin-bottom: .35rem;
+        }
+
+        hr {
+            background-color: $cp-green;
+            border: none;
+
+            width: 100%;
+            height: 1px;
+        }
+    }
+
     &__contactMap {
         display: flex;
         flex-direction: column;

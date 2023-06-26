@@ -245,6 +245,9 @@ body {
 .paragraph--detail {
   font-weight: 900;
 }
+.paragraph--tradingHourWeekday {
+  font-weight: 900;
+}
 .paragraph--contactForm {
   font-weight: 900;
   text-align: left;
@@ -1063,6 +1066,22 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
+}
+.contactUsSection__contactTradingHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2.5rem;
+}
+.contactUsSection__tradingHoursDetails > * {
+  margin-bottom: 0.35rem;
+}
+.contactUsSection__tradingHoursDetails hr {
+  background-color: #6CB347;
+  border: none;
+  width: 100%;
+  height: 1px;
 }
 .contactUsSection__contactMap {
   display: flex;
