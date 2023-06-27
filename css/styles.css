@@ -735,21 +735,11 @@ body {
 .navListSecondary {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 1.5rem 1rem;
   gap: 1rem;
   min-height: 52vh;
-}
-@media (max-width: 520px) {
-  .navListSecondary {
-    justify-content: center;
-  }
-}
-@media (min-height: 520px) {
-  .navListSecondary {
-    justify-content: center;
-  }
 }
 @media (min-height: 600px) {
   .navListSecondary {
