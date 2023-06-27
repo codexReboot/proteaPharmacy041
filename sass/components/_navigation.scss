@@ -192,13 +192,41 @@
 .navListSecondary {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
-    min-height: 55vh;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
 
-    padding: 1.5rem 2rem 1.5rem;
-    gap: 1.25rem;
+    min-height: 52vh;
+
+    @media (max-width: 520px) {
+        justify-content: center;
+    }
+
+    @media (min-height: 520px) {
+        justify-content: center;
+    }
+
+    @media (min-height: 600px) {
+        min-height: 55vh;
+    }
+
+    @media (min-height: 700px) {
+        min-height: 56vh;
+    }
+
+    @media (min-height: 800px) {
+        min-height: 58vh;
+    }
+
+    @media (min-height: 900px) {
+        min-height: 62vh;
+    }
+
+    @media (min-height: 1000px) {
+        min-height: 65vh;
+    }
 
     &__navItem {
         display: flex;
@@ -210,17 +238,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        // color: transparent;
-        // font-size: 2.5rem;
-        // font-weight: 900;
-        // background-clip: text;
-        // -webkit-background-clip: text;
-
-        // background-image: url("/img/NavLinkBG.png");
-        // background-size: 200%;
-        // background-repeat: no-repeat;
-        // background-position: 100%;
         
         gap: .5rem;
 

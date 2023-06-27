@@ -6,8 +6,8 @@
 
     background-color: $cp-darkBlue;
 
-    padding: 1.5rem 1rem;
-    gap: 1rem;    
+    padding: clamp(1rem, 3vh, 2.5rem) 1rem;
+    gap: clamp(1rem, 2.2vh, 2rem);    
 
     &__headAndBylineContainer {
         display: flex;
