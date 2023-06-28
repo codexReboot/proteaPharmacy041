@@ -563,6 +563,72 @@ body {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2.5%, rgba(1, 46, 76, 0.4) 20%, rgba(1, 46, 76, 0.75) 50%, rgba(1, 46, 76, 0.4) 80%, rgba(0, 0, 0, 0) 97.5%);
   margin: 0.35rem 0;
 }
+.headingH2Container--about::after {
+  content: "";
+  background: url("../img/headingH2Icons/PeopleIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -80%;
+  left: 5%;
+  z-index: -100;
+}
+.headingH2Container--dispensary::after {
+  content: "";
+  background: url("../img/headingH2Icons/PillIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -80%;
+  left: 5%;
+  z-index: -100;
+}
+.headingH2Container--clinic::after {
+  content: "";
+  background: url("../img/headingH2Icons/StethoscopeIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -80%;
+  left: 5%;
+  z-index: -100;
+}
+.headingH2Container--info::after {
+  content: "";
+  background: url("../img/headingH2Icons/LinkIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -80%;
+  left: 5%;
+  z-index: -100;
+}
+.headingH2Container--contact::after {
+  content: "";
+  background: url("../img/headingH2Icons/PhoneIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -80%;
+  left: 5%;
+  z-index: -100;
+}
+
 .headingH3Container {
   position: relative;
 }
