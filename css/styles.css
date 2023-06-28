@@ -555,13 +555,19 @@ body {
 }
 
 .headingH2Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 .headingH2Container__headingH2 {
+  width: fit-content;
   position: relative;
 }
 .headingH2Container__hr {
   border: 0;
+  width: 100%;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2.5%, rgba(1, 46, 76, 0.4) 20%, rgba(1, 46, 76, 0.75) 50%, rgba(1, 46, 76, 0.4) 80%, rgba(0, 0, 0, 0) 97.5%);
   margin: 0.35rem 0;
@@ -576,7 +582,8 @@ body {
   height: 10rem;
   position: absolute;
   top: -120%;
-  left: 3%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -100;
 }
 .headingH2Container__headingH2--dispensary::after {
@@ -589,7 +596,8 @@ body {
   height: 10rem;
   position: absolute;
   top: -120%;
-  left: 3%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -100;
 }
 .headingH2Container__headingH2--clinic::after {
@@ -602,7 +610,8 @@ body {
   height: 10rem;
   position: absolute;
   top: -120%;
-  left: 3%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -100;
 }
 .headingH2Container__headingH2--info::after {
@@ -615,7 +624,8 @@ body {
   height: 10rem;
   position: absolute;
   top: -120%;
-  left: 3%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -100;
 }
 .headingH2Container__headingH2--contact::after {
@@ -628,7 +638,8 @@ body {
   height: 10rem;
   position: absolute;
   top: -120%;
-  left: 3%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -100;
 }
 
