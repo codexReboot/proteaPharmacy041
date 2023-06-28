@@ -557,13 +557,16 @@ body {
 .headingH2Container {
   position: relative;
 }
+.headingH2Container__headingH2 {
+  position: relative;
+}
 .headingH2Container__hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2.5%, rgba(1, 46, 76, 0.4) 20%, rgba(1, 46, 76, 0.75) 50%, rgba(1, 46, 76, 0.4) 80%, rgba(0, 0, 0, 0) 97.5%);
   margin: 0.35rem 0;
 }
-.headingH2Container--about::after {
+.headingH2Container__headingH2--about::after {
   content: "";
   background: url("../img/headingH2Icons/PeopleIcon.svg");
   background-size: cover;
@@ -572,11 +575,11 @@ body {
   width: 10rem;
   height: 10rem;
   position: absolute;
-  top: -80%;
-  left: 5%;
+  top: -120%;
+  left: 3%;
   z-index: -100;
 }
-.headingH2Container--dispensary::after {
+.headingH2Container__headingH2--dispensary::after {
   content: "";
   background: url("../img/headingH2Icons/PillIcon.svg");
   background-size: cover;
@@ -585,11 +588,11 @@ body {
   width: 10rem;
   height: 10rem;
   position: absolute;
-  top: -80%;
-  left: 5%;
+  top: -120%;
+  left: 3%;
   z-index: -100;
 }
-.headingH2Container--clinic::after {
+.headingH2Container__headingH2--clinic::after {
   content: "";
   background: url("../img/headingH2Icons/StethoscopeIcon.svg");
   background-size: cover;
@@ -598,11 +601,11 @@ body {
   width: 10rem;
   height: 10rem;
   position: absolute;
-  top: -80%;
-  left: 5%;
+  top: -120%;
+  left: 3%;
   z-index: -100;
 }
-.headingH2Container--info::after {
+.headingH2Container__headingH2--info::after {
   content: "";
   background: url("../img/headingH2Icons/LinkIcon.svg");
   background-size: cover;
@@ -611,11 +614,11 @@ body {
   width: 10rem;
   height: 10rem;
   position: absolute;
-  top: -80%;
-  left: 5%;
+  top: -120%;
+  left: 3%;
   z-index: -100;
 }
-.headingH2Container--contact::after {
+.headingH2Container__headingH2--contact::after {
   content: "";
   background: url("../img/headingH2Icons/PhoneIcon.svg");
   background-size: cover;
@@ -624,8 +627,8 @@ body {
   width: 10rem;
   height: 10rem;
   position: absolute;
-  top: -80%;
-  left: 5%;
+  top: -120%;
+  left: 3%;
   z-index: -100;
 }
 
