@@ -178,21 +178,23 @@ body {
   font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
 }
 
+.headingH2Container {
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+}
 .headingH2Container__headingH2 {
   color: #012e4c;
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1;
   letter-spacing: 2px;
 }
 .headingH2Container__subheadingH2 {
-  color: #6CB347;
+  color: #225f01;
   font-family: "Open Sans", sans-serif;
+  font-weight: 900;
   font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 1px;
 }
 
 .headingH3Container {
@@ -558,8 +560,8 @@ body {
 .headingH2Container__hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(1, 46, 76, 0.75) 20%, rgba(1, 46, 76, 0.4) 60%, rgba(0, 0, 0, 0) 95%);
-  margin: 0.15rem 0 0.5rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2.5%, rgba(1, 46, 76, 0.4) 20%, rgba(1, 46, 76, 0.75) 50%, rgba(1, 46, 76, 0.4) 80%, rgba(0, 0, 0, 0) 97.5%);
+  margin: 0.35rem 0;
 }
 .headingH3Container {
   position: relative;

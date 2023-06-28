@@ -49,8 +49,8 @@
     &__hr {
         border: 0;
         height: 1px;
-        background-image: linear-gradient(to right, rgba($cp-darkBlue, 0.75) 20%, rgba($cp-darkBlue, 0.4) 60%, rgba(0,0,0,0) 95%);
-        margin: .15rem 0 .5rem;
+        background-image: linear-gradient(to right,rgba(0,0,0,0) 2.5%, rgba($cp-darkBlue, 0.4) 20%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 80%, rgba(0,0,0,0) 97.5%);
+        margin: .35rem 0;
     }
 
     &__subheadingH2 {
