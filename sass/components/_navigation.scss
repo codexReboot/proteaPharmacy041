@@ -190,45 +190,15 @@
 }
 
 .navListSecondary {
+    flex: 1 0 auto;
+    
     display: flex;
     flex-direction: column;
-    // set to flex start
     justify-content: center;
     align-items: center;
     
-    // padding 1.5rem if justify content is set to flex-start
     padding: 1.5rem 1rem;
     gap: 1rem;
-
-    min-height: 52vh;
-
-    // @media (max-width: 520px) {
-    //     justify-content: center;
-    // }
-
-    // @media (min-height: 520px) {
-    //     justify-content: center;
-    // }
-
-    @media (min-height: 600px) {
-        min-height: 55vh;
-    }
-
-    @media (min-height: 700px) {
-        min-height: 56vh;
-    }
-
-    @media (min-height: 800px) {
-        min-height: 58vh;
-    }
-
-    @media (min-height: 900px) {
-        min-height: 62vh;
-    }
-
-    @media (min-height: 1000px) {
-        min-height: 65vh;
-    }
 
     &__navItem {
         display: flex;

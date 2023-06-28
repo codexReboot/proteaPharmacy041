@@ -565,6 +565,13 @@ body {
   position: relative;
 }
 
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
 .linkDiv {
   position: absolute;
   top: -7rem;
@@ -733,38 +740,13 @@ body {
 }
 
 .navListSecondary {
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5rem 1rem;
   gap: 1rem;
-  min-height: 52vh;
-}
-@media (min-height: 600px) {
-  .navListSecondary {
-    min-height: 55vh;
-  }
-}
-@media (min-height: 700px) {
-  .navListSecondary {
-    min-height: 56vh;
-  }
-}
-@media (min-height: 800px) {
-  .navListSecondary {
-    min-height: 58vh;
-  }
-}
-@media (min-height: 900px) {
-  .navListSecondary {
-    min-height: 62vh;
-  }
-}
-@media (min-height: 1000px) {
-  .navListSecondary {
-    min-height: 65vh;
-  }
 }
 .navListSecondary__navItem {
   display: flex;

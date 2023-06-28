@@ -21,31 +21,15 @@ const navFrame = document.querySelector('.navFrame');
 
 const footer = document.querySelector('.footer');
 
-const primaryHeading = document.querySelector('.primaryHeading');
-const navListSecondary = document.querySelector('.navListSecondary');
+const hero = document.querySelector('.heroSection');
 
-let viewableHeight = window.innerHeight;
+let footerHeight = footer.offsetHeight;
+hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 
-let calcHeightNum = viewableHeight - footer.offsetHeight -primaryHeading.offsetHeight;
-console.log(`calcHeightNumOnLoad = ${calcHeightNum}`);
-navListSecondary.style.height = calcHeightNum + 20;
-console.log(`navListHeightOnLoad = ${navListSecondary.offsetHeight}`);
 
-let height = navbar.offsetHeight;
-navFrame.style.height = `${height}px`;
-
-visualViewport.addEventListener("resize", () => {
-  viewableHeight = window.innerHeight;
-  calcHeightNum = viewableHeight - footer.offsetHeight - primaryHeading.offsetHeight;
-  navListSecondary.style.height = calcHeightNum + 20;
-  console.log(`navListHeightOnResize = ${navListSecondary.offsetHeight}`);
-  console.log(`viewableHeightOnResize = ${viewableHeight}`);
-  
-  height = navbar.offsetHeight;
-  navFrame.style.height = `${height}px`;
-
-  // console.log(`navbar height = ${navbar.offsetHeight}`);
-  // console.log(`navFrame height = ${navFrame.offsetHeight}`);
+window.addEventListener('resize', function(){
+  footerHeight = footer.offsetHeight;
+  hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 });
 
 hamburgerBtn.addEventListener('click', () => {
