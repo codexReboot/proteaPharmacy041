@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
 
-    gap: .5rem;
+    gap: 1rem;
 
     &__landlineContainer, &__whatsappContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         
-        gap: .5rem;
+        gap: .275rem;
     }
 
     &__icon {
