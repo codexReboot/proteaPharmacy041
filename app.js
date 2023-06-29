@@ -13,6 +13,9 @@ const navItem2 = document.querySelector('.navItem2');
 const navItem3 = document.querySelector('.navItem3');
 const navItem4 = document.querySelector('.navItem4');
 const navItem5 = document.querySelector('.navItem5');
+const navItem6 = document.querySelector('.navItem6');
+const navItem7 = document.querySelector('.navItem7');
+const navItem8 = document.querySelector('.navItem8');
 
 const profilePhoto = document.querySelector('.profilePhoto');
 const logo = document.querySelector('.logo');
@@ -48,19 +51,6 @@ hamburgerBtn.addEventListener('click', () => {
   console.log(`navbar offsetHeight = ${navbar.offsetHeight}`);
   navFrame.style.height = `${height}px`;
   console.log(`navFrame offsetHeight = ${navFrame.offsetHeight}`);
-
-  // if(!navbar.classList.contains('navbar--background')){
-  //   setTimeout(() => {
-  //     logo.style.visibility = "visible";
-  //     logo.style.opacity = "1";
-  //     navbar.classList.add('navbar--background');
-  //   }, 300);
-    
-  // } else if(window.scrollY < 300) {
-  //   logo.style.visibility = "hidden"; 
-  //   logo.style.opacity = "0";
-  //   navbar.classList.remove('navbar--background');
-  // }
   
   if (!hamburgerTopBar.classList.contains('hamburgerBtn__hamburgerBar--right')) {
     setTimeout(() => {
@@ -102,6 +92,9 @@ hamburgerBtn.addEventListener('click', () => {
       navItem3.style.animationDelay = '1.30s';
       navItem4.style.animationDelay = '1.60s';
       navItem5.style.animationDelay = '1.90s';
+      navItem6.style.animationDelay = '2.20s';
+      navItem7.style.animationDelay = '2.50s';
+      navItem8.style.animationDelay = '2.80s';
     }, 20);
   } else {
     hamburgerMenu.classList.remove('navList--navListMoveIn')
@@ -116,6 +109,9 @@ hamburgerBtn.addEventListener('click', () => {
     navItem3.style.animationDelay = '.40s';
     navItem4.style.animationDelay = '.50s';
     navItem5.style.animationDelay = '.60s';
+    navItem6.style.animationDelay = '.90s';
+    navItem7.style.animationDelay = '1.20s';
+    navItem8.style.animationDelay = '1.50s';
     setTimeout(() => {
       hamburgerMenu.classList.remove('navList--display');
       hamburgerMenu.classList.add('navList--displayNone');

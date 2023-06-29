@@ -768,7 +768,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(1, 46, 76, 0.8), rgba(30, 32, 32, 0.9) 20%), url("../../img/hero/hero-background-img.webp");
+  background-color: #d7d7d7;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -783,22 +783,16 @@ body {
   margin-bottom: 1rem;
 }
 .navList__navLink {
-  color: transparent;
+  color: #012e4c;
   font-size: 2.5rem;
   font-weight: 900;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: url("../../img/backgroundImages/bgAnimateTextWallpaper.png");
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: 100%;
   position: relative;
   z-index: 100;
   transition: all 0.4s;
 }
 .navList__navLink::after {
   content: "";
-  background-color: #C1121F;
+  background-color: #012e4c;
   height: 2px;
   width: 99%;
   position: absolute;
@@ -806,7 +800,7 @@ body {
   left: 0;
   z-index: -100;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: center;
   transition: transform 0s;
 }
 .navList__navLink:hover::after {
@@ -884,7 +878,7 @@ body {
 }
 
 .navList--navListMoveOut {
-  animation: animateNavListContainerMoveOut 0.4s ease-out 0.8s forwards;
+  animation: animateNavListContainerMoveOut 0.4s ease-out 2s forwards;
 }
 
 .navItem--moveIn {
