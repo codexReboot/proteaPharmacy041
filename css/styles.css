@@ -812,8 +812,8 @@ body {
   animation: animateNavLink 0.4s ease-in 1 forwards;
 }
 .navList .navFrame {
-  background: linear-gradient(to bottom right, #cd4536 5%, rgba(128, 13, 0, 0.8) 20%, rgba(1, 46, 76, 0.9) 75%, rgba(85, 245, 255, 0.6));
-  border-bottom: 1px solid #d7d7d7;
+  background-color: #012e4c;
+  border-bottom: 1px solid #6CB347;
   position: absolute;
   top: 0;
   left: 0;
