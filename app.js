@@ -49,18 +49,18 @@ hamburgerBtn.addEventListener('click', () => {
   navFrame.style.height = `${height}px`;
   console.log(`navFrame offsetHeight = ${navFrame.offsetHeight}`);
 
-  if(!navbar.classList.contains('navbar--background')){
-    setTimeout(() => {
-      logo.style.visibility = "visible";
-      logo.style.opacity = "1";
-      navbar.classList.add('navbar--background');
-    }, 300);
+  // if(!navbar.classList.contains('navbar--background')){
+  //   setTimeout(() => {
+  //     logo.style.visibility = "visible";
+  //     logo.style.opacity = "1";
+  //     navbar.classList.add('navbar--background');
+  //   }, 300);
     
-  } else if(window.scrollY < 300) {
-    logo.style.visibility = "hidden";
-    logo.style.opacity = "0";
-    navbar.classList.remove('navbar--background');
-  }
+  // } else if(window.scrollY < 300) {
+  //   logo.style.visibility = "hidden"; 
+  //   logo.style.opacity = "0";
+  //   navbar.classList.remove('navbar--background');
+  // }
   
   if (!hamburgerTopBar.classList.contains('hamburgerBtn__hamburgerBar--right')) {
     setTimeout(() => {
@@ -74,6 +74,13 @@ hamburgerBtn.addEventListener('click', () => {
       hamburgerMiddleBar.classList.toggle('hamburgerBtn__hamburgerBar--transparent');
       hamburgerBottomBar.classList.toggle('hamburgerBtn__hamburgerBar--left');
     }, 500);
+    
+    if(window.scrollY < 200 && !hamburgerMenu.classList.contains('navList--displayNone')){
+      footer.style.position = "fixed";
+      navbar.style.visibility = "hidden";
+      navbar.style.opacity = "0";
+      navbar.classList.remove('navbar--background');
+    }
   }
   
   

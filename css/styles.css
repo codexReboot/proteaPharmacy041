@@ -677,6 +677,11 @@ body {
   gap: 0.5rem;
 }
 
+.logoAndNumbers {
+  position: relative;
+  z-index: 100;
+}
+
 .numbers {
   display: flex;
   justify-content: center;
