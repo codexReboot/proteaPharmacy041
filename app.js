@@ -26,6 +26,17 @@ const hero = document.querySelector('.heroSection');
 let footerHeight = footer.offsetHeight;
 hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 
+let height = navbar.offsetHeight;
+navFrame.style.height = `${height}px`;
+
+visualViewport.addEventListener("resize", () => {
+  height = navbar.offsetHeight;
+  navFrame.style.height = `${height}px`;
+
+  console.log(`navbar height = ${navbar.offsetHeight}`);
+  console.log(`navFrame height = ${navFrame.offsetHeight}`);
+});
+
 
 window.addEventListener('resize', function(){
   footerHeight = footer.offsetHeight;
@@ -106,8 +117,7 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 window.onscroll = () => {
-  if(window.scrollY > 200) {
-
+  if(window.scrollY > 200) {  
     footer.style.position = "static";
     navbar.style.visibility = "visible";
     navbar.style.opacity = "1";
@@ -118,7 +128,5 @@ window.onscroll = () => {
     navbar.style.visibility = "hidden";
     navbar.style.opacity = "0";
     navbar.classList.remove('navbar--background');
-
-    
   }
 }
