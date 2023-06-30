@@ -134,47 +134,45 @@ window.onscroll = () => {
   }
 }
 
-// navItems.addEventListener('click', () => {
-//   hamburgerMenu.style.backgroundColor = "red";
-// });
-
 for(let item of navItems) {
-      item.addEventListener('click', () => {
-        // item.style.backgroundColor = 'red';
+  item.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('navList--navListMoveIn')
+    hamburgerMenu.classList.add('navList--navListMoveOut')
+    for(let item of navItems) {
+      item.style.opacity = "1";
+      item.classList.remove('navItem--moveIn');
+      item.classList.add('navItem--moveOut');
+    }
+    navItem1.style.animationDelay = '.10s';
+    navItem2.style.animationDelay = '.15s';
+    navItem3.style.animationDelay = '.20s';
+    navItem4.style.animationDelay = '.25s';
+    navItem5.style.animationDelay = '.30s';
+    navItem6.style.animationDelay = '.35s';
+    navItem7.style.animationDelay = '.40s';
+    navItem8.style.animationDelay = '.45s';
+    setTimeout(() => {
+      hamburgerMenu.classList.remove('navList--display');
+      hamburgerMenu.classList.add('navList--displayNone');
+    }, 1200);
 
-        hamburgerMenu.classList.remove('navList--navListMoveIn')
-        hamburgerMenu.classList.add('navList--navListMoveOut')
-        for(let item of navItems) {
-          item.style.opacity = "1";
-          item.classList.remove('navItem--moveIn');
-          item.classList.add('navItem--moveOut');
-        }
-        navItem1.style.animationDelay = '.10s';
-        navItem2.style.animationDelay = '.15s';
-        navItem3.style.animationDelay = '.20s';
-        navItem4.style.animationDelay = '.25s';
-        navItem5.style.animationDelay = '.30s';
-        navItem6.style.animationDelay = '.35s';
-        navItem7.style.animationDelay = '.40s';
-        navItem8.style.animationDelay = '.45s';
-        setTimeout(() => {
-          hamburgerMenu.classList.remove('navList--display');
-          hamburgerMenu.classList.add('navList--displayNone');
-        }, 2000);
-
-        setTimeout(() => {
+    setTimeout(() => {
       hamburgerTopBar.classList.toggle('hamburgerBtn__hamburgerBar--right');
       hamburgerMiddleBar.classList.toggle('hamburgerBtn__hamburgerBar--transparent');
       hamburgerBottomBar.classList.toggle('hamburgerBtn__hamburgerBar--left');
     }, 500);
-    
-    if(window.scrollY < 200 && !hamburgerMenu.classList.contains('navList--displayNone')){
-      footer.style.position = "fixed";
-      navbar.style.visibility = "hidden";
-      navbar.style.opacity = "0";
-      navbar.classList.remove('navbar--background');
-    }
 
-      });
-    }
+    setTimeout(() => {
+      if(window.scrollY < 200 ){
+        footer.style.position = "fixed";
+        navbar.style.visibility = "hidden";
+        navbar.style.opacity = "0";
+        navbar.classList.remove('navbar--background');
+      }
+    }, 800);
+    
+    
+
+  });
+}
 

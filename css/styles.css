@@ -665,6 +665,9 @@ body {
   top: -7rem;
   left: 0;
 }
+.linkDiv--home {
+  top: 0;
+}
 
 .logo {
   display: flex;
