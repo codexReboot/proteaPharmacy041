@@ -288,6 +288,12 @@ body {
   font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
 }
 
+.navList__navLink {
+  color: #012e4c;
+  font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+  font-weight: 900;
+}
+
 .navListSecondary__navLink {
   color: #012e4c;
   font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
@@ -783,9 +789,10 @@ body {
   margin-bottom: 1rem;
 }
 .navList__navLink {
-  color: #012e4c;
-  font-size: 2.5rem;
-  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   position: relative;
   z-index: 100;
   transition: all 0.4s;

@@ -201,6 +201,14 @@ body {
 	}
 }
 
+.navList {
+	&__navLink {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+        font-weight: 900;
+	}
+}
+
 .navListSecondary {
 	&__navLink {
 		color: $cf-darkBlue;

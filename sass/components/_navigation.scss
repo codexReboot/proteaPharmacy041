@@ -134,10 +134,11 @@
     }
 
     &__navLink {
-        color: $cf-darkBlue;
-        font-size: 2.5rem;
-        font-weight: 900;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .5rem;
 
         position: relative;
         z-index: 100;
