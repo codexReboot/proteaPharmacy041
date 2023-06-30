@@ -894,7 +894,7 @@ body {
 }
 
 .navList--navListMoveOut {
-  animation: animateNavListContainerMoveOut 0.4s ease-out 2s forwards;
+  animation: animateNavListContainerMoveOut 0.4s ease-out 0.8s forwards;
 }
 
 .navItem--moveIn {

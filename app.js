@@ -88,13 +88,13 @@ hamburgerBtn.addEventListener('click', () => {
         item.classList.add('navItem--moveIn');
       }
       navItem1.style.animationDelay = '.70s';
-      navItem2.style.animationDelay = '1s';
-      navItem3.style.animationDelay = '1.30s';
-      navItem4.style.animationDelay = '1.60s';
-      navItem5.style.animationDelay = '1.90s';
-      navItem6.style.animationDelay = '2.20s';
-      navItem7.style.animationDelay = '2.50s';
-      navItem8.style.animationDelay = '2.80s';
+      navItem2.style.animationDelay = '.80s';
+      navItem3.style.animationDelay = '.90s';
+      navItem4.style.animationDelay = '1.00s';
+      navItem5.style.animationDelay = '1.10s';
+      navItem6.style.animationDelay = '1.20s';
+      navItem7.style.animationDelay = '1.30s';
+      navItem8.style.animationDelay = '1.40s';
     }, 20);
   } else {
     hamburgerMenu.classList.remove('navList--navListMoveIn')
@@ -104,14 +104,14 @@ hamburgerBtn.addEventListener('click', () => {
       item.classList.remove('navItem--moveIn');
       item.classList.add('navItem--moveOut');
     }
-    navItem1.style.animationDelay = '.20s';
-    navItem2.style.animationDelay = '.30s';
-    navItem3.style.animationDelay = '.40s';
-    navItem4.style.animationDelay = '.50s';
-    navItem5.style.animationDelay = '.60s';
-    navItem6.style.animationDelay = '.90s';
-    navItem7.style.animationDelay = '1.20s';
-    navItem8.style.animationDelay = '1.50s';
+    navItem1.style.animationDelay = '.10s';
+    navItem2.style.animationDelay = '.15s';
+    navItem3.style.animationDelay = '.20s';
+    navItem4.style.animationDelay = '.25s';
+    navItem5.style.animationDelay = '.30s';
+    navItem6.style.animationDelay = '.35s';
+    navItem7.style.animationDelay = '.40s';
+    navItem8.style.animationDelay = '.45s';
     setTimeout(() => {
       hamburgerMenu.classList.remove('navList--display');
       hamburgerMenu.classList.add('navList--displayNone');
@@ -149,14 +149,14 @@ for(let item of navItems) {
           item.classList.remove('navItem--moveIn');
           item.classList.add('navItem--moveOut');
         }
-        navItem1.style.animationDelay = '.20s';
-        navItem2.style.animationDelay = '.30s';
-        navItem3.style.animationDelay = '.40s';
-        navItem4.style.animationDelay = '.50s';
-        navItem5.style.animationDelay = '.60s';
-        navItem6.style.animationDelay = '.90s';
-        navItem7.style.animationDelay = '1.20s';
-        navItem8.style.animationDelay = '1.50s';
+        navItem1.style.animationDelay = '.10s';
+        navItem2.style.animationDelay = '.15s';
+        navItem3.style.animationDelay = '.20s';
+        navItem4.style.animationDelay = '.25s';
+        navItem5.style.animationDelay = '.30s';
+        navItem6.style.animationDelay = '.35s';
+        navItem7.style.animationDelay = '.40s';
+        navItem8.style.animationDelay = '.45s';
         setTimeout(() => {
           hamburgerMenu.classList.remove('navList--display');
           hamburgerMenu.classList.add('navList--displayNone');
