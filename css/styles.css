@@ -819,6 +819,15 @@ body {
   right: 0;
   z-index: 100;
 }
+.navList__icon {
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+}
+.navList__icon--rightArrow {
+  height: 12px;
+  width: 12px;
+}
 
 .navListSecondary {
   flex: 1 0 auto;

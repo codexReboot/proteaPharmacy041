@@ -186,6 +186,17 @@
 
 
     }
+
+    &__icon {
+        background-color: transparent;
+        height: 16px;
+        width: 16px;
+
+        &--rightArrow {
+            height: 12px;
+            width: 12px;
+        }
+    }
 }
 
 .navListSecondary {
