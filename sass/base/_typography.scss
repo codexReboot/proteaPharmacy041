@@ -131,7 +131,7 @@ body {
 
 .paragraph {
 	color:  $cf-darkBlue;
-	font-size: 1.2rem;
+	font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
 	font-weight: 400;
 	text-align: center;
 
