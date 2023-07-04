@@ -187,14 +187,14 @@ body {
 .headingH2Container__headingH2 {
   color: #012e4c;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
+  font-size: clamp(2.4rem, 5vw, 3rem);
   letter-spacing: 2px;
 }
 .headingH2Container__subheadingH2 {
   color: #225f01;
   font-family: "Open Sans", sans-serif;
+  font-size: clamp(1rem, 2.7vw, 2.2rem);
   font-weight: 900;
-  font-size: 1rem;
 }
 
 .headingH3Container {
@@ -235,7 +235,7 @@ body {
 
 .paragraph {
   color: #012e4c;
-  font-size: 1.2rem;
+  font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
   font-weight: 400;
   text-align: center;
 }
