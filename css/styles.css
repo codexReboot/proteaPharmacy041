@@ -660,6 +660,16 @@ body {
   align-items: stretch;
 }
 
+.imageSlider__slideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+}
+.imageSlider__slide {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+}
 .imageSlider__slideNavContainer {
   display: flex;
   justify-content: space-between;

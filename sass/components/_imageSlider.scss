@@ -1,4 +1,16 @@
 .imageSlider {
+    &__slideContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        
+        gap: 3rem;
+    }
+
+    &__slide {
+        box-shadow: $bs-dark;
+    }
 
     &__slideNavContainer {
         display: flex;
