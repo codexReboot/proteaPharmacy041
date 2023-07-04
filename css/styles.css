@@ -660,6 +660,11 @@ body {
   align-items: stretch;
 }
 
+.imageSlider__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
 .linkDiv {
   position: absolute;
   top: -8.5rem;
