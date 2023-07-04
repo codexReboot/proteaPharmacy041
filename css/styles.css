@@ -690,7 +690,7 @@ body {
   box-shadow: -3px 3px 8px 1px rgba(30, 32, 32, 0.6);
   width: 12rem;
   height: auto;
-  margin: 0 0.75rem 0.75rem 0;
+  margin: 0.85rem 0.75rem 0.75rem 0;
   shape-outside: circle();
 }
 .imageSlider__clearFix {
