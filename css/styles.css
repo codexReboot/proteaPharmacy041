@@ -220,6 +220,9 @@ body {
   line-height: 1;
   letter-spacing: 1px;
 }
+.headingH4Container__headingH4--slide {
+  text-align: left;
+}
 
 .headingH5Container {
   text-align: center;
@@ -232,12 +235,19 @@ body {
   line-height: 1;
   letter-spacing: 1px;
 }
+.headingH5Container__headingH5--slide {
+  text-align: left;
+}
 
 .paragraph {
   color: #012e4c;
   font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
   font-weight: 400;
   text-align: center;
+}
+.paragraph--slide {
+  font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+  text-align: left;
 }
 .paragraph--dispensary, .paragraph--counterMeds, .paragraph--clinicHero {
   color: #f0f0f0;
@@ -668,7 +678,23 @@ body {
   gap: 3rem;
 }
 .imageSlider__slide {
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+  background-color: #d7d7d7;
+  box-shadow: 0px 0px 12px 1px rgba(30, 32, 32, 0.4);
+  padding: 1.5rem;
+}
+.imageSlider__image {
+  float: left;
+  background: linear-gradient(135deg, rgba(240, 240, 240, 0.6) 10%, rgba(108, 179, 71, 0.9) 60%, #3e6629 95%);
+  border: 2px solid #f0f0f0;
+  border-radius: 50%;
+  box-shadow: -3px 3px 8px 1px rgba(30, 32, 32, 0.6);
+  width: 12rem;
+  height: 12rem;
+  margin: 0 0.75rem 0.75rem 0;
+  shape-outside: circle();
+}
+.imageSlider__clearFix {
+  clear: both;
 }
 .imageSlider__slideNavContainer {
   display: flex;
