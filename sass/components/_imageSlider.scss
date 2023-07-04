@@ -1,8 +1,36 @@
 .imageSlider {
 
+    &__slideNavContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    &__dotsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+    }
+
+    &__dot {
+        background-color: $cp-darkBlue;
+        border-radius: 100%;
+        width: .85rem;
+        height: .85rem;
+    }
+
+    &__dot--1 {
+        background-color: $cp-darkRed;
+    }
 
     &__icon {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 2rem;
+        height: 2rem;
     }
 }

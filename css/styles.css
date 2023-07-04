@@ -660,9 +660,32 @@ body {
   align-items: stretch;
 }
 
+.imageSlider__slideNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+}
+.imageSlider__dotsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.imageSlider__dot {
+  background-color: #012e4c;
+  border-radius: 100%;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+.imageSlider__dot--1 {
+  background-color: #800d00;
+}
 .imageSlider__icon {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .linkDiv {
