@@ -20,7 +20,7 @@
         overflow: hidden;
 
         width: 100%;
-        min-height: 22.5rem;
+        min-height: clamp(24rem, 49vh, 35rem);
     }
 
     &__slide {
