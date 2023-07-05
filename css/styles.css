@@ -751,6 +751,7 @@ body {
   border-radius: 100%;
   width: 0.85rem;
   height: 0.85rem;
+  transition: all 2s;
 }
 .imageSlider__dot--1 {
   background-color: #800d00;
@@ -761,7 +762,7 @@ body {
 }
 
 .animateCurrentSlide {
-  animation: animateSlide 15s linear forwards;
+  animation: animateSlide 12s linear forwards;
 }
 
 .displayNone {

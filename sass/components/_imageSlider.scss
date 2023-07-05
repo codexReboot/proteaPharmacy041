@@ -69,6 +69,8 @@
         border-radius: 100%;
         width: .85rem;
         height: .85rem;
+
+        transition: all 2s;
     }
 
     &__dot--1 {
@@ -82,7 +84,7 @@
 }
 
 .animateCurrentSlide {
-    animation: animateSlide 15s linear forwards;
+    animation: animateSlide 12s linear forwards;
 }
 
 .displayNone {

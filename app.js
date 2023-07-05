@@ -29,25 +29,32 @@ const hero = document.querySelector('.heroSection');
 // Select the slides(teamMember cards) in the aboutSection
 const slides = document.querySelectorAll('.imageSlider__slide');
 
+// Select the dots below the slides in the aboutSection
+const dots = document.querySelectorAll('.imageSlider__dot');
+
 let slideIndex = 0;
-const slideInterval = 15000;
+const slideInterval = 12000;
 
 function nextSlide() {
       if (slideIndex >= slides.length) {
         slides[slideIndex-1].classList.remove('displayBlock');
         slides[slideIndex-1].classList.add('displayNone');
+        dots[slideIndex-1].style.backgroundColor = '#012e4c';
         slideIndex = 0;
       }
       if(slideIndex === 0) {
         slides[slideIndex].classList.remove('displayNone');
         slides[slideIndex].classList.add('displayBlock');
         slides[slideIndex].classList.add('animateCurrentSlide');
+        dots[slideIndex].style.backgroundColor = '#4fdc03';
 
       } else {
         slides[slideIndex-1].classList.remove('displayBlock');
         slides[slideIndex-1].classList.add('displayNone');
         slides[slideIndex].classList.add('displayBlock');
         slides[slideIndex].classList.add('animateCurrentSlide');
+        dots[slideIndex-1].style.backgroundColor = '#012e4c';
+        dots[slideIndex].style.backgroundColor = '#4fdc03';
       }
       slideIndex++;
       console.log(slideIndex);
