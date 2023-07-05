@@ -77,22 +77,30 @@
 @keyframes animateSlide {
   0% {
     transform: translateX(100%);
-    opacity: .2;
+    opacity: 0;
   }
 
-  20% {
+  14% {
+    opacity: .25;
+  }
+
+  16% {
     transform: translateX(0%);
     opacity: 1;
   }
 
-  80% {
+  84% {
     transform: translateX(0%);
     opacity: 1;
+  }
+
+  86% {
+    opacity: .3;
   }
 
   100% {
     transform: translateX(-100%);
-    opacity: 0.2;
+    opacity: 0;
   }
 } 
 
