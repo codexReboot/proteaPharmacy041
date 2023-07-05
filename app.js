@@ -29,11 +29,29 @@ const hero = document.querySelector('.heroSection');
 // Select the slides(teamMember cards) in the aboutSection
 const slides = document.querySelectorAll('.imageSlider__slide');
 
+let slideIndex = 0;
+const slideInterval = 2000;
 
+function nextSlide() {
+      if (slideIndex >= slides.length) {
+        slides[slideIndex-1].classList.remove('displayBlock');
+        slides[slideIndex-1].classList.add('displayNone');
+        slideIndex = 0;
+      }
+      if(slideIndex === 0) {
+        slides[slideIndex].classList.remove('displayNone');
+        slides[slideIndex].classList.add('displayBlock');
+      } else {
+        slides[slideIndex-1].classList.remove('displayBlock');
+        slides[slideIndex-1].classList.add('displayNone');
+        slides[slideIndex].classList.add('displayBlock');
+      }
+      slideIndex++;
+      console.log(slideIndex);
+      console.log("slides.lenth : ",slides.length);
+    }
 
-
-
-
+setInterval(nextSlide, slideInterval);
 
 
 

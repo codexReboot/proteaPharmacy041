@@ -24,7 +24,7 @@
     }
 
     // &__slide1 {
-    //     display: block;
+    //     display: none;
     // }
 
     // &__slide2 {
@@ -98,10 +98,10 @@
 //     animation: animateSlide 4s ease-in-out 1 forwards;
 // }
 
-// .displayNone {
-//     display: none;
-// }
+.displayNone {
+    display: none;
+}
 
-// .displayBlock {
-//     display: block;
-// }
+.displayBlock {
+    display: block;
+}

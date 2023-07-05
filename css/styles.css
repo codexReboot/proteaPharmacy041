@@ -730,6 +730,14 @@ body {
   height: 2rem;
 }
 
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
 .linkDiv {
   position: absolute;
   top: -8.5rem;
