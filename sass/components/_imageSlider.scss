@@ -6,12 +6,39 @@
         align-items: stretch;
         
         gap: 3rem;
+
+        position: relative;
+    }
+
+    &__slider {
+        display: flex;
     }
 
     &__slide {
         box-shadow: 0px 0px 12px 1px rgba($cp-dark, .4);
         padding: 1.5rem;
+
     }
+
+    // &__slide1 {
+    //     display: block;
+    // }
+
+    // &__slide2 {
+    //     display: none;
+    // }
+
+    // &__slide3 {
+    //     display: none;
+    // }
+
+    // &__slide4 {
+    //     display: none;
+    // }
+
+    // &__slide5 {
+    //     display: none;
+    // }
 
     &__image {
         float: left;
@@ -63,3 +90,15 @@
         height: 2rem;
     }
 }
+
+// .animateCurrentSlide {
+//     animation: animateSlide 4s ease-in-out 1 forwards;
+// }
+
+// .displayNone {
+//     display: none;
+// }
+
+// .displayBlock {
+//     display: block;
+// }

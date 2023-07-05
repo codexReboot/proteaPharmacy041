@@ -26,8 +26,23 @@ const footer = document.querySelector('.footer');
 
 const hero = document.querySelector('.heroSection');
 
+// Select the slides(teamMember cards) in the aboutSection
+const slides = document.querySelectorAll('.imageSlider__slide');
+
+
+
+
+
+
+
+
+
+
+
+
 let footerHeight = footer.offsetHeight;
 hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
+console.log(`${window.innerHeight - footerHeight}px`);
 
 let height = navbar.offsetHeight;
 navFrame.style.height = `${height}px`;

@@ -72,4 +72,51 @@
     transform: translateX(200px);
     opacity: 0;
   }
-} 
+}
+
+// @keyframes animateSlideLeft {
+//   0% {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+
+//   80% {
+//     opacity: .8;
+//   }
+
+//   100% {
+//     transform: translateX(0%);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes animateSlide {
+//   0% {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+
+//   10% {
+//     opacity: .6;
+//   }
+
+//   20% {
+//     transform: translateX(0%);
+//     opacity: 1;
+//   }
+
+//   80% {
+//     transform: translateX(0%);
+//     opacity: 1;
+//   }
+
+//   90% {
+//     opacity: .6;
+//   }
+
+//   100% {
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
+// } 
+
