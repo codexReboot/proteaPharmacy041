@@ -15,6 +15,8 @@
         align-items: center;
 
         gap: 3rem;
+
+        min-height: 22rem;
     }
 
     &__slide {
@@ -22,26 +24,6 @@
         padding: 1.5rem;
 
     }
-
-    // &__slide1 {
-    //     display: none;
-    // }
-
-    // &__slide2 {
-    //     display: none;
-    // }
-
-    // &__slide3 {
-    //     display: none;
-    // }
-
-    // &__slide4 {
-    //     display: none;
-    // }
-
-    // &__slide5 {
-    //     display: none;
-    // }
 
     &__image {
         float: left;
@@ -94,9 +76,9 @@
     }
 }
 
-// .animateCurrentSlide {
-//     animation: animateSlide 4s ease-in-out 1 forwards;
-// }
+.animateCurrentSlide {
+    animation: animateSlide 15s linear forwards;
+}
 
 .displayNone {
     display: none;

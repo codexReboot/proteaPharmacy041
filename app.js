@@ -30,7 +30,7 @@ const hero = document.querySelector('.heroSection');
 const slides = document.querySelectorAll('.imageSlider__slide');
 
 let slideIndex = 0;
-const slideInterval = 2000;
+const slideInterval = 15000;
 
 function nextSlide() {
       if (slideIndex >= slides.length) {
@@ -41,10 +41,13 @@ function nextSlide() {
       if(slideIndex === 0) {
         slides[slideIndex].classList.remove('displayNone');
         slides[slideIndex].classList.add('displayBlock');
+        slides[slideIndex].classList.add('animateCurrentSlide');
+
       } else {
         slides[slideIndex-1].classList.remove('displayBlock');
         slides[slideIndex-1].classList.add('displayNone');
         slides[slideIndex].classList.add('displayBlock');
+        slides[slideIndex].classList.add('animateCurrentSlide');
       }
       slideIndex++;
       console.log(slideIndex);
