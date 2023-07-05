@@ -704,7 +704,7 @@ body {
 }
 .imageSlider__sliderNavigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 75%;
