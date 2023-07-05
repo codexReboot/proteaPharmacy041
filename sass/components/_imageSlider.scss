@@ -2,16 +2,19 @@
     &__slideContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: stretch;
-        
-        gap: 3rem;
 
-        position: relative;
+        gap: 3rem;
     }
 
     &__slider {
         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 3rem;
     }
 
     &__slide {
@@ -56,7 +59,7 @@
         clear: both;
     }
 
-    &__slideNavContainer {
+    &__sliderNavigation {
         display: flex;
         justify-content: space-between;
         align-items: center;

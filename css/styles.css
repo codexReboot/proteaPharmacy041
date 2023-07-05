@@ -673,13 +673,16 @@ body {
 .imageSlider__slideContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
   gap: 3rem;
-  position: relative;
 }
 .imageSlider__slider {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
 }
 .imageSlider__slide {
   box-shadow: 0px 0px 12px 1px rgba(30, 32, 32, 0.4);
@@ -699,7 +702,7 @@ body {
 .imageSlider__clearFix {
   clear: both;
 }
-.imageSlider__slideNavContainer {
+.imageSlider__sliderNavigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
