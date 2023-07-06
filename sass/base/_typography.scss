@@ -94,9 +94,9 @@ body {
 .headingH3Container {
 	text-align: center;
 	&__headingH3 {
-		color: $cf-darkBlue;
+		color: $cf-blue;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1.9rem;
+		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
 		font-weight: 700;
 		line-height: 1;
 		letter-spacing: 1px;     
