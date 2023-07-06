@@ -154,6 +154,14 @@ body {
 		letter-spacing: 1px;
 	}
 
+	&--dispensary, &--counterMeds {
+		text-align: center;
+	}
+
+	// &--counterMeds {
+	// 	text-align: left;
+	// }
+
 	&--clinicContent {
 	}
 

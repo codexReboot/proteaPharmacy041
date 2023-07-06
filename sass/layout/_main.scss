@@ -69,52 +69,86 @@
 
     gap: 3rem;
 
-    &__paragraph--dispensary {
-        background: radial-gradient(at 65% 35%, rgba($cp-white, .4) 15%, rgba($cp-white, .8) 25%, rgba($cp-white, 1) 40%);
+    // &__paragraph--dispensary {
+    //     // background: radial-gradient(at 72% 12rem, rgba($cp-white, .5) 18%, rgba($cp-white, .9) 22%, rgba($cp-white, 1) 35%);
 
-        padding: 2.5rem;
+    //     padding: 2.5rem;
 
-        position: relative;
-    }
+    //     position: relative;
+    // }
 
-    &__paragraph--dispensary::after {
-        content: "";
+    // &__paragraph--dispensary::after {
+    //     content: "";
 
-        background: url("../img/dispensary/ProteaApteekDispensary.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: 5rem;
-        background-position-y: -20rem;
+    //     // background: radial-gradient(at 72% 12rem, rgba($cp-white, .5) 18%, rgba($cp-white, .9) 22%, rgba($cp-white, 1) 35%), url("../img/dispensary/ProteaApteekDispensary.webp");
+    //     background: url("../img/dispensary/ProteaApteekDispensary.webp");
+    //     background-size: 10rem;
+    //     background-repeat: no-repeat;
+    //     background-position-x: 50%;
+    //     background-position-y: 50%;
 
-        width: 100%;
-        height: 100%;
+    //     width: 40%;
+    //     height: 40%;
 
-        position: absolute;
-        top: 0;
-        left: 0;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
 
-        z-index: -100;
-    }
+    //     z-index: -100;
+    // }
 
-    &__paragraph--counterMeds {
-        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    // &__paragraph--counterMeds {
+    //     background: radial-gradient(ellipse at center, rgba($cp-white, 0) 3%, rgba($cp-white, .25) 11%, rgba($cp-white, .55) 18%, rgba($cp-white, .8) 20%, rgba($cp-white, 1) 28%);
+    //     background-size: cover;
+    //     padding: 2.5rem;
 
-        border-radius: $br-m;
-        box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
+    //     position: relative;
+    // }
 
-        padding: 2.5rem;
-    }
+    // &__paragraph--counterMeds::after {
+    //     content: "";
+
+    //     background: url("../img/dispensary/ProteaApteekOverTheCounterMeds.webp");
+    //     background-size: 60rem;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+        
+
+    //     width: 100%;
+    //     min-height: 100%;
+
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+
+    //     z-index: -100;
+    // }
 
     article {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
+        max-width: 45rem;
+        margin: 0 auto;
+    }
 
-        gap: 1rem;
+    article > *:not(img) {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        border: 1px solid $cp-green;
+        padding: .75rem;
+        shape-outside: element();
+    }
+
+    &__image--dispensary {
+        float: left;
+        margin: 0 2rem .5rem 0;
+        width: clamp(8rem, 20vw, 10rem);
+    }
+
+    &__image--counterMeds {
+        float: right;
+        margin: 0 0 .5rem 2rem;
+        width: clamp(12rem, 20vw, 15rem);
     }
 
 }
@@ -125,53 +159,54 @@
     justify-content: flex-start;
     align-items: stretch;
 
-    gap: 4rem;
+    gap: 3rem;
 
-    &__services {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
+    // &__hero {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    //     align-items: stretch;
 
-        gap: 3rem;
+    //     gap: 1rem;
+    // }
+
+
+    // &__heroPhotoAndContent {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: stretch;
+
+    //     background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../img/clinic/ProteaApteekClinic.webp");
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+
+    //     border-radius: $br-m;
+    //     box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
+
+    //     padding: 2.5rem;
+    // }
+
+    article {
+        max-width: 45rem;
+        margin: 0 auto;
     }
 
-    &__hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-
-        gap: 1rem;
+    article > *:not(img, p) {
+        margin-bottom: 2rem;
     }
 
-
-    &__heroPhotoAndContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-
-        background: linear-gradient(to bottom, rgba($cp-dark, .8) 65%, rgba($cp-dark, .2) 95%), url("../img/clinic/ProteaApteekClinic.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        border-radius: $br-m;
-        box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
-
-        padding: 2.5rem;
+    &__image {
+        border: 1px solid $cp-green;
+        padding: .75rem;
+        shape-outside: element();
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-
-        & > * {
-            margin-bottom: .125rem;
-        }
+    &__image--clinic {
+        float: left;
+        margin: 0 2rem .5rem 0;
+        width: clamp(13rem, 20vw, 16rem);
     }
 }
 
