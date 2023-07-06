@@ -1218,6 +1218,23 @@ body {
   align-items: stretch;
   gap: 3rem;
 }
+.importantInfoSection article {
+  max-width: 45rem;
+  margin: 0 auto;
+}
+.importantInfoSection article > *:not(img, p) {
+  margin-bottom: 2rem;
+}
+.importantInfoSection__image {
+  border: 1px solid #6CB347;
+  padding: 0.75rem;
+  shape-outside: element();
+}
+.importantInfoSection__image--importantInfo {
+  float: left;
+  margin: 0 2rem 0.5rem 0;
+  width: clamp(13rem, 20vw, 16rem);
+}
 .importantInfoSection__linksList > * {
   margin-bottom: 0.75rem;
 }
