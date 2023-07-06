@@ -211,7 +211,7 @@ body {
 .headingH2Container__headingH2 {
   color: #012e4c;
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(2.4rem, 5vw, 3rem);
+  font-size: clamp(2.6rem, 7vw, 3.2rem);
   letter-spacing: 2px;
 }
 .headingH2Container__subheadingH2 {
@@ -633,19 +633,29 @@ body {
   transform: translateX(-50%);
   z-index: -100;
 }
+@media (min-width: 400px) {
+  .headingH2Container__headingH2--about::after {
+    top: -80%;
+  }
+}
 .headingH2Container__headingH2--dispensary::after {
   content: "";
   background: url("../img/headingH2Icons/PillIcon.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 10rem;
-  height: 10rem;
+  width: 11rem;
+  height: 11rem;
   position: absolute;
   top: -120%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+}
+@media (min-width: 420px) {
+  .headingH2Container__headingH2--dispensary::after {
+    top: -90%;
+  }
 }
 .headingH2Container__headingH2--clinic::after {
   content: "";
@@ -653,13 +663,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 10rem;
-  height: 10rem;
+  width: 11rem;
+  height: 11rem;
   position: absolute;
   top: -120%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+}
+@media (min-width: 420px) {
+  .headingH2Container__headingH2--clinic::after {
+    top: -90%;
+  }
 }
 .headingH2Container__headingH2--info::after {
   content: "";
@@ -667,13 +682,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 10rem;
-  height: 10rem;
+  width: 11rem;
+  height: 11rem;
   position: absolute;
   top: -120%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+}
+@media (min-width: 420px) {
+  .headingH2Container__headingH2--info::after {
+    top: -90%;
+  }
 }
 .headingH2Container__headingH2--contact::after {
   content: "";
@@ -681,13 +701,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 10rem;
-  height: 10rem;
+  width: 11rem;
+  height: 11rem;
   position: absolute;
   top: -120%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+}
+@media (min-width: 420px) {
+  .headingH2Container__headingH2--contact::after {
+    top: -90%;
+  }
 }
 
 .headingH3Container {
