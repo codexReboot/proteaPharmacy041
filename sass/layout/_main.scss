@@ -38,27 +38,27 @@
         gap: 2rem;
     }
 
-    &__pharmacyTeam {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+    // &__pharmacyTeam {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    //     align-items: center;
 
-        gap: 1rem;
-    }
+    //     gap: 1rem;
+    // }
 
-    &__teamPhotoContainer {
-        background: linear-gradient(to bottom, transparent 5%, rgba($cp-dark,.1) 55%, rgba($cp-darkBlue,.6) 80%, rgba($cp-darkBlue,.75) 90%, rgba($cp-darkBlue,1)), url("../img/staff/ProteaPharmacyTeam.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    // &__teamPhotoContainer {
+    //     background: linear-gradient(to bottom, transparent 5%, rgba($cp-dark,.1) 55%, rgba($cp-darkBlue,.6) 80%, rgba($cp-darkBlue,.75) 90%, rgba($cp-darkBlue,1)), url("../img/staff/ProteaPharmacyTeam.webp");
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
 
-        border-radius: 5px;
-        box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
+    //     border-radius: 5px;
+    //     box-shadow: 0 0 6px 1px rgba($cp-darkBlue, .6);
         
-        width: 100%;
-        height: 15rem;
-    }
+    //     width: 100%;
+    //     height: 15rem;
+    // }
 }
 
 .dispensarySection {

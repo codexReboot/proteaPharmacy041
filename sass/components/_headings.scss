@@ -197,3 +197,21 @@
 .headingH3Container {
     position: relative;
 }
+
+.headingContainerSlider {
+	display: flex;
+    justify-content: center;
+    align-items: first baseline;
+
+    gap: 1rem;
+
+    margin-bottom: .5rem;
+	
+	&__headingH4 {
+		
+	}
+
+	&__headingH5 {
+		
+	}
+}

@@ -24,8 +24,8 @@
     }
 
     &__slide {
-        box-shadow: 0px 0px 12px 1px rgba($cp-dark, .4);
-        padding: 1.5rem;
+        // box-shadow: 0px 0px 12px 1px rgba($cp-dark, .4);
+        // padding: 1.5rem;
         width: min(35rem, 92%);
         height: fit-content;
     }
@@ -36,7 +36,7 @@
         border: 2px solid $cp-white;
         border-radius: 50%;
         box-shadow: -3px 3px 8px 1px rgba($cp-dark, .6);
-        width: 9rem;
+        width: 12rem;
         height: auto;
         margin: .85rem .75rem .75rem 0;
         shape-outside: circle();

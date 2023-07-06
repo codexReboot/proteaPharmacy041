@@ -115,6 +115,8 @@ body {
 	}
 
 	&__headingH4--slide {
+		color: $cf-darkGreen;
+		text-transform: uppercase;
 		text-align: left;
 	}
 }
@@ -131,7 +133,30 @@ body {
 	}
 
 	&__headingH5--slide {
+		color: $cf-green;
+		text-transform: lowercase;
 		text-align: left;
+	}
+}
+
+.headingContainerSlider {
+	text-align: center;
+	line-height: 1;
+	letter-spacing: 1px;
+	
+	&__headingH4--slide {
+		color: $cf-darkGreen;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.4rem;
+		font-weight: 700;
+		letter-spacing: 0px;  
+	}
+
+	&__headingH5--slide {
+		color: $cf-darkGreen;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.1rem;
+		font-weight: 900;  
 	}
 }
 
