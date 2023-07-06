@@ -169,8 +169,17 @@ body {
 		font-weight: 900;
 	}
 
-	&--tradingHourWeekday {
+	&--tradingHoursIntro {
+	
+	}
+
+	&--tradingHoursWeekday {
+		color: $cf-darkGreen;
 		font-weight: 900;
+	}
+
+	&--tradingHoursTimes {
+		font-weight: 700;
 	}
 
 	&--contactForm {
