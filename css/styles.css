@@ -1287,15 +1287,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.75rem;
 }
 .importantInfoSection__linksList > * {
   margin-bottom: 0.75rem;
 }
 .importantInfoSection__linkItem {
   background-color: #6CB347;
-  width: 100%;
+  width: 45rem;
   min-height: 20vh;
   position: relative;
 }
@@ -1330,7 +1330,7 @@ body {
 .importantInfoSection__linkItem--deptHealthLimpopo {
   background: url("../img/importantInfo/DptHealthLimpopo.webp");
   background-repeat: no-repeat;
-  background-size: 45%;
+  background-size: 30%;
   background-position: top;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1338,7 +1338,7 @@ body {
 .importantInfoSection__linkItem--deptHealthSA {
   background: url("../img/importantInfo/DeptHealthSA.webp");
   background-repeat: no-repeat;
-  background-size: 45%;
+  background-size: 30%;
   background-position: top;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1359,7 +1359,7 @@ body {
   align-items: center;
   gap: 0.25rem;
   position: absolute;
-  bottom: 1.75rem;
+  bottom: 1.25rem;
   left: 0;
   right: 0;
 }
