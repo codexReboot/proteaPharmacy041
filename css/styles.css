@@ -372,8 +372,10 @@ body {
 
 .importantInfoSection__linkText {
   color: #012e4c;
-  font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+  font-size: clamp(calc(1.15rem + .5vw), 2.1vh, calc(1.65rem + .5vw));
   font-weight: 900;
+  line-height: 1;
+  text-align: center;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -1295,7 +1297,7 @@ body {
 }
 .importantInfoSection__linkItem {
   background-color: #6CB347;
-  width: 45rem;
+  width: min(45rem, 100%);
   min-height: 20vh;
   position: relative;
 }
@@ -1307,7 +1309,7 @@ body {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
 }
 .importantInfoSection__linkItem--vaccination {
-  background: linear-gradient(to top, rgba(240, 240, 240, 0.9) 15%, rgba(240, 240, 240, 0.4) 60%), url("../../img/importantInfo/ProteaPharmacyLinksVaccination.webp");
+  background: linear-gradient(to top, rgba(240, 240, 240, 0.9) 15%, rgba(240, 240, 240, 0.4) 60%), url("../img/importantInfo/ProteaPharmacyLinksVaccination.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1330,7 +1332,7 @@ body {
 .importantInfoSection__linkItem--deptHealthLimpopo {
   background: url("../img/importantInfo/DptHealthLimpopo.webp");
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: clamp(15rem, 30vh, 25rem);
   background-position: top;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1338,7 +1340,7 @@ body {
 .importantInfoSection__linkItem--deptHealthSA {
   background: url("../img/importantInfo/DeptHealthSA.webp");
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: clamp(15rem, 30vh, 25rem);
   background-position: top;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1357,11 +1359,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.85rem;
   position: absolute;
   bottom: 1.25rem;
   left: 0;
   right: 0;
+}
+.importantInfoSection__icon {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .contactUsSection {

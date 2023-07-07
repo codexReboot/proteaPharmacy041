@@ -159,7 +159,7 @@
     &__linkItem {
         background-color: $cp-green;
 
-        width: 45rem;
+        width: min(45rem, 100%);;
         min-height: 20vh;
 
         position: relative;
@@ -173,7 +173,7 @@
         }
 
         &--vaccination {
-            background: linear-gradient(to top, rgba($cp-white, .9) 15%, rgba($cp-white, .4) 60%), url('../../img/importantInfo/ProteaPharmacyLinksVaccination.webp');
+            background: linear-gradient(to top, rgba($cp-white, .9) 15%, rgba($cp-white, .4) 60%), url('../img/importantInfo/ProteaPharmacyLinksVaccination.webp');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -199,7 +199,7 @@
         &--deptHealthLimpopo {
             background: url('../img/importantInfo/DptHealthLimpopo.webp');
             background-repeat: no-repeat;
-            background-size:30%;
+            background-size: clamp(15rem, 30vh, 25rem);
             background-position: top;
             box-shadow: $bs-dark;
             position: relative;
@@ -208,7 +208,7 @@
         &--deptHealthSA {
             background: url('../img/importantInfo/DeptHealthSA.webp');
             background-repeat: no-repeat;
-            background-size:30%;
+            background-size: clamp(15rem, 30vh, 25rem);;
             background-position: top;
             box-shadow: $bs-dark;
             position: relative;
@@ -231,12 +231,17 @@
         justify-content: center;
         align-items: center;
 
-        gap: .25rem;
+        gap: .85rem;
 
         position: absolute;
         bottom: 1.25rem;
         left: 0;
         right: 0;
+    }
+    
+    &__icon {
+        width: 1.6rem;
+        height: 1.6rem;
     }
 }
 

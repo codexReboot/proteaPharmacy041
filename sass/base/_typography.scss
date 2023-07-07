@@ -272,8 +272,6 @@ body {
 .navListSecondary {
 	&__navLink {
 		color: $cf-darkBlue;
-        // font-size: clamp(1.4rem, 2.5vh, 2.2rem);
-		// font-size: 12rem;
 		font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
         font-weight: 900;
         background-clip: text;
@@ -284,8 +282,10 @@ body {
 .importantInfoSection {
 	&__linkText {
 		color: $cf-darkBlue;
-        font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
+        font-size: clamp(calc(1.15rem + .5vw), 2.1vh, calc(1.65rem + .5vw));
         font-weight: 900;
+		line-height: 1;
+		text-align: center;
 		background-clip: text;
         -webkit-background-clip: text;
 	}
