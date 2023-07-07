@@ -1221,13 +1221,13 @@ body {
 }
 .dispensarySection__image--dispensary {
   float: left;
-  margin: 0 2rem 0.5rem 0;
-  width: clamp(8rem, 20vw, 10rem);
+  margin: 0 1.5rem 0.5rem 0;
+  width: clamp(12rem, 28vw, 15rem);
 }
 .dispensarySection__image--counterMeds {
   float: right;
   margin: 0 0 0.5rem 2rem;
-  width: clamp(12rem, 20vw, 15rem);
+  width: clamp(14rem, 35vw, 22rem);
 }
 
 .clinicSection {
@@ -1252,7 +1252,7 @@ body {
 .clinicSection__image--clinic {
   float: left;
   margin: 0 2rem 0.5rem 0;
-  width: clamp(13rem, 20vw, 16rem);
+  width: clamp(14rem, 35vw, 22rem);
 }
 
 .importantInfoSection {
@@ -1277,7 +1277,7 @@ body {
 .importantInfoSection__image--importantInfo {
   float: left;
   margin: 0 2rem 0.5rem 0;
-  width: clamp(13rem, 20vw, 16rem);
+  width: clamp(14rem, 35vw, 22rem);
 }
 .importantInfoSection__linksList > * {
   margin-bottom: 0.75rem;
