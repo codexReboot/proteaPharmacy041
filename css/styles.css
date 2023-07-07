@@ -296,6 +296,10 @@ body {
   font-size: clamp(calc(1rem + 1vw), 1.2vh, calc(1.2rem + 1vw));
   text-align: left;
 }
+.paragraph--dispensaryIntro {
+  margin: 0 auto;
+  max-width: 45rem;
+}
 .paragraph--dispensary, .paragraph--counterMeds, .paragraph--clinicHero {
   color: #012e4c;
   font-weight: 400;

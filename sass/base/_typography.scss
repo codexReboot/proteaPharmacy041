@@ -173,6 +173,11 @@ body {
 		text-align: left;
 	}
 
+	&--dispensaryIntro {
+		margin: 0 auto;
+		max-width: 45rem;
+	}
+
 	&--dispensary, &--counterMeds, &--clinicHero {
 		color:  $cf-darkBlue;
 		font-weight: 400;
