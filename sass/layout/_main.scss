@@ -330,7 +330,8 @@
     &__googleMapsContainer {
         border: 1px solid $cp-green;
         box-shadow: $bs-dark;
-        width: 100%;
+        margin: 0 auto;
+        width: min(100%, 45rem);
     }
 
     &__googleMaps {
