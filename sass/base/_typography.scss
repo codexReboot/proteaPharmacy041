@@ -284,7 +284,7 @@ body {
 .importantInfoSection {
 	&__linkText {
 		color: $cf-darkBlue;
-        font-size: 1.4rem;
+        font-size: clamp(calc(1.15rem + .5vw), 2.3vh, calc(1.65rem + .5vw));
         font-weight: 900;
 		background-clip: text;
         -webkit-background-clip: text;
