@@ -5,6 +5,8 @@
   padding: 0rem;
 
   .contactForm {
+    margin: 0 auto;
+    width: min(100%, 45rem);
 
     &__field {
         margin: 2rem auto 0;
