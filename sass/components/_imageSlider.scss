@@ -16,11 +16,11 @@
 
         gap: 1rem;
 
-        padding: 1rem 0;
+        padding: 0;
         overflow: hidden;
 
         width: 100%;
-        min-height: clamp(24rem, 49vh, 35rem);
+        min-height: 18.5rem;
     }
 
     &__slide {
@@ -36,7 +36,7 @@
         border: 2px solid $cp-white;
         border-radius: 50%;
         box-shadow: -3px 3px 8px 1px rgba($cp-dark, .6);
-        width: 12rem;
+        width: 10.5rem;
         height: auto;
         margin: .85rem .75rem .75rem 0;
         shape-outside: circle();
