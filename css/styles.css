@@ -1330,7 +1330,7 @@ body {
 .importantInfoSection__linkItem--deptHealthLimpopo {
   background: url("../img/importantInfo/DptHealthLimpopo.webp");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 45%;
   background-position: top;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1338,7 +1338,7 @@ body {
 .importantInfoSection__linkItem--deptHealthSA {
   background: url("../img/importantInfo/DeptHealthSA.webp");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 45%;
   background-position: top;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   position: relative;
@@ -1359,7 +1359,7 @@ body {
   align-items: center;
   gap: 0.25rem;
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.75rem;
   left: 0;
   right: 0;
 }
