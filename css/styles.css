@@ -244,6 +244,10 @@ body {
   line-height: 1;
   letter-spacing: 1px;
 }
+.headingH4Container__headingH4--contact {
+  color: #225f01;
+  font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+}
 .headingH4Container__headingH4--slide {
   color: #225f01;
   text-transform: uppercase;
@@ -260,6 +264,9 @@ body {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1px;
+}
+.headingH5Container__headingH5--contact {
+  font-size: clamp(1.4rem, 3vw, 2rem);
 }
 .headingH5Container__headingH5--slide {
   color: #6CB347;
@@ -313,7 +320,8 @@ body {
 }
 .paragraph--tradingHoursWeekday {
   color: #225f01;
-  font-weight: 900;
+  font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+  font-weight: 700;
 }
 .paragraph--tradingHoursTimes {
   font-weight: 700;
