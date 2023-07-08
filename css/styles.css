@@ -246,7 +246,7 @@ body {
 }
 .headingH4Container__headingH4--contact {
   color: #225f01;
-  font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+  font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
 }
 .headingH4Container__headingH4--slide {
   color: #225f01;
@@ -266,7 +266,7 @@ body {
   letter-spacing: 1px;
 }
 .headingH5Container__headingH5--contact {
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
 }
 .headingH5Container__headingH5--slide {
   color: #6CB347;
@@ -316,7 +316,6 @@ body {
   text-align: center;
 }
 .paragraph--detail {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: 700;
 }
 .paragraph--tradingHoursWeekday {
