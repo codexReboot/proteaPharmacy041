@@ -1220,6 +1220,9 @@ body {
     gap: 0.35rem;
   }
 }
+.footer__legal {
+  cursor: pointer;
+}
 .footer__copyright {
   display: flex;
   flex-direction: column;
@@ -1231,6 +1234,9 @@ body {
     flex-direction: row;
     gap: 1rem;
   }
+}
+.footer__schalk--name {
+  cursor: pointer;
 }
 
 .header {
