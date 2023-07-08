@@ -26,6 +26,10 @@ const footer = document.querySelector('.footer');
 
 const hero = document.querySelector('.heroSection');
 
+////////////////////////////////////////////////////////////////////////////////////////
+// SLIDE ANIMATION 
+////////////////////////////////////////////////////////////////////////////////////////
+
 // Select the slides(teamMember cards) in the aboutSection
 const slides = document.querySelectorAll('.imageSlider__slide');
 
@@ -34,6 +38,13 @@ const dots = document.querySelectorAll('.imageSlider__dot');
 
 let slideIndex = 0;
 const slideInterval = 12000;
+
+slides[slideIndex].classList.remove('displayNone');
+slides[slideIndex].classList.add('displayBlock');
+slides[slideIndex].classList.add('animateCurrentSlide');
+dots[slideIndex].style.backgroundColor = '#4fdc03';
+
+slideIndex = 1;
 
 function nextSlide() {
       if (slideIndex >= slides.length) {
@@ -63,10 +74,7 @@ function nextSlide() {
 
 setInterval(nextSlide, slideInterval);
 
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////////////
 
 let footerHeight = footer.offsetHeight;
 hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
