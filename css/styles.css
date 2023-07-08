@@ -400,6 +400,35 @@ body {
   color: #6CB347;
 }
 
+.termsAndConditions__h2 {
+  color: #6CB347;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.2rem, 7vw, 2.6rem);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin: 4rem 0 2rem;
+}
+.termsAndConditions__h3 {
+  color: #6CB347;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.9rem, 5.2vw, 2.5rem);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin: 4rem 0 2rem;
+}
+.termsAndConditions__p {
+  color: #f0f0f0;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 0 0.5rem;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -1155,6 +1184,10 @@ body {
 .techStack__img {
   width: clamp(5rem, 20.5vw, 18rem);
   filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.6));
+}
+
+.termsAndConditions-displayNone {
+  display: none;
 }
 
 .footer {
