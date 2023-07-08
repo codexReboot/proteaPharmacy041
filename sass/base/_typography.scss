@@ -205,7 +205,8 @@ body {
 	}
 
 	&--detail {
-		font-weight: 900;
+		font-size: clamp(1.2rem, 3vw, 1.8rem);
+		font-weight: 700;
 	}
 
 	&--tradingHoursIntro {

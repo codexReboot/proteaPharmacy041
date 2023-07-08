@@ -316,7 +316,8 @@ body {
   text-align: center;
 }
 .paragraph--detail {
-  font-weight: 900;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 700;
 }
 .paragraph--tradingHoursWeekday {
   color: #225f01;
