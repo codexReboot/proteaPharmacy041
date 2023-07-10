@@ -16,6 +16,10 @@
         align-items: center; 
     }
 
+    &__headlineImage {
+        width: clamp(3.3rem, 10vw, 4.2rem);
+    }
+
     &__headline {
         display: flex;
         justify-content: center;

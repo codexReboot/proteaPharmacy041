@@ -180,7 +180,7 @@ body {
   font-size: clamp(calc(1.1rem + 1vw), 2.8vh, calc(1.6rem + 1vw));
 }
 .primaryHeading__headlineText {
-  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
   font-weight: 900;
   letter-spacing: 2px;
   line-height: 1;
@@ -674,6 +674,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.primaryHeading__headlineImage {
+  width: clamp(3.3rem, 10vw, 4.2rem);
 }
 .primaryHeading__headline {
   display: flex;
