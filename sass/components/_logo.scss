@@ -10,7 +10,7 @@
     &__img {        
         display: block;
         height: auto;
-        width: 2.2rem;
+        width: clamp(calc(2.3rem + 1.4vw), 3.5vh, calc(2.8rem + 1.4vw));
     }
 
     &__text {
