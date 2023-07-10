@@ -261,7 +261,7 @@
         justify-content: flex-start;
         align-items: stretch;
 
-        margin-bottom: 0;
+        margin-bottom: 0 auto 4rem;
 
         & > * {
             margin-bottom: 3rem;
@@ -306,7 +306,7 @@
 
         gap: 1rem;
 
-        margin: 0 auto;
+        margin: 0 auto 5rem;
         max-width: 45rem;
     }
 
@@ -330,12 +330,16 @@
     &__googleMapsContainer {
         border: 1px solid $cp-green;
         box-shadow: $bs-dark;
-        margin: 0 auto;
+        margin: 0 auto 4rem;
         width: min(100%, 45rem);
     }
 
     &__googleMaps {
         width: 100%;
         
+    }
+
+    &__contactMessageForm {
+        padding-bottom: 4rem;
     }
 }

@@ -76,6 +76,17 @@ setInterval(nextSlide, slideInterval);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////////////
+// Terms and Conditions pop-up logic
+//////////////////////////////////////////////////////////////////////////////////////////
+
+const legal = document.querySelector('.footer__legal');
+const termsAndConditions = document.querySelector('.termsAndConditions');
+
+legal.addEventListener('click', ()=> {
+  termsAndConditions.classList.toggle('termsAndConditions-displayNone')
+});
+
 let footerHeight = footer.offsetHeight;
 hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 console.log(`${window.innerHeight - footerHeight}px`);

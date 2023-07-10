@@ -308,6 +308,8 @@ body {
 	
 	&__legal {
 		color: $cf-red;
+		text-decoration: underline;
+		text-underline-offset: 3px;
 	}
 
 	&__copyright {
