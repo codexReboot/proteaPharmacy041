@@ -75,17 +75,25 @@ function nextSlide() {
 setInterval(nextSlide, slideInterval);
 
 //////////////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////////////////////////////
 // Terms and Conditions pop-up logic
 //////////////////////////////////////////////////////////////////////////////////////////
 
 const legal = document.querySelector('.footer__legal');
+const radioBtn = document.querySelector('.footer__radioBtn');
+const radioBtnSwitch = document.querySelector('.footer__radioBtnSwitch');
 const termsAndConditions = document.querySelector('.termsAndConditions');
+let legalBtnClicked = false;
 
-legal.addEventListener('click', ()=> {
-  termsAndConditions.classList.toggle('termsAndConditions-displayNone')
+legal.addEventListener('click', () => {
+  footer.style.position = "static";
+  termsAndConditions.classList.toggle('termsAndConditions-displayNone');
+  radioBtnSwitch.classList.toggle('radioBtnSwitchClicked');
 });
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
 
 let footerHeight = footer.offsetHeight;
 hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
@@ -182,18 +190,28 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 window.onscroll = () => {
-  if(window.scrollY > 200) {  
-    footer.style.position = "static";
-    navbar.style.visibility = "visible";
-    navbar.style.opacity = "1";
-    navbar.classList.add('navbar--background');
+  setTimeout(() => {
+    if(window.scrollY > 200) 
+    {  
+      footer.style.position = "static";
+      navbar.style.visibility = "visible";
+      navbar.style.opacity = "1";
+      navbar.classList.add('navbar--background');
+    }
 
-  } else if(window.scrollY < 200 && hamburgerMenu.classList.contains('navList--displayNone')){
-    footer.style.position = "fixed";
-    navbar.style.visibility = "hidden";
-    navbar.style.opacity = "0";
-    navbar.classList.remove('navbar--background');
-  }
+    else if(window.scrollY < 200 && hamburgerMenu.classList.contains('navList--displayNone'))
+    {
+      footer.style.position = "fixed";
+      navbar.style.visibility = "hidden";
+      navbar.style.opacity = "0";
+      navbar.classList.remove('navbar--background');
+      termsAndConditions.classList.add('termsAndConditions-displayNone');
+      radioBtnSwitch.classList.remove('radioBtnSwitchClicked');
+      console.log("check this");
+      console.log(window.scrollY)
+    }
+  }, 500);
+   
 }
 
 for(let item of navItems) {
@@ -232,9 +250,6 @@ for(let item of navItems) {
         navbar.classList.remove('navbar--background');
       }
     }, 800);
-    
-    
-
   });
 }
 
