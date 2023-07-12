@@ -396,6 +396,7 @@ body {
 }
 .footer__legal {
   color: #CD4536;
+  line-height: 1;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -403,10 +404,11 @@ body {
   color: #6CB347;
 }
 .footer__schalk {
-  color: #d7d7d7;
+  color: #898989;
+  font-size: clamp(calc(.9rem + .6vw), 1.8vh, calc(1.4rem + .6vw));
 }
 .footer__schalk--name {
-  color: #898989;
+  color: inherit;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -1171,28 +1173,16 @@ body {
   background: linear-gradient(to right, transparent, rgba(108, 179, 71, 0.4) 15%, #6cb347 40%, #3E6629, #6cb347 60%, rgba(108, 179, 71, 0.4) 85%, transparent);
 }
 
-.radioBtn {
-  display: inline-flex;
-  justify-content: flex-start;
-  background-color: #6CB347;
-  border: 2px solid #f0f0f0;
-  border-radius: 12px;
-  margin-left: 1rem;
-  width: 30px;
-  height: 16px;
-  transition: all 2ss;
+.openAndCloseIcons {
+  display: inline-block;
+  margin-left: 1.2rem;
 }
-.radioBtn__radioBtnSwitch {
-  background-color: #1E2020;
-  border-radius: 12px;
-  width: 13px;
-  height: 12px;
-  transition: all 0.6s;
+.openAndCloseIcons__icon {
+  width: 3rem;
+  height: 3rem;
 }
-
-.radioBtnSwitchClicked {
-  background-color: #800d00;
-  transform: translateX(100%);
+.openAndCloseIcons__icon--displayNone {
+  display: none;
 }
 
 .socialMedia {
@@ -1270,6 +1260,11 @@ body {
   }
 }
 .footer__legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
 }
 .footer__copyright {

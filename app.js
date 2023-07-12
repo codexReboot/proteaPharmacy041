@@ -79,15 +79,17 @@ setInterval(nextSlide, slideInterval);
 //////////////////////////////////////////////////////////////////////////////////////////
 
 const legal = document.querySelector('.footer__legal');
-const radioBtn = document.querySelector('.footer__radioBtn');
-const radioBtnSwitch = document.querySelector('.footer__radioBtnSwitch');
+const legalOpenIcon = document.querySelector('.openAndCloseIcons__openIcon');
+const legalCloseIcon = document.querySelector('.openAndCloseIcons__closeIcon');
 const termsAndConditions = document.querySelector('.termsAndConditions');
+
 let legalBtnClicked = false;
 
 legal.addEventListener('click', () => {
   footer.style.position = "static";
   termsAndConditions.classList.toggle('termsAndConditions-displayNone');
-  radioBtnSwitch.classList.toggle('radioBtnSwitchClicked');
+  legalOpenIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
+  legalCloseIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
 });
 
 
@@ -206,9 +208,10 @@ window.onscroll = () => {
       navbar.style.opacity = "0";
       navbar.classList.remove('navbar--background');
       termsAndConditions.classList.add('termsAndConditions-displayNone');
-      radioBtnSwitch.classList.remove('radioBtnSwitchClicked');
-      console.log("check this");
-      console.log(window.scrollY)
+      legalOpenIcon.classList.remove('openAndCloseIcons__icon--displayNone');
+      legalCloseIcon.classList.remove('openAndCloseIcons__icon--displayNone');
+      legalCloseIcon.classList.add('openAndCloseIcons__icon--displayNone');
+      
     }
   }, 500);
    
