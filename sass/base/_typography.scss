@@ -309,6 +309,7 @@ body {
 	
 	&__legal {
 		color: $cf-red;
+		line-height: 1;
 		text-decoration: underline;
 		text-underline-offset: 3px;
 	}
@@ -318,10 +319,11 @@ body {
 	}
 
 	&__schalk {
-		color: $cf-lightGrey;
+		color: $cf-grey;
+		font-size: clamp(calc(.9rem + .6vw), 1.8vh, calc(1.4rem + .6vw));
 
 		&--name {
-			color: $cf-grey;
+			color: inherit;
 			font-weight: 700;
 			text-decoration: underline;
 			text-underline-offset: 3px;
