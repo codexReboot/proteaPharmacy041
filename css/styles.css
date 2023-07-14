@@ -850,7 +850,7 @@ body {
   padding: 0;
   overflow: hidden;
   width: 100%;
-  min-height: 18.5rem;
+  min-height: 23rem;
 }
 .imageSlider__slide {
   width: min(35rem, 92%);
