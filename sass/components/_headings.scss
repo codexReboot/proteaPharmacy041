@@ -204,10 +204,14 @@
 
 .headingContainerSlider {
 	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: first baseline;
+    align-items: center;
 
-    gap: 1rem;
+    gap: .5rem;
+
+
 
     margin-bottom: .5rem;
 	

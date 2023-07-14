@@ -820,9 +820,11 @@ body {
 
 .headingContainerSlider {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: first baseline;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 .heroSection {
