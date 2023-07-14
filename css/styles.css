@@ -699,6 +699,9 @@ body {
   align-items: center;
   gap: 1rem;
 }
+.primaryHeading__paragraph {
+  max-width: 45rem;
+}
 
 .headingH2Container {
   display: flex;
