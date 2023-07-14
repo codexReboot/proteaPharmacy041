@@ -224,6 +224,11 @@ body {
 .headingH3Container {
   text-align: center;
 }
+@media (min-width: 600px) {
+  .headingH3Container {
+    text-align: left;
+  }
+}
 .headingH3Container__headingH3 {
   color: #00538a;
   font-family: "Montserrat", sans-serif;
