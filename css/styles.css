@@ -710,6 +710,11 @@ body {
   align-items: center;
   position: relative;
 }
+@media (min-width: 600px) {
+  .headingH2Container {
+    align-items: flex-start;
+  }
+}
 .headingH2Container__headingH2 {
   width: fit-content;
   position: relative;
@@ -735,6 +740,11 @@ body {
   transform: translateX(-50%);
   z-index: -100;
 }
+@media (min-width: 600px) {
+  .headingH2Container__headingH2--about::after {
+    left: 8rem;
+  }
+}
 @media (min-width: 400px) {
   .headingH2Container__headingH2--about::after {
     top: -80%;
@@ -753,6 +763,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+}
+@media (min-width: 600px) {
+  .headingH2Container__headingH2--dispensary::after {
+    left: 8rem;
+  }
 }
 @media (min-width: 420px) {
   .headingH2Container__headingH2--dispensary::after {
@@ -773,6 +788,11 @@ body {
   transform: translateX(-50%);
   z-index: -100;
 }
+@media (min-width: 600px) {
+  .headingH2Container__headingH2--clinic::after {
+    left: 8rem;
+  }
+}
 @media (min-width: 420px) {
   .headingH2Container__headingH2--clinic::after {
     top: -90%;
@@ -792,6 +812,11 @@ body {
   transform: translateX(-50%);
   z-index: -100;
 }
+@media (min-width: 600px) {
+  .headingH2Container__headingH2--info::after {
+    left: 8rem;
+  }
+}
 @media (min-width: 420px) {
   .headingH2Container__headingH2--info::after {
     top: -90%;
@@ -810,6 +835,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: -100;
+}
+@media (min-width: 600px) {
+  .headingH2Container__headingH2--contact::after {
+    left: 8rem;
+  }
 }
 @media (min-width: 420px) {
   .headingH2Container__headingH2--contact::after {
@@ -1299,6 +1329,11 @@ body {
   align-items: stretch;
   gap: 5rem;
   padding: 2rem 1rem 0;
+}
+@media (min-width: 600px) {
+  .main {
+    padding: 2rem 4rem 0;
+  }
 }
 .aboutSection {
   display: flex;

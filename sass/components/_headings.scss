@@ -56,6 +56,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    // tablet portrait
+    @media (min-width: 600px) {
+        align-items:flex-start;
+    }
      
     position: relative;
 
@@ -92,6 +97,11 @@
         top: -120%;
         left: 50%;
 
+        // tablet portrait 
+        @media (min-width: 600px) {
+            left: 8rem;
+        }
+
         transform: translateX(-50%);
 
         z-index: -100;
@@ -116,6 +126,11 @@
         position: absolute;
         top: -120%;
         left: 50%;
+
+        // tablet portrait 
+        @media (min-width: 600px) {
+            left: 8rem;
+        }
 
         transform: translateX(-50%);
 
@@ -142,6 +157,11 @@
         top: -120%;
         left: 50%;
 
+        // tablet portrait 
+        @media (min-width: 600px) {
+            left: 8rem;
+        }
+
         transform: translateX(-50%);
 
         z-index: -100;
@@ -167,6 +187,11 @@
         top: -120%;
         left: 50%;
 
+        // tablet portrait 
+        @media (min-width: 600px) {
+            left: 8rem;
+        }
+
         transform: translateX(-50%);
 
         z-index: -100;
@@ -191,6 +216,11 @@
         position: absolute;
         top: -120%;
         left: 50%;
+
+        // tablet portrait 
+        @media (min-width: 600px) {
+            left: 8rem;
+        }
 
         transform: translateX(-50%);
 
