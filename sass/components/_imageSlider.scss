@@ -61,14 +61,14 @@
         justify-content: center;
         align-items: center;
 
-        gap: 1rem;
+        gap: .8rem;
     }
 
     &__dot {
         background-color: $cp-darkBlue;
         border-radius: 100%;
-        width: .85rem;
-        height: .85rem;
+        width: .75rem;
+        height: .75rem;
 
         transition: all 2s;
     }
