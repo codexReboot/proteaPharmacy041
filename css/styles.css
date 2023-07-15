@@ -253,6 +253,11 @@ body {
   color: #225f01;
   font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
 }
+@media (min-width: 600px) {
+  .headingH4Container__headingH4--contact {
+    text-align: left;
+  }
+}
 .headingH4Container__headingH4--slide {
   color: #225f01;
   text-transform: uppercase;
@@ -273,6 +278,11 @@ body {
 .headingH5Container__headingH5--contact {
   font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
 }
+@media (min-width: 600px) {
+  .headingH5Container__headingH5--contact {
+    text-align: left;
+  }
+}
 .headingH5Container__headingH5--slide {
   color: #6CB347;
   text-transform: lowercase;
@@ -287,14 +297,14 @@ body {
 .headingContainerSlider__headingH4--slide {
   color: #225f01;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
   font-weight: 700;
   letter-spacing: 0px;
 }
 .headingContainerSlider__headingH5--slide {
   color: #225f01;
   font-family: "Lato", sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
   font-weight: 900;
 }
 
@@ -304,6 +314,11 @@ body {
   font-weight: 400;
   text-align: center;
 }
+@media (min-width: 600px) {
+  .paragraph {
+    text-align: left;
+  }
+}
 .paragraph--slide {
   font-size: clamp(calc(1rem + 1vw), 1.2vh, calc(1.2rem + 1vw));
   text-align: left;
@@ -311,6 +326,11 @@ body {
 .paragraph--dispensaryIntro {
   margin: 0 auto;
   max-width: 45rem;
+}
+@media (min-width: 600px) {
+  .paragraph--dispensaryIntro {
+    min-width: 100%;
+  }
 }
 .paragraph--dispensary, .paragraph--counterMeds, .paragraph--clinicHero {
   color: #012e4c;
@@ -320,8 +340,18 @@ body {
 .paragraph--dispensary, .paragraph--counterMeds {
   text-align: center;
 }
+@media (min-width: 600px) {
+  .paragraph--dispensary, .paragraph--counterMeds {
+    text-align: left;
+  }
+}
 .paragraph--detail {
   font-weight: 700;
+}
+@media (min-width: 600px) {
+  .paragraph--detail {
+    text-align: left;
+  }
 }
 .paragraph--tradingHoursWeekday {
   font-family: "Montserrat", sans-serif;
@@ -865,6 +895,11 @@ body {
   gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 600px) {
+  .headingContainerSlider {
+    justify-content: flex-start;
+  }
+}
 .heroSection {
   display: flex;
   flex-direction: column;
@@ -879,6 +914,11 @@ body {
   align-items: stretch;
   gap: 1.5rem;
 }
+@media (min-width: 600px) {
+  .imageSlider__slideContainer {
+    gap: 0.25rem;
+  }
+}
 .imageSlider__slider {
   display: flex;
   flex-direction: row;
@@ -888,11 +928,21 @@ body {
   padding: 0;
   overflow: hidden;
   width: 100%;
-  min-height: 23rem;
+  min-height: 24rem;
+}
+@media (min-width: 600px) {
+  .imageSlider__slider {
+    min-height: 25rem;
+  }
 }
 .imageSlider__slide {
   width: min(35rem, 92%);
   height: fit-content;
+}
+@media (min-width: 600px) {
+  .imageSlider__slide {
+    min-width: 92%;
+  }
 }
 .imageSlider__image {
   float: left;
@@ -904,6 +954,11 @@ body {
   height: auto;
   margin: 0.85rem 0.75rem 0.75rem 0;
   shape-outside: circle();
+}
+@media (min-width: 600px) {
+  .imageSlider__image {
+    width: clamp(12.5rem, 25vw, 20rem);
+  }
 }
 .imageSlider__clearFix {
   clear: both;
@@ -1356,6 +1411,11 @@ body {
   margin: 0 auto;
   max-width: 45rem;
 }
+@media (min-width: 600px) {
+  .aboutSection__ourBusiness {
+    min-width: 100%;
+  }
+}
 .aboutSection__ourTeam {
   display: flex;
   flex-direction: column;
@@ -1364,6 +1424,11 @@ body {
   gap: 2rem;
   margin: 0 auto;
   max-width: 45rem;
+}
+@media (min-width: 600px) {
+  .aboutSection__ourTeam {
+    min-width: 100%;
+  }
 }
 
 .dispensarySection {
@@ -1376,6 +1441,11 @@ body {
 .dispensarySection article {
   max-width: 45rem;
   margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .dispensarySection article {
+    min-width: 100%;
+  }
 }
 .dispensarySection article > *:not(img) {
   margin-bottom: 2rem;
@@ -1407,7 +1477,12 @@ body {
   max-width: 45rem;
   margin: 0 auto;
 }
-.clinicSection article > *:not(img, p) {
+@media (min-width: 600px) {
+  .clinicSection article {
+    min-width: 100%;
+  }
+}
+.clinicSection article > *:not(img, p, div) {
   margin-bottom: 2rem;
 }
 .clinicSection__image {
@@ -1420,6 +1495,21 @@ body {
   margin: 0 2rem 0.5rem 0;
   width: clamp(14rem, 35vw, 22rem);
 }
+@media (min-width: 600px) {
+  .clinicSection__clinicServicesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5rem auto;
+    max-width: fit-content;
+    min-height: 100px;
+  }
+  .clinicSection__item {
+    flex: 0 0 250px;
+  }
+}
 
 .importantInfoSection {
   display: flex;
@@ -1431,6 +1521,11 @@ body {
 .importantInfoSection article {
   max-width: 45rem;
   margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .importantInfoSection article {
+    min-width: 100%;
+  }
 }
 .importantInfoSection article > *:not(img, p) {
   margin-bottom: 2rem;
@@ -1455,11 +1550,25 @@ body {
 .importantInfoSection__linksList > * {
   margin-bottom: 0.75rem;
 }
+@media (min-width: 600px) {
+  .importantInfoSection__linksList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
 .importantInfoSection__linkItem {
   background-color: #6CB347;
   width: min(45rem, 100%);
   min-height: 20vh;
   position: relative;
+}
+@media (min-width: 600px) {
+  .importantInfoSection__linkItem {
+    flex: 1 0 300px;
+  }
 }
 .importantInfoSection__linkItem--pregnancy {
   background: linear-gradient(to top, rgba(240, 240, 240, 0.9) 25%, rgba(240, 240, 240, 0.4) 80%), url("../img/importantInfo/ProteaPharmacyLinksPregnancy.webp");
@@ -1549,6 +1658,26 @@ body {
 .contactUsSection__contactNumbersAndEmail > * {
   margin-bottom: 3rem;
 }
+.contactUsSection__contactDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4rem;
+}
+@media (min-width: 600px) {
+  .contactUsSection__contactDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3.2rem;
+  }
+  .contactUsSection__contactDetailsSection {
+    flex: 0 0 350px;
+  }
+}
 .contactUsSection__contactDetailsPharmacy, .contactUsSection__contactDetailsPharmacists, .contactUsSection__contactDetailsClinic, .contactUsSection__contactDetailsAccounts, .contactUsSection__contactDetailsMedicalAids {
   display: flex;
   flex-direction: column;
@@ -1569,6 +1698,11 @@ body {
   align-items: center;
   gap: 0.3rem;
 }
+@media (min-width: 600px) {
+  .contactUsSection__contactItem {
+    justify-content: flex-start;
+  }
+}
 .contactUsSection__contactTradingHours {
   display: flex;
   flex-direction: column;
@@ -1578,8 +1712,30 @@ body {
   margin: 0 auto 5rem;
   max-width: 45rem;
 }
+@media (min-width: 600px) {
+  .contactUsSection__contactTradingHours {
+    min-width: 100%;
+  }
+}
 .contactUsSection__tradingHoursDetails > * {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 600px) {
+  .contactUsSection__tradingHoursDetails > * {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .contactUsSection__tradingHoursDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .contactUsSection__tradingHoursDetails > * {
+    margin-right: 4rem;
+  }
 }
 .contactUsSection__contactMap {
   display: flex;
@@ -1595,6 +1751,11 @@ body {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
   margin: 0 auto 4rem;
   width: min(100%, 45rem);
+}
+@media (min-width: 600px) {
+  .contactUsSection__googleMapsContainer {
+    min-width: 100%;
+  }
 }
 .contactUsSection__googleMaps {
   width: 100%;

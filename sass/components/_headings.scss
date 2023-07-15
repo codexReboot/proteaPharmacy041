@@ -241,6 +241,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
+    // tablet portrait
+    @media (min-width: 600px) {
+        justify-content: flex-start;
+    }
+
     align-items: center;
 
     gap: .5rem;
