@@ -1184,52 +1184,77 @@
 
                 </section>
 
-                <section class="contactUsSection__contactMap">
+                <div class="contactUsSection__mapAndContactformContainer">
 
-                    <div class="contactUsSection__headingH3Container headingH3Container">
-                        <div id="googleMaps" class="linkDiv"></div>
-                        <h3 class="headingH3Container__headingH3 headingH3">Google Maps</h3>
-                    </div>
+                    <section class="contactUsSection__contactMap">
 
-                    <article class="contactUsSection__googleMapsContainer">
-                        <iframe class="contactUsSection__googleMaps"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.727595784764!2d28.409465123217387!3d-24.701889216655903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebf696e2f10884b%3A0x3aac7d78ec5fc2f8!2sProtea%20Apteek%20Nylstroom!5e0!3m2!1sen!2sza!4v1687425013464!5m2!1sen!2sza"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </article>
-
-                </section>
-
-                <div class="contactUsSection__contactMessageForm">
-
-                    <div class="contactUsSection__headingH3Container headingH3Container">
-                        <h3 class="headingH3Container__headingH3 headingH3">Message Us</h3>
-                    </div>
-
-                    <form class="contactForm">
-
-                        <div class="contactForm__field">
-                            <label class="paragraph paragraph--contactForm" for="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <div class="contactUsSection__headingH3Container headingH3Container">
+                            <div id="googleMaps" class="linkDiv"></div>
+                            <h3 class="headingH3Container__headingH3 headingH3">Google Maps</h3>
                         </div>
 
-                        <div class="contactForm__field">
-                            <label class="paragraph paragraph--contactForm" for="number">Number:</label>
-                            <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+                        <article class="contactUsSection__googleMapsContainer">
+                            <iframe class="contactUsSection__googleMaps"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.727595784764!2d28.409465123217387!3d-24.701889216655903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebf696e2f10884b%3A0x3aac7d78ec5fc2f8!2sProtea%20Apteek%20Nylstroom!5e0!3m2!1sen!2sza!4v1687425013464!5m2!1sen!2sza"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </article>
+
+                    </section>
+
+                    <section class="contactUsSection__contactMessageForm">
+
+                        <div class="contactUsSection__headingH3Container headingH3Container">
+                            <h3 class="headingH3Container__headingH3 headingH3">Message Us</h3>
                         </div>
 
-                        <div class="contactForm__field">
-                            <label class="paragraph paragraph--contactForm" for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                        </div>
+                        <form class="contactForm">
 
-                        <div class="contactForm__field">
-                            <label class="paragraph paragraph--contactForm" for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
-                        </div>
+                            <div class="contactForm__inputsContainer">
+
+                                <div class="contactForm__namesInputContainer">
+
+                                    <div class="contactForm__field">
+                                        <label class="paragraph paragraph--contactForm" for="name">First Name:</label>
+                                        <input type="text" id="name" name="fitst-name" placeholder="Enter your first name" required>
+                                    </div>
+
+                                    <div class="contactForm__field">
+                                        <label class="paragraph paragraph--contactForm" for="name">Last Name:</label>
+                                        <input type="text" id="name" name="last-name" placeholder="Enter your last name" required>
+                                    </div>
+
+                                </div>
+
+                                <div class="contactForm__numbersInputContainer">
+
+                                    <div class="contactForm__field">
+                                        <label class="paragraph paragraph--contactForm" for="number">Number:</label>
+                                        <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+                                    </div>
+
+                                    <div class="contactForm__field">
+                                        <label class="paragraph paragraph--contactForm" for="email">Email:</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="contactForm__textMessageContainer">
+
+                                <div class="contactForm__field">
+                                    <label class="paragraph paragraph--contactForm" for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                                </div>
+
+                            </div>
+
+                        </form>
 
                         <button class="contactForm__submitButton btn btn--primary-blue-contactForm" type="submit">Submit</button>
 
-                    </form>
+                    </section>
 
                 </div>
 

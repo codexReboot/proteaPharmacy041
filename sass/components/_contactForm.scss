@@ -9,26 +9,53 @@
     
     width: min(100%, 45rem);
 
+    // tablet portrait
+    @media (min-width: 600px) {
+      min-width: 100%;
+    }
+
+    &__inputsContainer {
+    
+    }
+
+    &__namesInputContainer, &__numbersInputContainer {
+      // tablet portrait
+      @media (min-width: 600px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+
+        .contactForm__field {
+          flex: 1 0 250px;
+        }
+      }
+    }
+
+    &__textMessageContainer {
+      
+    }
+
     &__field {
         margin: 2rem auto 0;
 
         label {
-        display: block;
-        margin-bottom: .5rem;
+          display: block;
+          margin-bottom: .5rem;
         }
 
         input,
         textarea {
-        width: 100%;
-        padding: 1rem;
-        border: 1px solid $cp-green;
-        border-radius: $br-sm;
+          width: 100%;
+          padding: 1rem;
+          border: 1px solid $cp-green;
+          border-radius: $br-sm;
         }
     }
 
     &__submitButton {
         margin-top: 1.5rem;
     }
-    
   }
 }
