@@ -205,9 +205,12 @@ body {
 	font-weight: 400;
 	text-align: center;
 
-	// tablet portrait
-	@media (min-width: 600px) {
+	@include respond(tab-port) {
 		text-align: left;
+	}
+
+	@include respond(tab-land) {
+		font-size: clamp(calc(.9rem + .8vw), 2vh, calc(1.4rem + .8vw));
 	}
 
 	&--slide {

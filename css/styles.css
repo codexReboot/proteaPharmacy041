@@ -329,9 +329,14 @@ body {
   font-weight: 400;
   text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .paragraph {
     text-align: left;
+  }
+}
+@media (min-width: 56.25em) {
+  .paragraph {
+    font-size: clamp(calc(.9rem + .8vw), 2vh, calc(1.4rem + .8vw));
   }
 }
 .paragraph--slide {
