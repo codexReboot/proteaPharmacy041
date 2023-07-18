@@ -80,14 +80,23 @@ body {
 		color: $cf-darkBlue;
 		font-family: 'Montserrat', sans-serif;
 		font-size: clamp(2.6rem, 7vw, 3.2rem);
-		letter-spacing: 2px;     
+
+		letter-spacing: 2px;  
+
+		@include respond(tab-land) {
+			font-size: clamp(2.6rem, 3vw, 3.6rem);
+		}   
 	}
 
 	 &__subheadingH2 {
 	 	color: $cf-darkGreen;
 		font-family: 'Open Sans', sans-serif;
-		font-size: clamp(1rem, 2.7vw, 2.2rem);
+		font-size: clamp(1rem, 2.2vw, 2.2rem);
 		font-weight: 900;
+
+		@include respond(tab-land) {
+			font-size: clamp(1rem, 2vw, 2.6rem);
+		}
 	 }
 }
 
@@ -105,7 +114,11 @@ body {
 		font-size: clamp(1.9rem, 5.2vw, 2.5rem);
 		font-weight: 700;
 		line-height: 1;
-		letter-spacing: 1px;     
+		letter-spacing: 1px;   
+
+		@include respond(tab-land) {
+			font-size: clamp(1.9rem, 2.3vw, 2.9rem);
+		}    
 	}	 
 }
 

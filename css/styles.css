@@ -214,11 +214,21 @@ body {
   font-size: clamp(2.6rem, 7vw, 3.2rem);
   letter-spacing: 2px;
 }
+@media (min-width: 56.25em) {
+  .headingH2Container__headingH2 {
+    font-size: clamp(2.6rem, 3vw, 3.6rem);
+  }
+}
 .headingH2Container__subheadingH2 {
   color: #225f01;
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(1rem, 2.7vw, 2.2rem);
+  font-size: clamp(1rem, 2.2vw, 2.2rem);
   font-weight: 900;
+}
+@media (min-width: 56.25em) {
+  .headingH2Container__subheadingH2 {
+    font-size: clamp(1rem, 2vw, 2.6rem);
+  }
 }
 
 .headingH3Container {
@@ -236,6 +246,11 @@ body {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1px;
+}
+@media (min-width: 56.25em) {
+  .headingH3Container__headingH3 {
+    font-size: clamp(1.9rem, 2.3vw, 2.9rem);
+  }
 }
 
 .headingH4Container {
