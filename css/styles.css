@@ -316,11 +316,21 @@ body {
   font-weight: 700;
   letter-spacing: 0px;
 }
+@media (min-width: 56.25em) {
+  .headingContainerSlider__headingH4--slide {
+    font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+  }
+}
 .headingContainerSlider__headingH5--slide {
   color: #225f01;
   font-family: "Lato", sans-serif;
   font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
   font-weight: 900;
+}
+@media (min-width: 56.25em) {
+  .headingContainerSlider__headingH5--slide {
+    font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
+  }
 }
 
 .paragraph {
@@ -342,6 +352,11 @@ body {
 .paragraph--slide {
   font-size: clamp(calc(1rem + 1vw), 1.2vh, calc(1.2rem + 1vw));
   text-align: left;
+}
+@media (min-width: 56.25em) {
+  .paragraph--slide {
+    font-size: clamp(calc(.9rem + .8vw), 2vh, calc(1.4rem + .8vw));
+  }
 }
 .paragraph--dispensaryIntro {
   margin: 0 auto;
