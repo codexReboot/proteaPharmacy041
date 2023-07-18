@@ -273,6 +273,11 @@ body {
     text-align: left;
   }
 }
+@media (min-width: 56.25em) {
+  .headingH4Container__headingH4--contact {
+    font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+  }
+}
 .headingH4Container__headingH4--slide {
   color: #225f01;
   text-transform: uppercase;
@@ -296,6 +301,11 @@ body {
 @media (min-width: 600px) {
   .headingH5Container__headingH5--contact {
     text-align: left;
+  }
+}
+@media (min-width: 56.25em) {
+  .headingH5Container__headingH5--contact {
+    font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
   }
 }
 .headingH5Container__headingH5--slide {
