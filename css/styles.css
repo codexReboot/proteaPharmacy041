@@ -677,6 +677,9 @@ body {
   border: 2px solid #6CB347;
   padding: 0.5rem;
 }
+.contactForm__submitButton {
+  margin: 2rem auto;
+}
 
 .contactIcons {
   display: flex;
