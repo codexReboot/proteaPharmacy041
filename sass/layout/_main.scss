@@ -439,7 +439,8 @@
     }
 
     &__mapAndContactformContainer {
-        @media (min-width: 900px) {
+
+        @include respond(tab-land) {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -458,12 +459,18 @@
         width: min(100%, 45rem);
         margin: 0 auto;
 
-        @media (min-width: 600px) {
-            width: 100%;
-        }
-
         & > * {
             margin-bottom: 3rem;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    
+        @include respond(tab-land) {
+            max-width: 45%;
+            margin: 0;
         }
     }
 
@@ -482,5 +489,23 @@
 
     &__contactMessageForm {
         padding-bottom: 4rem;
+        margin: 0 auto;
+        width: min(45rem, 100%);
+
+        & > *:first-child {
+            margin-bottom: 3rem;
+
+            @include respond(tab-port) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include respond (tab-port) {
+            min-width: 100%;
+        }
+
+        @include respond (tab-land) {
+            min-width: 45%;
+        }
     }
 }

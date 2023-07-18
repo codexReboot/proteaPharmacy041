@@ -1,61 +1,25 @@
-/* Mobile First Approach */
-// Mobile First Approach
-.contactUsSection__contactMessageForm {
-  max-width: 100%;
-  padding: 0rem;
-
-  .contactForm {
-    margin: 0 auto;
-    
-    width: min(100%, 45rem);
-
-    // tablet portrait
-    @media (min-width: 600px) {
-      min-width: 100%;
+.contactForm {
+  &__namesInputContainer, &__numbersInputContainer {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
     }
+  }
 
-    &__inputsContainer {
-    
-    }
+  &__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
 
-    &__namesInputContainer, &__numbersInputContainer {
-      // tablet portrait
-      @media (min-width: 600px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    margin-bottom: 1rem;
 
-        gap: 1rem;
+    width: 100%;
 
-        .contactForm__field {
-          flex: 1 0 250px;
-        }
-      }
-    }
-
-    &__textMessageContainer {
-      
-    }
-
-    &__field {
-        margin: 2rem auto 0;
-
-        label {
-          display: block;
-          margin-bottom: .5rem;
-        }
-
-        input,
-        textarea {
-          width: 100%;
-          padding: 1rem;
-          border: 1px solid $cp-green;
-          border-radius: $br-sm;
-        }
-    }
-
-    &__submitButton {
-        margin-top: 1.5rem;
+    input, textarea {
+      border-radius: .35rem;
+      border: 2px solid $cp-green;
+      padding: .5rem;
     }
   }
 }

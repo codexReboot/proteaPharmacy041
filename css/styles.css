@@ -108,7 +108,7 @@ html {
 @media (min-width: 56.25em) {
   html {
     /* 	13px / 16px *100 = 81.25% */
-    font-size: 81.25%;
+    font-size: 62.5%;
   }
 }
 @media (min-width: 75em) {
@@ -658,47 +658,24 @@ body {
 .cardSkills__headingH3 {
   margin-bottom: 1rem;
 }
-/* Mobile First Approach */
-.contactUsSection__contactMessageForm {
-  max-width: 100%;
-  padding: 0rem;
-}
-.contactUsSection__contactMessageForm .contactForm {
-  margin: 0 auto;
-  width: min(100%, 45rem);
-}
-@media (min-width: 600px) {
-  .contactUsSection__contactMessageForm .contactForm {
-    min-width: 100%;
-  }
-}
-@media (min-width: 600px) {
-  .contactUsSection__contactMessageForm .contactForm__namesInputContainer, .contactUsSection__contactMessageForm .contactForm__numbersInputContainer {
+@media (min-width: 37.5em) {
+  .contactForm__namesInputContainer, .contactForm__numbersInputContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
   }
-  .contactUsSection__contactMessageForm .contactForm__namesInputContainer .contactForm__field, .contactUsSection__contactMessageForm .contactForm__numbersInputContainer .contactForm__field {
-    flex: 1 0 250px;
-  }
 }
-.contactUsSection__contactMessageForm .contactForm__field {
-  margin: 2rem auto 0;
-}
-.contactUsSection__contactMessageForm .contactForm__field label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-.contactUsSection__contactMessageForm .contactForm__field input,
-.contactUsSection__contactMessageForm .contactForm__field textarea {
+.contactForm__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
   width: 100%;
-  padding: 1rem;
-  border: 1px solid #6CB347;
-  border-radius: 0.25rem;
 }
-.contactUsSection__contactMessageForm .contactForm__submitButton {
-  margin-top: 1.5rem;
+.contactForm__field input, .contactForm__field textarea {
+  border-radius: 0.35rem;
+  border: 2px solid #6CB347;
+  padding: 0.5rem;
 }
 
 .contactIcons {
@@ -1753,7 +1730,7 @@ body {
     margin-right: 4rem;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .contactUsSection__mapAndContactformContainer {
     display: flex;
     flex-direction: row;
@@ -1770,13 +1747,20 @@ body {
   width: min(100%, 45rem);
   margin: 0 auto;
 }
-@media (min-width: 600px) {
+.contactUsSection__contactMap > * {
+  margin-bottom: 3rem;
+}
+@media (min-width: 37.5em) {
   .contactUsSection__contactMap {
+    margin-bottom: 2rem;
     width: 100%;
   }
 }
-.contactUsSection__contactMap > * {
-  margin-bottom: 3rem;
+@media (min-width: 56.25em) {
+  .contactUsSection__contactMap {
+    max-width: 45%;
+    margin: 0;
+  }
 }
 .contactUsSection__googleMapsContainer {
   border: 1px solid #6CB347;
@@ -1789,6 +1773,26 @@ body {
 }
 .contactUsSection__contactMessageForm {
   padding-bottom: 4rem;
+  margin: 0 auto;
+  width: min(45rem, 100%);
+}
+.contactUsSection__contactMessageForm > *:first-child {
+  margin-bottom: 3rem;
+}
+@media (min-width: 37.5em) {
+  .contactUsSection__contactMessageForm > *:first-child {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 37.5em) {
+  .contactUsSection__contactMessageForm {
+    min-width: 100%;
+  }
+}
+@media (min-width: 56.25em) {
+  .contactUsSection__contactMessageForm {
+    min-width: 45%;
+  }
 }
 
 .navbarSection {
