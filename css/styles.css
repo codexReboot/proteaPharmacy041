@@ -458,6 +458,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+@media (min-width: 56.25em) {
+  .importantInfoSection__linkText {
+    font-size: clamp(calc(.95rem + .5vw), 1.9vh, calc(1.45rem + .5vw));
+  }
+}
 
 .footer {
   font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));

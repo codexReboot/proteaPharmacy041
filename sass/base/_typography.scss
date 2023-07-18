@@ -358,6 +358,10 @@ body {
 		text-align: center;
 		background-clip: text;
         -webkit-background-clip: text;
+
+		@include respond(tab-land) {
+		font-size: clamp(calc(.95rem + .5vw), 1.9vh, calc(1.45rem + .5vw));
+	}
 	}
 }
 
