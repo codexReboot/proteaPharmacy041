@@ -404,6 +404,11 @@ body {
   font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
   font-weight: 900;
 }
+@media (min-width: 56.25em) {
+  .paragraph--tradingHoursWeekday {
+    font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
+  }
+}
 .paragraph--tradingHoursTimes {
   font-weight: 700;
 }
