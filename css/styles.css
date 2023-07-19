@@ -1911,6 +1911,16 @@ body {
     flex: 0 0 300px;
   }
 }
+@media (min-width: 1450px) {
+  .contactUsSection__contactDetailsSection {
+    flex: 0 0 330px;
+  }
+}
+@media (min-width: 1750px) {
+  .contactUsSection__contactDetailsSection {
+    flex: 0 0 340px;
+  }
+}
 .contactUsSection__contactDetailsPharmacy, .contactUsSection__contactDetailsPharmacists, .contactUsSection__contactDetailsClinic, .contactUsSection__contactDetailsAccounts, .contactUsSection__contactDetailsMedicalAids {
   display: flex;
   flex-direction: column;
