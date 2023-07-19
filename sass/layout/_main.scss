@@ -35,7 +35,6 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-
         }
     }
 
@@ -58,6 +57,7 @@
         @include respond(tab-land) {
             min-width: 47%;
             max-width: 47%;
+            margin: 0;
         }
     }
 
@@ -80,6 +80,7 @@
         @include respond(tab-land) {
             min-width: 47%;
             max-width: 47%;
+            margin: 0;
         }
 
     }
@@ -113,6 +114,7 @@
         @include respond(tab-land) {
             min-width: 47%;
             max-width: 47%;
+            margin: 0;
         }
     }
 

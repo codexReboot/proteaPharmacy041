@@ -1531,6 +1531,7 @@ body {
   .aboutSection__ourBusiness {
     min-width: 47%;
     max-width: 47%;
+    margin: 0;
   }
 }
 .aboutSection__ourTeam {
@@ -1551,6 +1552,7 @@ body {
   .aboutSection__ourTeam {
     min-width: 47%;
     max-width: 47%;
+    margin: 0;
   }
 }
 
@@ -1581,6 +1583,7 @@ body {
   .dispensarySection article {
     min-width: 47%;
     max-width: 47%;
+    margin: 0;
   }
 }
 .dispensarySection article > *:not(img) {
