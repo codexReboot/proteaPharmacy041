@@ -41,6 +41,10 @@
             min-width: 92%;
         }
 
+        @include respond(tab-land) {
+            min-width: 57%;
+        }
+
         height: fit-content;
     }
 
@@ -55,6 +59,10 @@
         // tablet portrait
         @media (min-width: 600px) {
             width: clamp(12.5rem, 25vw, 20rem);
+        }
+
+        @include respond(tab-land) {
+            width: clamp(8rem, 30vw, 18rem);
         }
 
         height: auto;

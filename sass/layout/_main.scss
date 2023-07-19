@@ -25,6 +25,20 @@
 
     gap: 3rem;
 
+    &__ourBusAndOurTeamContainer {
+
+        & > :first-child {
+            margin-bottom: 2rem;
+        }
+
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+        }
+    }
+
     &__ourBusiness {
         display: flex;
         flex-direction: column;
@@ -39,6 +53,11 @@
         // tablet portrait
         @media (min-width: 600px) {
             min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 47%;
+            max-width: 47%;
         }
     }
 
@@ -58,6 +77,11 @@
             min-width: 100%;
         }
 
+        @include respond(tab-land) {
+            min-width: 47%;
+            max-width: 47%;
+        }
+
     }
 }
 
@@ -69,6 +93,14 @@
 
     gap: 3rem;
 
+    &__dispAndCounterMedsContainer {
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
     article {
         max-width: 45rem;
         margin: 0 auto;
@@ -76,6 +108,11 @@
         // tablet portrait
         @media (min-width: 600px) {
             min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 47%;
+            max-width: 47%;
         }
     }
 
@@ -99,6 +136,11 @@
         float: right;
         margin: 0 0 .5rem 2rem;
         width: clamp(14rem, 35vw, 22rem);
+
+        @include respond(tab-land) {
+            float: left;
+            margin: 0 2rem .5rem 0;
+        }
     }
 
 }
@@ -111,18 +153,46 @@
 
     gap: 3rem;
 
+    &__clinicIntroAndServicesContainer {
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
     article {
         max-width: 45rem;
-        margin: 0 auto;
+        margin: 0 auto 2rem;
 
         // tablet portrait
         @media (min-width: 600px) {
             min-width: 100%;
         }
+
+        @include respond(tab-land) {
+            margin: 0 0 2rem;
+            min-width: 47%;
+            max-width: 47%;
+        }
     }
 
-    article > *:not(img, p, div) {
+    article > *:not(p) {
         margin-bottom: 2rem;
+    }
+
+    article:nth-child(2) {
+        @include respond(tab-land) {
+            margin-top: 4rem;
+        }
+    }
+
+    article:nth-child(2) > * {
+        margin-bottom: 2rem;
+    }
+
+    &__clearFix {
+        clear: both;
     }
 
     &__image {
@@ -135,6 +205,10 @@
         float: left;
         margin: 0 2rem .5rem 0;
         width: clamp(14rem, 35vw, 22rem);
+    }
+
+    &__clearFix {
+        clear: both;
     }
 
     @media (min-width: 600px) {
@@ -155,7 +229,11 @@
         }    
     }
 
-    
+    @include respond(tab-land) {
+        &__item {
+           flex: 0 0 185px;
+        } 
+    }    
 }
 
 .importantInfoSection {
@@ -166,6 +244,18 @@
 
     gap: 3rem;
 
+    &__introAndLinksContainer {
+        // margin: 0 auto;
+
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            gap: 1.5rem;
+        }
+    }
+
     article {
         max-width: 45rem;
         margin: 0 auto;
@@ -173,6 +263,12 @@
         // tablet portrait
         @media (min-width: 600px) {
             min-width: 100%;
+        }
+
+        @include respond(tab-land) {
+            min-width: 44%;
+            max-width: 44%;
+            margin: 0;
         }
     }
 
@@ -190,6 +286,15 @@
         float: left;
         margin: 0 2rem .5rem 0;
         width: clamp(14rem, 35vw, 22rem);
+
+        @include respond(tab-land) {
+            float: left;
+            width: 60%;
+        }
+    }
+
+    &__clearFix {
+        clear: both;
     }
 
 
@@ -200,6 +305,8 @@
         align-items: center;
 
         gap: 1.75rem;
+
+        margin-top: 2rem;
 
         & > * {
             margin-bottom: .75rem;
@@ -214,16 +321,32 @@
 
             gap: 3rem;
         }
+
+        @include respond(tab-land) {
+            gap: 3rem;
+            margin-top: 5rem;
+            & > * {
+                margin-bottom: .15rem;
+            }
+            min-width: 52%;
+            max-width: 52%;
+        }        
     }
 
     &__linkItem {
         background-color: $cp-green;
 
         width: min(45rem, 100%);
-        min-height: 20vh;
+        min-height: calc(10rem + 5vh);
 
         @media (min-width: 600px) {
             flex: 1 0 300px;
+            min-height: calc(7em + 5vh);
+        }
+
+        @include respond(tab-land) {
+            flex: 1 0 180px;
+            min-height: calc(5rem + 7vh);
         }
 
         position: relative;
@@ -278,11 +401,17 @@
             position: relative;
         }
 
+        &--deptHealthLimpopo, &--deptHealthSA {
+            @include respond(tab-land) {
+                background-size: clamp(8rem, 18vh, 18rem);
+            }
+        }
+
         &--deptHealthLimpopo::after, &--deptHealthSA::after {
             content: "";
             background-color: white;
             width: 100%;
-            min-height: 20vh;
+            min-height: 100%;
             position: absolute;
             top: 0;
             left: 0;
@@ -355,6 +484,17 @@
 
         &__contactDetailsSection {
             flex: 0 0 350px;
+        }
+    }
+
+    @include respond(tab-land) {
+        &__contactDetailsContainer {
+            gap: clamp(2.5rem, 5vw, 7rem);
+            // gap: 7rem;
+        }
+        
+        &__contactDetailsSection {
+            flex: 0 0 300px;
         }
     }
 
@@ -485,6 +625,10 @@
 
     &__googleMaps {
         width: 100%;
+
+        @include respond(tab-land) {
+            height: 28vw;
+        }
     }
 
     &__contactMessageForm {
