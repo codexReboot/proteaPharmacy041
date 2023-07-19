@@ -251,6 +251,12 @@
         &__item {
            flex: 0 0 240px;
         } 
+    }
+
+    @include respond(big-desk) {
+        &__item {
+           flex: 0 0 280px;
+        } 
     }    
 }
 
@@ -525,6 +531,12 @@
     @media (min-width: 1750px) {
         &__contactDetailsSection {
             flex: 0 0 340px;
+        }
+    }
+
+    @include respond(big-desk) {
+        &__contactDetailsSection {
+            flex: 0 0 400px;
         }
     }
 

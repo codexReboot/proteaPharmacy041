@@ -1700,6 +1700,11 @@ body {
     flex: 0 0 240px;
   }
 }
+@media (min-width: 112.5em) {
+  .clinicSection__item {
+    flex: 0 0 280px;
+  }
+}
 
 .importantInfoSection {
   display: flex;
@@ -1932,6 +1937,11 @@ body {
 @media (min-width: 1750px) {
   .contactUsSection__contactDetailsSection {
     flex: 0 0 340px;
+  }
+}
+@media (min-width: 112.5em) {
+  .contactUsSection__contactDetailsSection {
+    flex: 0 0 400px;
   }
 }
 .contactUsSection__contactDetailsPharmacy, .contactUsSection__contactDetailsPharmacists, .contactUsSection__contactDetailsClinic, .contactUsSection__contactDetailsAccounts, .contactUsSection__contactDetailsMedicalAids {
