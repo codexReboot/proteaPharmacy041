@@ -48,6 +48,10 @@
 
     &__paragraph {
         max-width: 45rem;
+
+        @include respond(tab-port) {
+            max-width: 85%;
+        }
     }
 }
 
