@@ -233,6 +233,24 @@
         &__item {
            flex: 0 0 185px;
         } 
+    }
+
+    @include respond(desk) {
+        &__item {
+           flex: 0 0 210px;
+        } 
+    }
+
+    @media (min-width: 1500px) {
+        &__item {
+           flex: 0 0 220px;
+        } 
+    }
+
+    @media (min-width: 1600px) {
+        &__item {
+           flex: 0 0 240px;
+        } 
     }    
 }
 

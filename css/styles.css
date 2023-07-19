@@ -1672,6 +1672,21 @@ body {
     flex: 0 0 185px;
   }
 }
+@media (min-width: 75em) {
+  .clinicSection__item {
+    flex: 0 0 210px;
+  }
+}
+@media (min-width: 1500px) {
+  .clinicSection__item {
+    flex: 0 0 220px;
+  }
+}
+@media (min-width: 1600px) {
+  .clinicSection__item {
+    flex: 0 0 240px;
+  }
+}
 
 .importantInfoSection {
   display: flex;
