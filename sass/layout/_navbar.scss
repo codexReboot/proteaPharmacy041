@@ -19,6 +19,10 @@
 
     transition: all .6s;
 
+    @include respond(tab-port) {
+        padding: .5rem 4rem;        
+    }
+
     @media (min-width: 2000px) {
         margin: 0 auto;
         max-width: 2000px;

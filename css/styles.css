@@ -2091,6 +2091,11 @@ body {
   z-index: 1000;
   transition: all 0.6s;
 }
+@media (min-width: 37.5em) {
+  .navbarSection {
+    padding: 0.5rem 4rem;
+  }
+}
 @media (min-width: 2000px) {
   .navbarSection {
     margin: 0 auto;
