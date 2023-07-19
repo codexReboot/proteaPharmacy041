@@ -11,7 +11,7 @@
 
     @media (min-width: 500px) {
             gap: .35rem;
-        }
+    }
 
 
     opacity: 1;
@@ -23,6 +23,11 @@
     z-index: 100;
 
     transition: opacity .6s;
+
+    @media (min-width: 2000px) {
+        margin: 0 auto;
+        max-width: 2000px;
+    }
 
     &__legal {
         display: flex;

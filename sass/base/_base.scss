@@ -35,8 +35,10 @@ html {
 	
 	@include respond(big-desk) {
 	/* 	18px / 16px *100 = 112.5% */
-		font-size: 112.5%; // 1.4rem = 25.2px
+		font-size: 70%; // 1.4rem = 25.2px
 	}
+
+	background-color: $cp-lightGrey;
 }
 
 body {
@@ -50,6 +52,11 @@ body {
 	box-sizing: border-box;
 	// for position absolute iro popup component
 	position: relative;
+
+	@media (min-width: 2000px) {
+		margin: 0 auto;
+		max-width: 2000px;
+	}
 }
 
 
