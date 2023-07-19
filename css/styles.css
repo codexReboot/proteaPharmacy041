@@ -114,7 +114,7 @@ html {
 @media (min-width: 75em) {
   html {
     /* 	15px / 16px *100 = 93.75% */
-    font-size: 93.75%;
+    font-size: 65%;
   }
 }
 @media (min-width: 112.5em) {
@@ -940,6 +940,11 @@ body {
 
 .headingH3Container {
   position: relative;
+}
+@media (min-width: 37.5em) {
+  .headingH3Container__br--counterMeds {
+    display: none;
+  }
 }
 
 .headingContainerSlider {
