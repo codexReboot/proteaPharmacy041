@@ -1975,6 +1975,22 @@ body {
     justify-content: flex-start;
   }
 }
+.contactUsSection__contactItem a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.contactUsSection__icon {
+  height: 16px;
+  width: 16px;
+}
+@media (min-width: 37.5em) {
+  .contactUsSection__icon {
+    height: 20px;
+    width: 20px;
+  }
+}
 .contactUsSection__contactTradingHours {
   display: flex;
   flex-direction: column;

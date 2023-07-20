@@ -579,6 +579,24 @@
         gap: .3rem;
     }
 
+    &__contactItem a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: .3rem;
+    }
+
+    &__icon {
+        height: 16px;
+        width: 16px;
+
+        @include respond(tab-port) {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
     &__contactTradingHours {
         display: flex;
         flex-direction: column;
