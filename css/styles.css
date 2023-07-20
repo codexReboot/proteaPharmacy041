@@ -817,9 +817,16 @@ body {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2.5%, rgba(1, 46, 76, 0.4) 20%, rgba(1, 46, 76, 0.75) 50%, rgba(1, 46, 76, 0.4) 80%, rgba(0, 0, 0, 0) 97.5%);
   margin: 0.35rem 0;
 }
+@media (min-width: 37.5em) {
+  .headingH2Container__hr {
+    background-image: linear-gradient(to right, black 2.5%, rgba(1, 46, 76, 0.9) 20%, rgba(1, 46, 76, 0.75) 50%, rgba(1, 46, 76, 0.4) 80%, rgba(0, 0, 0, 0) 97.5%);
+    width: 70%;
+  }
+}
 .headingH2Container__headingH2--about::after {
   content: "";
   background: url("../img/headingH2Icons/PeopleIcon.svg");
+  background-color: red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

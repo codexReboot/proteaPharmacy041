@@ -80,6 +80,11 @@
         height: 1px;
         background-image: linear-gradient(to right,rgba(0,0,0,0) 2.5%, rgba($cp-darkBlue, 0.4) 20%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 80%, rgba(0,0,0,0) 97.5%);
         margin: .35rem 0;
+
+        @include respond(tab-port) {
+           background-image: linear-gradient(to right,rgba(0,0,0, 1) 2.5%, rgba($cp-darkBlue, 0.9) 20%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 80%, rgba(0,0,0,0) 97.5%); 
+           width: 70%;
+        }
     }
 
     &__subheadingH2 {
@@ -89,6 +94,7 @@
         content: "";
 
         background: url('../img/headingH2Icons/PeopleIcon.svg');
+        background-color: red;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
