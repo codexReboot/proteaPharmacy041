@@ -1327,13 +1327,14 @@ body {
   animation: animateNavLink 0.4s ease-in 1 forwards;
 }
 .navListSecondary__icon {
-  background-color: transparent;
   height: 16px;
   width: 16px;
 }
-.navListSecondary__icon--rightArrow {
-  height: 12px;
-  width: 12px;
+@media (min-width: 37.5em) {
+  .navListSecondary__icon {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .navList--navListMoveIn {
