@@ -35,10 +35,6 @@ ORDER: base + typography > general layout + grid > page layout > components
 @keyframes animateNavItemsMoveIn {
   0% {
     transform: translateX(150px);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.5;
   }
   100% {
     transform: translateX(0px);
@@ -49,9 +45,6 @@ ORDER: base + typography > general layout + grid > page layout > components
   0% {
     transform: translateX(0px);
     opacity: 1;
-  }
-  80% {
-    opacity: 0.5;
   }
   100% {
     transform: translateX(200px);
@@ -1043,10 +1036,19 @@ body {
 }
 .imageSlider__sliderNavigation {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   margin: 0 auto;
   width: 75%;
+}
+.imageSlider__sliderNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  min-width: 100%;
 }
 .imageSlider__dotsContainer {
   display: flex;
