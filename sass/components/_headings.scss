@@ -90,11 +90,24 @@
     &__subheadingH2 {
     }
 
+
+    // &__headingH2--about::after {
+    //     content: "";
+    //     width: 10rem;
+    //     height: 10rem;
+
+    //     background-color: red;
+
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+
+    //     z-index: 100;
+    // }
     &__headingH2--about::after {
         content: "";
 
         background: url('../img/headingH2Icons/PeopleIcon.svg');
-        background-color: red;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

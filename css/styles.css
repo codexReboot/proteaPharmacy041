@@ -91,7 +91,6 @@ html {
   /* 	the default font size of the browser is 16px */
   /* 	10px / 16px *100 = 62.5% */
   font-size: 62.5%;
-  background-color: #d7d7d7;
 }
 @media (min-width: 37.5em) {
   html {
@@ -826,7 +825,6 @@ body {
 .headingH2Container__headingH2--about::after {
   content: "";
   background: url("../img/headingH2Icons/PeopleIcon.svg");
-  background-color: red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
