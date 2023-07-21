@@ -1032,13 +1032,9 @@ body {
   align-items: center;
   width: 100%;
 }
-.imageSlider__btnContainer {
-  font-size: 5rem;
-  line-height: 0.6;
-  background-color: black;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px 4px rgba(3, 3, 3, 0.4);
-  padding: 0.15rem 1rem;
+.imageSlider__leftArrowBtn, .imageSlider__rightArrowBtn {
+  width: 4rem;
+  height: 4rem;
 }
 
 .imageSlider__slide {

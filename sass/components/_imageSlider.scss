@@ -42,12 +42,17 @@
     }
 
     &__btnContainer {
-        font-size: 5rem;
-        line-height: .6;
-        background-color: black;
-        border-radius: .5rem;
-        box-shadow: 0 0 10px 4px rgba(3, 3, 3, .4);
-        padding: .15rem 1rem;
+        // font-size: 1rem;
+        // line-height: .6;
+        // background-color: black;
+        // border-radius: .5rem;
+        // box-shadow: 0 0 10px 4px rgba(3, 3, 3, .4);
+        // padding: .15rem 1rem;
+    }
+
+    &__leftArrowBtn, &__rightArrowBtn {
+        width: 4rem;
+        height: 4rem;
     }
 }
 
