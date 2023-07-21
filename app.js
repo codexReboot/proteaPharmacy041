@@ -27,9 +27,65 @@ const footer = document.querySelector('.footer');
 const hero = document.querySelector('.heroSection');
 
 ////////////////////////////////////////////////////////////////////////////////////////
-// SLIDE ANIMATION AND NAVIGATION LOGIC
+// imageSlider variables
+///////////////////////////////////////////////////////////////////////////////////////
+
+const slides = document.querySelectorAll('.imageSlider__slide');
+const index = document.querySelectorAll('.imageSlider__index');
+const leftArrBtn = document.querySelector('.imageSlider__leftArrBtnContainer');
+const rightArrBtn = document.querySelector('.imageSlider__rightArrBtnContainer');
+
+////////////////////////////////////////////////////////////////////////////////////////
+// imageSlider animation and navigation logic
 ////////////////////////////////////////////////////////////////////////////////////////
 
+let slideIndex = 0
+
+leftArrBtn.addEventListener('click', ()=> {
+    if(slideIndex < 0) {
+        slideIndex = 5;
+    }
+    slides[slideIndex].classList.remove('animateSlideMifL');
+    slides[slideIndex].classList.remove('animateSlideMifR');
+    slides[slideIndex].classList.add('animateSlideMotR');
+    setTimeout(() => {
+        slides[slideIndex].classList.add('displayNone');
+    }, 1000);
+    setTimeout(() => {
+        if(slideIndex === 0) {
+            slideIndex = 6;
+        }
+        slides[slideIndex - 1].classList.remove('animateSlideMotR');
+        slides[slideIndex - 1].classList.remove('animateSlideMotL');
+        slides[slideIndex - 1].classList.remove('displayNone');
+        slides[slideIndex - 1].classList.add('displayBlock');
+        slides[slideIndex - 1].classList.add('animateSlideMifL');
+        slideIndex -= 1;
+    }, 1001);
+});
+
+rightArrBtn.addEventListener('click', ()=> {
+    if(slideIndex > 5) {
+        slideIndex = 0;
+    }
+    slides[slideIndex].classList.remove('animateSlideMifL');
+    slides[slideIndex].classList.remove('animateSlideMifR');
+    slides[slideIndex].classList.add('animateSlideMotL');
+    setTimeout(() => {
+        slides[slideIndex].classList.add('displayNone');
+    }, 1000);
+    setTimeout(() => {
+        if(slideIndex === 5) {
+            slideIndex = -1;
+        }
+        slides[slideIndex + 1].classList.remove('animateSlideMotL');
+        slides[slideIndex + 1].classList.remove('animateSlideMotR');
+        slides[slideIndex + 1].classList.remove('displayNone');
+        slides[slideIndex + 1].classList.add('displayBlock');
+        slides[slideIndex + 1].classList.add('animateSlideMifR');
+        slideIndex += 1;
+    }, 1001);
+});
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
