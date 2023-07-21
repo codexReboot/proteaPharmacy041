@@ -1002,7 +1002,8 @@ body {
 }
 
 .imageSlider__imageSliderContainer {
-  width: 80%;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .imageSlider__slidesContainer {
