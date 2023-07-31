@@ -341,12 +341,12 @@ body {
   text-align: left;
 }
 
-.headingContainerSlider {
+.headingSlideContainer {
   text-align: center;
   line-height: 1;
   letter-spacing: 1px;
 }
-.headingContainerSlider__headingH4--slide {
+.headingSlideContainer__headingH4--slide {
   color: #225f01;
   font-family: "Montserrat", sans-serif;
   font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
@@ -354,18 +354,18 @@ body {
   letter-spacing: 0px;
 }
 @media (min-width: 56.25em) {
-  .headingContainerSlider__headingH4--slide {
+  .headingSlideContainer__headingH4--slide {
     font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
   }
 }
-.headingContainerSlider__headingH5--slide {
+.headingSlideContainer__headingH5--slide {
   color: #225f01;
   font-family: "Lato", sans-serif;
   font-size: clamp(calc(1rem + 1vw), 2.4vh, calc(1.5rem + 1vw));
   font-weight: 900;
 }
 @media (min-width: 56.25em) {
-  .headingContainerSlider__headingH5--slide {
+  .headingSlideContainer__headingH5--slide {
     font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
   }
 }
@@ -980,7 +980,7 @@ body {
   }
 }
 
-.headingContainerSlider {
+.headingSlideContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -990,7 +990,7 @@ body {
   margin-bottom: 0.5rem;
 }
 @media (min-width: 600px) {
-  .headingContainerSlider {
+  .headingSlideContainer {
     justify-content: flex-start;
   }
 }
@@ -1003,16 +1003,26 @@ body {
 
 .imageSlider__imageSliderContainer {
   margin: 0 auto;
-  max-width: 100%;
+  width: min(100%, 42rem);
 }
 .imageSlider__slidesContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 4rem;
-  min-height: 30rem;
+  margin-bottom: 1rem;
+  min-height: 32rem;
   overflow: hidden;
+}
+.imageSlider__image {
+  float: left;
+  background: linear-gradient(135deg, #f0f0f0 5%, #6cb347 45%, #3e6629 85%);
+  border: 2px solid #f0f0f0;
+  border-radius: 100%;
+  box-shadow: -3px 3px 7px 2px rgba(30, 32, 32, 0.6);
+  shape-outside: margin-box;
+  margin: 1rem;
+  width: min(42%, 17rem);
 }
 .imageSlider__navContainer {
   position: relative;
@@ -1021,7 +1031,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1030,14 +1040,14 @@ body {
 .imageSlider__index {
   background-color: #012e4c;
   border-radius: 8px;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 .imageSlider__btnsContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

@@ -43,7 +43,7 @@ let slideIndex = 0
 
 leftArrBtn.addEventListener('click', ()=> {
     if(slideIndex < 0) {
-        slideIndex = 5;
+        slideIndex = 14;
     }
     slides[slideIndex].classList.remove('animateSlideMifL');
     slides[slideIndex].classList.remove('animateSlideMifR');
@@ -53,7 +53,7 @@ leftArrBtn.addEventListener('click', ()=> {
     }, 1000);
     setTimeout(() => {
         if(slideIndex === 0) {
-            slideIndex = 6;
+            slideIndex = 15;
         }
         slides[slideIndex - 1].classList.remove('animateSlideMotR');
         slides[slideIndex - 1].classList.remove('animateSlideMotL');
@@ -65,7 +65,7 @@ leftArrBtn.addEventListener('click', ()=> {
 });
 
 rightArrBtn.addEventListener('click', ()=> {
-    if(slideIndex > 5) {
+    if(slideIndex > 14) {
         slideIndex = 0;
     }
     slides[slideIndex].classList.remove('animateSlideMifL');
@@ -75,7 +75,7 @@ rightArrBtn.addEventListener('click', ()=> {
         slides[slideIndex].classList.add('displayNone');
     }, 1000);
     setTimeout(() => {
-        if(slideIndex === 5) {
+        if(slideIndex === 14) {
             slideIndex = -1;
         }
         slides[slideIndex + 1].classList.remove('animateSlideMotL');

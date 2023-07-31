@@ -2,7 +2,7 @@
 
     &__imageSliderContainer {
         margin: 0 auto;
-        max-width: 100%;
+        width: min(100%, 42rem);
     }
 
     &__slidesContainer {
@@ -12,10 +12,22 @@
 
         gap: 1rem;
 
-        margin-bottom: 4rem;
-        min-height: 30rem;
+        margin-bottom: 1rem;
+        min-height: 32rem;
 
         overflow: hidden;
+    }
+
+    &__image {
+        float: left;
+        background: linear-gradient(135deg, rgba($cp-white, 1) 5%, rgba($cp-green, 1) 45%, rgba($cp-darkGreen, 1) 85%);
+        border: 2px solid $cp-white;
+        border-radius: 100%;
+        box-shadow: -3px 3px 7px 2px rgba($cp-dark, .6);
+        shape-outside: margin-box;
+        margin: 1rem;
+        width: min(42%, 17rem);
+        
     }
 
     &__navContainer {
@@ -27,7 +39,7 @@
         justify-content: center;
         align-items: center;
 
-        gap: .75rem;
+        gap: .5rem;
 
         position: absolute;
         top: 50%;
@@ -39,8 +51,8 @@
     &__index {
         background-color: $cp-darkBlue;
         border-radius: 8px;
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
     }
 
     &__btnsContainer {
@@ -48,7 +60,7 @@
         justify-content: space-between;
         align-items: center;
 
-        width: 85%;
+        width: 100%;
 
         position: absolute;
         top: 50%;
@@ -61,7 +73,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-                
+
         padding: 0;
         margin: 0;
     }
