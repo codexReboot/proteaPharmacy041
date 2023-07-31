@@ -36,10 +36,12 @@
 
     &__indexContainer {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         gap: .5rem;
+
+        width: 70%;
 
         position: absolute;
         top: 50%;
@@ -60,7 +62,7 @@
         justify-content: space-between;
         align-items: center;
 
-        width: 88%;
+        width: 90%;
 
         position: absolute;
         top: 50%;

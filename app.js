@@ -41,6 +41,10 @@ const rightArrBtn = document.querySelector('.imageSlider__rightArrBtnContainer')
 
 let slideIndex = 0
 
+index[0].style.backgroundColor = "#63d426";
+index[0].style.border = "1px solid #44c300";
+
+
 leftArrBtn.addEventListener('click', ()=> {
     if(slideIndex < 0) {
         slideIndex = 14;
@@ -48,6 +52,10 @@ leftArrBtn.addEventListener('click', ()=> {
     slides[slideIndex].classList.remove('animateSlideMifL');
     slides[slideIndex].classList.remove('animateSlideMifR');
     slides[slideIndex].classList.add('animateSlideMotR');
+
+    index[slideIndex].style.backgroundColor = "#012e4c";
+    index[slideIndex].style.border = "1px solid #012e4c";
+
     setTimeout(() => {
         slides[slideIndex].classList.add('displayNone');
     }, 1000);
@@ -60,6 +68,10 @@ leftArrBtn.addEventListener('click', ()=> {
         slides[slideIndex - 1].classList.remove('displayNone');
         slides[slideIndex - 1].classList.add('displayBlock');
         slides[slideIndex - 1].classList.add('animateSlideMifL');
+
+        index[slideIndex - 1].style.backgroundColor = "#63d426";
+        index[slideIndex - 1].style.border = "1px solid #44c300";
+
         slideIndex -= 1;
     }, 1001);
 });
@@ -71,6 +83,10 @@ rightArrBtn.addEventListener('click', ()=> {
     slides[slideIndex].classList.remove('animateSlideMifL');
     slides[slideIndex].classList.remove('animateSlideMifR');
     slides[slideIndex].classList.add('animateSlideMotL');
+
+    index[slideIndex].style.backgroundColor = "#012e4c";
+    index[slideIndex].style.border = "1px solid #012e4c";
+
     setTimeout(() => {
         slides[slideIndex].classList.add('displayNone');
     }, 1000);
@@ -83,6 +99,10 @@ rightArrBtn.addEventListener('click', ()=> {
         slides[slideIndex + 1].classList.remove('displayNone');
         slides[slideIndex + 1].classList.add('displayBlock');
         slides[slideIndex + 1].classList.add('animateSlideMifR');
+
+        index[slideIndex + 1].style.backgroundColor = "#63d426";
+        index[slideIndex + 1].style.border = "1px solid #44c300"
+
         slideIndex += 1;
     }, 1001);
 });
