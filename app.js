@@ -58,6 +58,8 @@ leftArrBtn.addEventListener('click', ()=> {
 
     setTimeout(() => {
         slides[slideIndex].classList.add('displayNone');
+        index[slideIndex].style.backgroundColor = "#012e4c";
+        index[slideIndex].style.border = "1px solid #012e4c";
     }, 1000);
     setTimeout(() => {
         if(slideIndex === 0) {
@@ -89,6 +91,8 @@ rightArrBtn.addEventListener('click', ()=> {
 
     setTimeout(() => {
         slides[slideIndex].classList.add('displayNone');
+        index[slideIndex].style.backgroundColor = "#012e4c";
+        index[slideIndex].style.border = "1px solid #012e4c";
     }, 1000);
     setTimeout(() => {
         if(slideIndex === 14) {
