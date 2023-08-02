@@ -1451,13 +1451,21 @@ body {
   background: linear-gradient(to right, transparent, rgba(108, 179, 71, 0.4) 15%, #6cb347 40%, #3E6629, #6cb347 60%, rgba(108, 179, 71, 0.4) 85%, transparent);
 }
 
+.promotionContainer {
+  min-height: 38rem;
+}
+@media (min-width: 37.5em) {
+  .promotionContainer {
+    align-self: flex-start;
+  }
+}
 .promotionContainer__img {
   background-color: white;
   border: 2px solid #6CB347;
   border-radius: 5px;
   box-shadow: 0 0 20px 4px rgba(30, 32, 32, 0.25);
   padding: 2rem 4rem;
-  margin: 0 auto 5rem;
+  margin: 2rem auto 3rem;
   width: 23rem;
 }
 .promotionContainer__displayBlock {
