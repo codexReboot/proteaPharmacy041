@@ -112,6 +112,43 @@ rightArrBtn.addEventListener('click', ()=> {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// product carousel
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const products = document.querySelectorAll('.product');
+let productIndex = 0;
+
+function animateProducts() {
+  products[productIndex].classList.remove('promotionContainer__displayNone');
+  products[productIndex].classList.add('promotionContainer__displayBlock');
+  products[productIndex].classList.add('animateProduct');
+  productIndex++;
+}
+
+products[productIndex].classList.remove('promotionContainer__displayNone');
+products[productIndex].classList.add('promotionContainer__displayBlock');
+products[productIndex].classList.add('animateProduct');
+productIndex++;
+
+setInterval(() => {
+    if(productIndex === 5) {
+        products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
+        products[productIndex - 1].classList.add('promotionContainer__displayNone');
+        products[productIndex - 1].classList.remove('animateProduct');
+        productIndex = 0;
+    }
+    if(productIndex === 0) {
+        products[productIndex].classList.remove('promotionContainer__displayNone');
+        products[productIndex].classList.add('promotionContainer__displayBlock');
+        products[productIndex].classList.add('animateProduct');
+        productIndex++;
+    } else {
+        products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
+        products[productIndex - 1].classList.add('promotionContainer__displayNone');
+        products[productIndex - 1].classList.remove('animateProduct');
+        animateProducts();
+    }
+}, 6000);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // Terms and Conditions pop-up logic
@@ -130,9 +167,6 @@ legal.addEventListener('click', () => {
   legalOpenIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
   legalCloseIcon.classList.toggle('openAndCloseIcons__icon--displayNone');
 });
-
-
-
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -183,7 +217,6 @@ hamburgerBtn.addEventListener('click', () => {
       navbar.classList.remove('navbar--background');
     }
   }
-  
   
   if(hamburgerMenu.classList.contains('navList--displayNone')) {
     hamburgerMenu.classList.remove('navList--displayNone');

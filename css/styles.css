@@ -103,6 +103,20 @@ ORDER: base + typography > general layout + grid > page layout > components
     opacity: 0;
   }
 }
+@keyframes productAnimation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 *,
 *::after,
 *::before {
@@ -1437,6 +1451,27 @@ body {
   background: linear-gradient(to right, transparent, rgba(108, 179, 71, 0.4) 15%, #6cb347 40%, #3E6629, #6cb347 60%, rgba(108, 179, 71, 0.4) 85%, transparent);
 }
 
+.promotionContainer__img {
+  background-color: white;
+  border: 2px solid #6CB347;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 4px rgba(30, 32, 32, 0.25);
+  padding: 2rem 4rem;
+  margin: 0 auto 5rem;
+  width: 23rem;
+}
+.promotionContainer__displayBlock {
+  display: block;
+  opacity: 0;
+}
+.promotionContainer__displayNone {
+  display: none;
+}
+
+.animateProduct {
+  animation: productAnimation 5s backwards 1s;
+}
+
 .openAndCloseIcons {
   display: inline-block;
   margin-left: 1.2rem;
@@ -1570,6 +1605,14 @@ body {
     padding: 2rem 4rem 0;
   }
 }
+.promotionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 3rem;
+}
+
 .aboutSection {
   display: flex;
   flex-direction: column;

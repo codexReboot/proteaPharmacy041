@@ -17,6 +17,15 @@
     }
 }
 
+.promotionSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 3rem;
+}
+
 .aboutSection {
     display: flex;
     flex-direction: column;
