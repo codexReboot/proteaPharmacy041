@@ -1452,19 +1452,20 @@ body {
 }
 
 .promotionContainer {
-  min-height: 38.5rem;
+  min-height: 45rem;
 }
 @media (min-width: 37.5em) {
   .promotionContainer {
     align-self: flex-start;
+    min-height: 45rem;
   }
 }
 .promotionContainer__img {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 20px 12px rgba(255, 255, 255, 0.9), 0 0 30px 18px rgba(240, 240, 240, 0.9);
+  box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.93), 0 0 30px 18px #f0f0f0;
   padding: 1rem;
-  margin: 2rem auto 3rem;
+  margin: 0 auto;
   width: 23rem;
 }
 .promotionContainer__displayBlock {
