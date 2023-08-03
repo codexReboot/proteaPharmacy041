@@ -1,8 +1,10 @@
 .promotionContainer {
+    min-height: 38.5rem;
+
     @include respond(tab-port) {
         align-self: flex-start;
-    }
-    min-height: 38.5rem;
+    };
+
     &__img {
         background-color: white;
         // border: 2px solid $cp-green;
