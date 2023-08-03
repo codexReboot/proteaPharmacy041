@@ -1452,7 +1452,7 @@ body {
 }
 
 .promotionContainer {
-  min-height: 38rem;
+  min-height: 38.5rem;
 }
 @media (min-width: 37.5em) {
   .promotionContainer {
@@ -1461,10 +1461,9 @@ body {
 }
 .promotionContainer__img {
   background-color: white;
-  border: 2px solid #6CB347;
-  border-radius: 5px;
-  box-shadow: 0 0 20px 4px rgba(30, 32, 32, 0.25);
-  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 12px rgba(255, 255, 255, 0.9), 0 0 30px 18px rgba(240, 240, 240, 0.9);
+  padding: 1rem;
   margin: 2rem auto 3rem;
   width: 23rem;
 }
