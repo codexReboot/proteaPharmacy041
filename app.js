@@ -131,7 +131,7 @@ products[productIndex].classList.add('animateProduct');
 productIndex++;
 
 setInterval(() => {
-    if(productIndex === 5) {
+    if(productIndex === 10) {
         products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
         products[productIndex - 1].classList.add('promotionContainer__displayNone');
         products[productIndex - 1].classList.remove('animateProduct');
