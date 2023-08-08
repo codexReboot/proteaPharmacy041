@@ -1,8 +1,10 @@
 .logo {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    gap: .5rem;
+    gap: .25rem;
 
     // position: relative;
     // z-index: 100;
@@ -10,7 +12,7 @@
     &__img {        
         display: block;
         height: auto;
-        width: clamp(calc(2.3rem + 1.4vw), 3.5vh, calc(2.8rem + 1.4vw));
+        width: clamp(calc(3.75rem + 1.8vw), 3.5vh, calc(4.75rem + 1.8vw));
     }
 
     &__text {
