@@ -1,4 +1,12 @@
 .logoAndNumbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: .5rem;
+
+
     position: relative;
     z-index: 100;
 }
@@ -22,6 +30,11 @@
         height: 14px;
         width: 14px;
     }
+}
+
+.contactIconsContainer {
+    order: 2;
+
 }
 
 .hamburgerBtn {

@@ -1199,6 +1199,11 @@ body {
 }
 
 .logoAndNumbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
   position: relative;
   z-index: 100;
 }
@@ -1218,6 +1223,10 @@ body {
 .numbers__icon {
   height: 14px;
   width: 14px;
+}
+
+.contactIconsContainer {
+  order: 2;
 }
 
 .hamburgerBtn {
