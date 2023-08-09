@@ -1,4 +1,8 @@
 .btn:link, .btn:visited {  
+    
+}
+
+.btn { 
     display: block;
     border: 2px solid $cp-grey;
     border-radius: $br-m;
@@ -7,22 +11,7 @@
     width: fit-content;
     margin: 0 auto;
 
-    &--primary-white {
-        background-color: $cp-white;
-        padding: .125em 1em;
-    }
-
-    &--primary-white-btn {
-        background-color: $cp-white;
-        padding: .125em 1em;
-    }
-
     &--primary-blue {
-        background-color: $cp-darkBlue;
-        padding: .125em 1em;
-    }
-
-    &--primary-blue-contactForm {
         border: 1px solid $cp-grey;
         border-radius: $br-sm;
         box-shadow: $bs-btn;
@@ -31,91 +20,17 @@
         padding: .55em 2em;
     }
 
-    &--primary-blue-btn {
-        background-color: $cp-darkBlue;
-        padding: .125em 1em;
-    } 
-
-    &--secondary {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-
-    &--secondary-btn {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-    
-    
-    backface-visibility: hidden;
-    transition: all .2s;
-}
-
-.btn { 
-    display: block;
-
-    border: 2px solid $cp-grey;
-    border-radius: $br-m;
-    box-shadow: $bs-btn;
-
-    width: fit-content;
-    margin: 0 auto;
-
     &--primary-white {
-        background-color: $cp-white;
-        padding: .125em 1em;
-    }
-
-    &--primary-white-btn {
-        background-color: $cp-white;
-        padding: .125em 1em;
-    }
-
-    &--primary-blue {
-        background-color: $cp-darkBlue;
-        padding: .125em 1em;
-    }
-
-    &--primary-blue-contactForm {
         border: 1px solid $cp-grey;
         border-radius: $br-sm;
         box-shadow: $bs-btn;
         background-color: $cp-darkBlue;
+        width: 100%;
         padding: .55em 2em;
-    }
-
-    &--primary-blue-btn {
-        background-color: $cp-darkBlue;
-        padding: .125em 1em;
-    } 
-
-    &--primary:hover {
-        border: 5px solid $cp-white;
-        background-color: $cp-grey;
-        box-shadow: $bs-btnHover;
-        transform: translateY(-3px);
-    } 
-
-    &--secondary {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-
-    &--secondary-btn {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-
-    &--secondary:hover {
-        border: 5px solid $cp-white;
-        background-color: $cp-grey;
-        box-shadow: $bs-btnHover;
-        transform: translateY(-3px);
-    }
-       
+    }    
+    
     backface-visibility: hidden;
     transition: all .2s;
-    
 }
 
 .btn:active {
