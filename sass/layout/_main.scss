@@ -674,6 +674,11 @@
             margin-bottom: 3rem;
         }
 
+        a {
+            width: fit-content;
+            margin: 0 auto 8rem;
+        }
+
         @include respond(tab-port) {
             margin-bottom: 2rem;
             width: 100%;

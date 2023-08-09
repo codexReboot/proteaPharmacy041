@@ -1,45 +1,48 @@
-.btn:link, .btn:visited {  
-    
-}
-
-.btn { 
-    display: block;
-    border: 2px solid $cp-grey;
-    border-radius: $br-m;
+.btn {  
+    background-color: $cp-darkBlue;
+    border-top: 2px solid $cp-darkGrey;
+    border-left: 2px solid $cp-grey;
+    border-bottom: 2px solid $cp-lightGrey;
+    border-right: 2px solid $cp-light;
+    border-radius: .45rem;
     box-shadow: $bs-btn;
 
     width: fit-content;
+
+    padding: .25em 1em;
     margin: 0 auto;
 
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: all .2s;
+
+    &:link, &:visited {
+        text-decoration: none;
+        transform: translateY(0px);
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, .55);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        border-bottom: 2px solid $cp-grey;
+        border-right: 2px solid $cp-grey;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
+        transform: translateY(-1px);
+    }
+
     &--primary-blue {
-        border: 1px solid $cp-grey;
-        border-radius: $br-sm;
-        box-shadow: $bs-btn;
-        background-color: $cp-darkBlue;
-        width: 100%;
-        padding: .55em 2em;
+        background-color: rgba($cp-darkBlue, .85);
     }
 
     &--primary-white {
-        border: 1px solid $cp-grey;
-        border-radius: $br-sm;
-        box-shadow: $bs-btn;
-        background-color: $cp-darkBlue;
-        width: 100%;
-        padding: .55em 2em;
-    }    
-    
-    backface-visibility: hidden;
-    transition: all .2s;
-}
+        background-color: rgba($cp-white, .85);
+    }
 
-.btn:active {
+    &--getDirections {
+        
+    }
 
-    border-top-color: $cp-grey;
-    border-left-color: $cp-grey;
-    border-bottom-color: $cp-lightGrey;
-    border-right-color: $cp-lightGrey;
-    background-color: $cp-lightGrey;
-    box-shadow: none;
-    transform: translateY(2px);
 }

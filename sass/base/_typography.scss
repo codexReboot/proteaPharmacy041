@@ -303,45 +303,16 @@ body {
 }
 
 .btn {
-	font-weight:900;
+	font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
+	font-weight:700;
 	letter-spacing: 1px;
-
-	&--primary-white {
-		color: $cf-red;
-		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
-	}
-
-	&--primary-white-btn {
-		color: $cf-red;
-		//font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
-		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-	}
-
+	
 	&--primary-blue {
 		color: $cf-white;
-		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
 	}
 
-	&--primary-blue-contactForm {
-		color: $cf-white;
-		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-	}
-
-	&--primary-blue-btn {
-		color: $cf-white;
-		//font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
-		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-	}
-
-	&--secondary {
-		color: $cf-white;
-		font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
-	}
-
-	&--secondary-btn {
-		color: $cf-white;
-		//font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
-		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+	&--primary-white {
+		color: $cf-darkGreen;
 	}
 }
 
