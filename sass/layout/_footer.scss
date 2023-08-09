@@ -6,8 +6,8 @@
 
     background-color: $cp-darkBlue;
 
-    padding: clamp(1rem, 2.2vh, 2rem) 1rem;
-    gap: .75rem;
+    padding: clamp(.25rem, 1vh, .85rem) 1rem;
+    gap: .1rem;
 
     @media (min-width: 500px) {
             gap: .35rem;

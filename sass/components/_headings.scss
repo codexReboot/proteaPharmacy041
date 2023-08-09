@@ -7,7 +7,7 @@
     background-color: $cp-darkBlue;
 
     padding: clamp(1rem, 3vh, 2.5rem) 1rem;
-    gap: clamp(1rem, 2.2vh, 2rem);    
+    gap: clamp(1.5rem, 1vh, 2rem);    
 
     &__headAndBylineContainer {
         display: flex;
@@ -17,15 +17,16 @@
     }
 
     &__headlineImage {
-        width: clamp(3.3rem, 10vw, 4.2rem);
+        width: clamp(calc(4.4rem + 6vw), 12vh, calc(8.4rem + 6vw));
     }
 
     &__headline {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
 
-        gap: 1rem;    
+        gap: .5rem;    
     }
 
     &__hr {
