@@ -701,31 +701,65 @@
 
     &__googleMaps {
         width: 100%;
+        height: 45vh;
+     
+    }
+
+    &__gpsAddress {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        gap: 1rem;
+
+        margin: 0 auto 5rem;
+        max-width: 45rem;
+
+        
+        @media (min-width: 600px) {
+            min-width: 100%;
+        }
 
         @include respond(tab-land) {
-            height: 28vw;
+            min-width: 45%;
         }
     }
 
-    &__contactMessageForm {
-        padding-bottom: 4rem;
-        margin: 0 auto;
-        width: min(45rem, 100%);
+    &__gpsAddressDetails {
+        & > * {
+            margin-bottom: 1.5rem;
 
-        & > *:first-child {
-            margin-bottom: 3rem;
-
-            @include respond(tab-port) {
+            @media (min-width:600px) {
                 margin-bottom: 2rem;
             }
         }
 
-        @include respond (tab-port) {
-            min-width: 100%;
+        @media (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            & > * {
+                margin-right: 4rem;            
+            }
         }
 
-        @include respond (tab-land) {
-            min-width: 45%;
+        @media (min-width: 600px) {
+        
         }
     }
+
+    .paragraph--gpsAddressParDetails {
+        cursor: pointer;
+    }
+
+    .paragraph--gpsAddressIntro {
+        @include respond(tab-land) {
+            margin-top: 1.15rem;
+        }
+    }
+
 }

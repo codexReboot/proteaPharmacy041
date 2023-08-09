@@ -441,19 +441,23 @@ body {
     text-align: left;
   }
 }
-.paragraph--tradingHoursWeekday {
+.paragraph--tradingHoursWeekday, .paragraph--gpsAddressParHeading {
   font-family: "Montserrat", sans-serif;
   color: #225f01;
   font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
   font-weight: 900;
 }
 @media (min-width: 56.25em) {
-  .paragraph--tradingHoursWeekday {
+  .paragraph--tradingHoursWeekday, .paragraph--gpsAddressParHeading {
     font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
   }
 }
-.paragraph--tradingHoursTimes {
+.paragraph--tradingHoursTimes, .paragraph--gpsAddressParDetails {
   font-weight: 700;
+}
+.paragraph--gpsAddressParDetails {
+  text-decoration: underline 2px;
+  text-underline-offset: 3px;
 }
 .paragraph--contactForm {
   font-weight: 900;
@@ -544,6 +548,9 @@ body {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.footer__schalk--name, .footer__schalk--arrow {
+  color: #f0f0f0;
 }
 
 .termsAndConditions__h2 {
@@ -1572,8 +1579,11 @@ body {
     gap: 1rem;
   }
 }
-.footer__schalk--name {
+.footer__schalk {
   cursor: pointer;
+}
+.footer__schalk--name {
+  margin-left: 0.25rem;
 }
 
 .header {
@@ -2171,33 +2181,53 @@ body {
 }
 .contactUsSection__googleMaps {
   width: 100%;
+  height: 45vh;
 }
-@media (min-width: 56.25em) {
-  .contactUsSection__googleMaps {
-    height: 28vw;
-  }
+.contactUsSection__gpsAddress {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+  margin: 0 auto 5rem;
+  max-width: 45rem;
 }
-.contactUsSection__contactMessageForm {
-  padding-bottom: 4rem;
-  margin: 0 auto;
-  width: min(45rem, 100%);
-}
-.contactUsSection__contactMessageForm > *:first-child {
-  margin-bottom: 3rem;
-}
-@media (min-width: 37.5em) {
-  .contactUsSection__contactMessageForm > *:first-child {
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 37.5em) {
-  .contactUsSection__contactMessageForm {
+@media (min-width: 600px) {
+  .contactUsSection__gpsAddress {
     min-width: 100%;
   }
 }
 @media (min-width: 56.25em) {
-  .contactUsSection__contactMessageForm {
+  .contactUsSection__gpsAddress {
     min-width: 45%;
+  }
+}
+.contactUsSection__gpsAddressDetails > * {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 600px) {
+  .contactUsSection__gpsAddressDetails > * {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .contactUsSection__gpsAddressDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .contactUsSection__gpsAddressDetails > * {
+    margin-right: 4rem;
+  }
+}
+.contactUsSection .paragraph--gpsAddressParDetails {
+  cursor: pointer;
+}
+@media (min-width: 56.25em) {
+  .contactUsSection .paragraph--gpsAddressIntro {
+    margin-top: 1.15rem;
   }
 }
 

@@ -52,7 +52,13 @@
         }
     }
 
-    &__schalk--name {
+    &__schalk {
         cursor: pointer;
+    }
+
+    &__schalk--name {
+
+        margin-left:.25rem;
+        
     }
 }

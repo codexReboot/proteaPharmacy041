@@ -277,11 +277,11 @@ body {
 		}
 	}
 
-	&--tradingHoursIntro {
+	&--tradingHoursIntro, &--gpsAddressIntro {
 	
 	}
 
-	&--tradingHoursWeekday {
+	&--tradingHoursWeekday, &--gpsAddressParHeading {
 		font-family: 'Montserrat', sans-serif;
 		color: $cf-darkGreen;
 		font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
@@ -292,9 +292,14 @@ body {
 		}
 	}
 
-	&--tradingHoursTimes {
+	&--tradingHoursTimes, &--gpsAddressParDetails {
 		font-weight: 700;
 	}
+
+	&--gpsAddressParDetails {
+		text-decoration: underline 2px;
+		text-underline-offset: 3px;
+	} 
 
 	&--contactForm {
 		font-weight: 900;
@@ -393,6 +398,10 @@ body {
 			text-underline-offset: 3px;
 		}
 	}
+
+	&__schalk--name, &__schalk--arrow {
+        color: $cf-white;
+    }
 }
 
 .termsAndConditions {
