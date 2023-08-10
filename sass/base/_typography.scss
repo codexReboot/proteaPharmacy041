@@ -148,7 +148,7 @@ body {
 		}
 	}
 
-	&__headingH4--slide {
+	&__headingH4--slide, &__headingH4--cardPhoto {
 		color: $cf-darkGreen;
 		text-transform: uppercase;
 		text-align: left;
@@ -179,7 +179,7 @@ body {
 		}
 	}
 
-	&__headingH5--slide {
+	&__headingH5--slide, &__headingH5--cardPhoto {
 		color: $cf-green;
 		text-transform: lowercase;
 		text-align: left;

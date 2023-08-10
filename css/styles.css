@@ -321,7 +321,7 @@ body {
     font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
   }
 }
-.headingH4Container__headingH4--slide {
+.headingH4Container__headingH4--slide, .headingH4Container__headingH4--cardPhoto {
   color: #225f01;
   text-transform: uppercase;
   text-align: left;
@@ -351,7 +351,7 @@ body {
     font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
   }
 }
-.headingH5Container__headingH5--slide {
+.headingH5Container__headingH5--slide, .headingH5Container__headingH5--cardPhoto {
   color: #6CB347;
   text-transform: lowercase;
   text-align: left;
@@ -1282,6 +1282,10 @@ body {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, rgba(108, 179, 71, 0.4) 15%, #6cb347 40%, #3E6629, #6cb347 60%, rgba(108, 179, 71, 0.4) 85%, transparent);
+}
+
+.displayNone {
+  display: none;
 }
 
 .promotionContainer {
