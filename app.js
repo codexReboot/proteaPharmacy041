@@ -115,40 +115,40 @@ rightArrBtn.addEventListener('click', ()=> {
 // product carousel
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const products = document.querySelectorAll('.product');
-let productIndex = 0;
+// const products = document.querySelectorAll('.product');
+// let productIndex = 0;
 
-function animateProducts() {
-  products[productIndex].classList.remove('promotionContainer__displayNone');
-  products[productIndex].classList.add('promotionContainer__displayBlock');
-  products[productIndex].classList.add('animateProduct');
-  productIndex++;
-}
+// function animateProducts() {
+//   products[productIndex].classList.remove('promotionContainer__displayNone');
+//   products[productIndex].classList.add('promotionContainer__displayBlock');
+//   products[productIndex].classList.add('animateProduct');
+//   productIndex++;
+// }
 
-products[productIndex].classList.remove('promotionContainer__displayNone');
-products[productIndex].classList.add('promotionContainer__displayBlock');
-products[productIndex].classList.add('animateProduct');
-productIndex++;
+// products[productIndex].classList.remove('promotionContainer__displayNone');
+// products[productIndex].classList.add('promotionContainer__displayBlock');
+// products[productIndex].classList.add('animateProduct');
+// productIndex++;
 
-setInterval(() => {
-    if(productIndex === 10) {
-        products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
-        products[productIndex - 1].classList.add('promotionContainer__displayNone');
-        products[productIndex - 1].classList.remove('animateProduct');
-        productIndex = 0;
-    }
-    if(productIndex === 0) {
-        products[productIndex].classList.remove('promotionContainer__displayNone');
-        products[productIndex].classList.add('promotionContainer__displayBlock');
-        products[productIndex].classList.add('animateProduct');
-        productIndex++;
-    } else {
-        products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
-        products[productIndex - 1].classList.add('promotionContainer__displayNone');
-        products[productIndex - 1].classList.remove('animateProduct');
-        animateProducts();
-    }
-}, 6000);
+// setInterval(() => {
+//     if(productIndex === 10) {
+//         products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
+//         products[productIndex - 1].classList.add('promotionContainer__displayNone');
+//         products[productIndex - 1].classList.remove('animateProduct');
+//         productIndex = 0;
+//     }
+//     if(productIndex === 0) {
+//         products[productIndex].classList.remove('promotionContainer__displayNone');
+//         products[productIndex].classList.add('promotionContainer__displayBlock');
+//         products[productIndex].classList.add('animateProduct');
+//         productIndex++;
+//     } else {
+//         products[productIndex - 1].classList.remove('promotionContainer__displayBlock');
+//         products[productIndex - 1].classList.add('promotionContainer__displayNone');
+//         products[productIndex - 1].classList.remove('animateProduct');
+//         animateProducts();
+//     }
+// }, 6000);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // Terms and Conditions pop-up logic
