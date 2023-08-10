@@ -30,86 +30,86 @@ const hero = document.querySelector('.heroSection');
 // imageSlider variables
 ///////////////////////////////////////////////////////////////////////////////////////
 
-const slides = document.querySelectorAll('.imageSlider__slide');
-const index = document.querySelectorAll('.imageSlider__index');
-const leftArrBtn = document.querySelector('.imageSlider__leftArrBtnContainer');
-const rightArrBtn = document.querySelector('.imageSlider__rightArrBtnContainer');
+// const slides = document.querySelectorAll('.imageSlider__slide');
+// const index = document.querySelectorAll('.imageSlider__index');
+// const leftArrBtn = document.querySelector('.imageSlider__leftArrBtnContainer');
+// const rightArrBtn = document.querySelector('.imageSlider__rightArrBtnContainer');
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // imageSlider animation and navigation logic
 ////////////////////////////////////////////////////////////////////////////////////////
 
-let slideIndex = 0
+// let slideIndex = 0
 
-index[0].style.backgroundColor = "#63d426";
-index[0].style.border = "1px solid #44c300";
+// index[0].style.backgroundColor = "#63d426";
+// index[0].style.border = "1px solid #44c300";
 
 
-leftArrBtn.addEventListener('click', ()=> {
-    if(slideIndex < 0) {
-        slideIndex = 14;
-    }
-    slides[slideIndex].classList.remove('animateSlideMifL');
-    slides[slideIndex].classList.remove('animateSlideMifR');
-    slides[slideIndex].classList.add('animateSlideMotR');
+// leftArrBtn.addEventListener('click', ()=> {
+//     if(slideIndex < 0) {
+//         slideIndex = 14;
+//     }
+//     slides[slideIndex].classList.remove('animateSlideMifL');
+//     slides[slideIndex].classList.remove('animateSlideMifR');
+//     slides[slideIndex].classList.add('animateSlideMotR');
 
-    index[slideIndex].style.backgroundColor = "#012e4c";
-    index[slideIndex].style.border = "1px solid #012e4c";
+//     index[slideIndex].style.backgroundColor = "#012e4c";
+//     index[slideIndex].style.border = "1px solid #012e4c";
 
-    setTimeout(() => {
-        slides[slideIndex].classList.add('displayNone');
-        index[slideIndex].style.backgroundColor = "#012e4c";
-        index[slideIndex].style.border = "1px solid #012e4c";
-    }, 1000);
-    setTimeout(() => {
-        if(slideIndex === 0) {
-            slideIndex = 15;
-        }
-        slides[slideIndex - 1].classList.remove('animateSlideMotR');
-        slides[slideIndex - 1].classList.remove('animateSlideMotL');
-        slides[slideIndex - 1].classList.remove('displayNone');
-        slides[slideIndex - 1].classList.add('displayBlock');
-        slides[slideIndex - 1].classList.add('animateSlideMifL');
+//     setTimeout(() => {
+//         slides[slideIndex].classList.add('displayNone');
+//         index[slideIndex].style.backgroundColor = "#012e4c";
+//         index[slideIndex].style.border = "1px solid #012e4c";
+//     }, 1000);
+//     setTimeout(() => {
+//         if(slideIndex === 0) {
+//             slideIndex = 15;
+//         }
+//         slides[slideIndex - 1].classList.remove('animateSlideMotR');
+//         slides[slideIndex - 1].classList.remove('animateSlideMotL');
+//         slides[slideIndex - 1].classList.remove('displayNone');
+//         slides[slideIndex - 1].classList.add('displayBlock');
+//         slides[slideIndex - 1].classList.add('animateSlideMifL');
 
-        index[slideIndex - 1].style.backgroundColor = "#63d426";
-        index[slideIndex - 1].style.border = "1px solid #44c300";
+//         index[slideIndex - 1].style.backgroundColor = "#63d426";
+//         index[slideIndex - 1].style.border = "1px solid #44c300";
 
-        slideIndex -= 1;
-    }, 1001);
-});
+//         slideIndex -= 1;
+//     }, 1001);
+// });
 
-rightArrBtn.addEventListener('click', ()=> {
-    if(slideIndex > 14) {
-        slideIndex = 0;
-    }
-    slides[slideIndex].classList.remove('animateSlideMifL');
-    slides[slideIndex].classList.remove('animateSlideMifR');
-    slides[slideIndex].classList.add('animateSlideMotL');
+// rightArrBtn.addEventListener('click', ()=> {
+//     if(slideIndex > 14) {
+//         slideIndex = 0;
+//     }
+//     slides[slideIndex].classList.remove('animateSlideMifL');
+//     slides[slideIndex].classList.remove('animateSlideMifR');
+//     slides[slideIndex].classList.add('animateSlideMotL');
 
-    index[slideIndex].style.backgroundColor = "#012e4c";
-    index[slideIndex].style.border = "1px solid #012e4c";
+//     index[slideIndex].style.backgroundColor = "#012e4c";
+//     index[slideIndex].style.border = "1px solid #012e4c";
 
-    setTimeout(() => {
-        slides[slideIndex].classList.add('displayNone');
-        index[slideIndex].style.backgroundColor = "#012e4c";
-        index[slideIndex].style.border = "1px solid #012e4c";
-    }, 1000);
-    setTimeout(() => {
-        if(slideIndex === 14) {
-            slideIndex = -1;
-        }
-        slides[slideIndex + 1].classList.remove('animateSlideMotL');
-        slides[slideIndex + 1].classList.remove('animateSlideMotR');
-        slides[slideIndex + 1].classList.remove('displayNone');
-        slides[slideIndex + 1].classList.add('displayBlock');
-        slides[slideIndex + 1].classList.add('animateSlideMifR');
+//     setTimeout(() => {
+//         slides[slideIndex].classList.add('displayNone');
+//         index[slideIndex].style.backgroundColor = "#012e4c";
+//         index[slideIndex].style.border = "1px solid #012e4c";
+//     }, 1000);
+//     setTimeout(() => {
+//         if(slideIndex === 14) {
+//             slideIndex = -1;
+//         }
+//         slides[slideIndex + 1].classList.remove('animateSlideMotL');
+//         slides[slideIndex + 1].classList.remove('animateSlideMotR');
+//         slides[slideIndex + 1].classList.remove('displayNone');
+//         slides[slideIndex + 1].classList.add('displayBlock');
+//         slides[slideIndex + 1].classList.add('animateSlideMifR');
 
-        index[slideIndex + 1].style.backgroundColor = "#63d426";
-        index[slideIndex + 1].style.border = "1px solid #44c300"
+//         index[slideIndex + 1].style.backgroundColor = "#63d426";
+//         index[slideIndex + 1].style.border = "1px solid #44c300"
 
-        slideIndex += 1;
-    }, 1001);
-});
+//         slideIndex += 1;
+//     }, 1001);
+// });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // product carousel
