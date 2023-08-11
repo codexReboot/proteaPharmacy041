@@ -148,8 +148,17 @@ body {
 		}
 	}
 
-	&__headingH4--slide, &__headingH4--cardPhoto {
+	&__headingH4--slide {
 		color: $cf-darkGreen;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	&__headingH4--cardPhoto {
+		color: $cf-white;
+		font-size: .85rem;
+		font-weight: 600;
+		letter-spacing: 0px;
 		text-transform: uppercase;
 		text-align: left;
 	}
@@ -179,9 +188,18 @@ body {
 		}
 	}
 
-	&__headingH5--slide, &__headingH5--cardPhoto {
+	&__headingH5--slide {
 		color: $cf-green;
 		text-transform: lowercase;
+		text-align: left;
+	}
+
+	&__headingH5--cardPhoto {
+		color: $cf-lightGrey;
+		font-size: .70rem;
+		font-weight: 600;
+		letter-spacing: 0px;
+		text-transform: uppercase;
 		text-align: left;
 	}
 }
