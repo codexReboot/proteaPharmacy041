@@ -57,5 +57,9 @@ $mb-h4: 1rem;
 $mb-p: 1rem;
 
 
+// linear-gradient
+$lingrad-cardPhotoBg: linear-gradient(155deg, rgba($cp-darkGreen, 1) 5%, rgba($cp-green, 1) 35%, rgba($cp-white, 1) 75%);
+$lingrad-cardPhotoOl: linear-gradient(0deg, rgba($cp-dark, .75) 8%, rgba($cp-dark, .45) 25%, transparent 50%);
+
 
 
