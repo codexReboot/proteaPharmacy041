@@ -321,8 +321,16 @@ body {
     font-size: clamp(calc(.9rem + 1vw), 2.3vh, calc(1.4rem + 1vw));
   }
 }
-.headingH4Container__headingH4--slide, .headingH4Container__headingH4--cardPhoto {
+.headingH4Container__headingH4--slide {
   color: #225f01;
+  text-transform: uppercase;
+  text-align: left;
+}
+.headingH4Container__headingH4--cardPhoto {
+  color: #f0f0f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -351,9 +359,17 @@ body {
     font-size: clamp(calc(.8rem + 1vw), 2.2vh, calc(1.3rem + 1vw));
   }
 }
-.headingH5Container__headingH5--slide, .headingH5Container__headingH5--cardPhoto {
+.headingH5Container__headingH5--slide {
   color: #6CB347;
   text-transform: lowercase;
+  text-align: left;
+}
+.headingH5Container__headingH5--cardPhoto {
+  color: #d7d7d7;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-transform: uppercase;
   text-align: left;
 }
 
@@ -1282,6 +1298,20 @@ body {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, rgba(108, 179, 71, 0.4) 15%, #6cb347 40%, #3E6629, #6cb347 60%, rgba(108, 179, 71, 0.4) 85%, transparent);
+}
+
+.photoCollage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 25vw);
+  gap: 1rem;
+  background-color: #bfbfbf;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.photoCollage__cardPhoto {
+  background-color: blue;
 }
 
 .displayNone {
