@@ -328,11 +328,16 @@ body {
 }
 .headingH4Container__headingH4--cardPhoto {
   color: #f0f0f0;
-  font-size: clamp(1.15rem, 2.5vw, 2.15rem);
+  font-size: clamp(1.15rem, 2.15vw, 2.15rem);
   font-weight: 600;
   letter-spacing: 0px;
   text-transform: uppercase;
   text-align: left;
+}
+@media (min-width: 56.25em) {
+  .headingH4Container__headingH4--cardPhoto {
+    font-size: clamp(.35rem, 1.85vw, 1.35rem);
+  }
 }
 
 .headingH5Container {
@@ -366,11 +371,16 @@ body {
 }
 .headingH5Container__headingH5--cardPhoto {
   color: #d7d7d7;
-  font-size: clamp(1rem, 2.25vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   font-weight: 600;
   letter-spacing: 0px;
   text-transform: uppercase;
   text-align: left;
+}
+@media (min-width: 56.25em) {
+  .headingH5Container__headingH5--cardPhoto {
+    font-size: clamp(.20rem, 1.70vw, 1.20rem);
+  }
 }
 
 .headingSlideContainer {
@@ -1307,11 +1317,44 @@ body {
 .photoCollage {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 50vw repeat(5, 30vw);
-  gap: 1rem;
+  grid-template-rows: repeat(2, 100vw) repeat(7, 50vw);
+  gap: 2rem;
   width: 100%;
   height: 100%;
   padding: 1rem;
+  margin: 0 auto;
+}
+@media (min-width: 320px) {
+  .photoCollage {
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(2, 32rem) repeat(7, 16.5rem);
+    width: min(100%, 30rem);
+    margin: 0 auto;
+  }
+}
+@media (min-width: 37.5em) {
+  .photoCollage {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 50vw) repeat(7, 25vw);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 56.25em) {
+  .photoCollage {
+    grid-template-columns: repeat(6, clamp(11rem, 13vw, 15rem));
+    grid-template-rows: repeat(5, clamp(15rem, 17vw, 19rem));
+    width: min(100%, 90rem);
+    margin: 0 auto 0 0;
+  }
+}
+@media (min-width: 75em) {
+  .photoCollage {
+    grid-template-columns: repeat(8, clamp(10rem, 10vw, 14rem));
+    grid-template-rows: repeat(5, clamp(14rem, 14vw, 18rem));
+    width: min(100%, 90rem);
+    margin: 0 auto 0 0;
+  }
 }
 .photoCollage__cardPhoto {
   display: flex;
@@ -1326,78 +1369,264 @@ body {
 }
 .photoCollage__cardPhoto--photo1 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyPieterJones11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
+  grid-column: 1/-1;
   grid-row: 1/span 1;
 }
 .photoCollage__cardPhoto--photo2 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyCornellLaurens04July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 1/span 1;
+  grid-column: 1/-1;
+  grid-row: 2/span 1;
 }
 .photoCollage__cardPhoto--photo3 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyPharmacistNinaBriel26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 2;
-  grid-row: 2/span 1;
+  grid-column: 1/span 3;
+  grid-row: 3/span 1;
 }
 .photoCollage__cardPhoto--photo4 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyAnzelleBritz26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 3/span 2;
-  grid-row: 2/span 1;
+  grid-column: 4/span 3;
+  grid-row: 3/span 1;
 }
 .photoCollage__cardPhoto--photo5 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyCorneOlivier26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 5/span 2;
-  grid-row: 2/span 1;
+  grid-column: 1/span 3;
+  grid-row: 4/span 1;
 }
 .photoCollage__cardPhoto--photo6 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/Avatar.png"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 2;
-  grid-row: 3/span 1;
+  grid-column: 4/span 3;
+  grid-row: 4/span 1;
 }
 .photoCollage__cardPhoto--photo7 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyRinaPotgieter11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 3/span 2;
-  grid-row: 3/span 1;
+  grid-column: 1/span 3;
+  grid-row: 5/span 1;
 }
 .photoCollage__cardPhoto--photo8 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyLudwigKieck11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 5/span 2;
-  grid-row: 3/span 1;
+  grid-column: 4/span 3;
+  grid-row: 5/span 1;
 }
 .photoCollage__cardPhoto--photo9 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyStephnieEngelbrecht11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 2;
-  grid-row: 4/span 1;
+  grid-column: 1/span 3;
+  grid-row: 6/span 1;
 }
 .photoCollage__cardPhoto--photo10 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacySindyFourie11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 3/span 2;
-  grid-row: 4/span 1;
+  grid-column: 4/span 3;
+  grid-row: 6/span 1;
 }
 .photoCollage__cardPhoto--photo11 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyMarlyneSethole26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 5/span 2;
-  grid-row: 4/span 1;
+  grid-column: 1/span 3;
+  grid-row: 7/span 1;
 }
 .photoCollage__cardPhoto--photo12 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyPietMogale26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 2;
-  grid-row: 5/span 1;
+  grid-column: 4/span 3;
+  grid-row: 7/span 1;
 }
 .photoCollage__cardPhoto--photo13 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyJohannaMoshokwa11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 3/span 2;
-  grid-row: 5/span 1;
+  grid-column: 1/span 3;
+  grid-row: 8/span 1;
 }
 .photoCollage__cardPhoto--photo14 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyAfrikaMaluleke11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 5/span 2;
-  grid-row: 5/span 1;
+  grid-column: 4/span 3;
+  grid-row: 8/span 1;
 }
 .photoCollage__cardPhoto--photo15 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacySammyMogale26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 2;
-  grid-row: 6/span 1;
+  grid-column: 1/span 3;
+  grid-row: 9/span 1;
+}
+@media (min-width: 37.5em) {
+  .photoCollage__cardPhoto--photo1 {
+    grid-column: 1/span 3;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo2 {
+    grid-column: 4/span 3;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo3 {
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo4 {
+    grid-column: 3/span 2;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo5 {
+    grid-column: 5/span 2;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo6 {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo7 {
+    grid-column: 3/span 2;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo8 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo9 {
+    grid-column: 1/span 2;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhoto--photo10 {
+    grid-column: 3/span 2;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhoto--photo11 {
+    grid-column: 5/span 2;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhoto--photo12 {
+    grid-column: 1/span 2;
+    grid-row: 5/span 1;
+  }
+  .photoCollage__cardPhoto--photo13 {
+    grid-column: 3/span 2;
+    grid-row: 5/span 1;
+  }
+  .photoCollage__cardPhoto--photo14 {
+    grid-column: 5/span 2;
+    grid-row: 5/span 1;
+  }
+  .photoCollage__cardPhoto--photo15 {
+    grid-column: 1/span 2;
+    grid-row: 6/span 1;
+  }
+}
+@media (min-width: 56.25em) {
+  .photoCollage__cardPhoto--photo1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhoto--photo2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhoto--photo3 {
+    grid-column: 5/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo4 {
+    grid-column: 6/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo5 {
+    grid-column: 5/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo6 {
+    grid-column: 6/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo7 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo8 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo9 {
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo10 {
+    grid-column: 4/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo11 {
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhoto--photo12 {
+    grid-column: 5/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo13 {
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhoto--photo14 {
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhoto--photo15 {
+    grid-column: 6/span 1;
+    grid-row: 3/span 1;
+  }
+}
+@media (min-width: 75em) {
+  .photoCollage__cardPhoto--photo1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhoto--photo2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhoto--photo3 {
+    grid-column: 5/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo4 {
+    grid-column: 6/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo5 {
+    grid-column: 7/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo6 {
+    grid-column: 8/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhoto--photo7 {
+    grid-column: 5/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo8 {
+    grid-column: 6/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo9 {
+    grid-column: 7/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo10 {
+    grid-column: 8/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhoto--photo11 {
+    grid-column: 5/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo12 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo13 {
+    grid-column: 4/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo14 {
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhoto--photo15 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+  }
 }
 
 .displayNone {

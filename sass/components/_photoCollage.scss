@@ -6,16 +6,47 @@
     display: grid;
     
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50vw repeat(5, 30vw);
+    grid-template-rows: repeat(2, 100vw) repeat(7, 50vw);
 
-    gap: 1rem;
+    gap: 2rem;
     
     width: 100%;
     height: 100%;
 
     padding: 1rem;
-    
-    
+    margin: 0 auto;
+
+    @media (min-width: 320px) {
+        grid-template-columns: repeat(6, 3rem);
+        grid-template-rows: repeat(2, 32rem) repeat(7, 16.5rem);
+
+        width: min(100%, 30rem); 
+        margin: 0 auto;   
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 50vw) repeat(7, 25vw);
+
+        width: 100%;
+        margin: 0 auto;   
+    }
+
+    @include respond(tab-land) {
+        grid-template-columns: repeat(6, clamp(11rem, 13vw, 15rem));
+        grid-template-rows: repeat(5, clamp(15rem, 17vw,  19rem));
+
+        width: min(100%, 90rem); 
+        margin: 0 auto 0 0; 
+    }
+
+    @include respond(desk) {
+        grid-template-columns: repeat(8, clamp(10rem, 10vw, 14rem));
+        grid-template-rows: repeat(5, clamp(14rem, 14vw,  18rem));
+
+        width: min(100%, 90rem); 
+        margin: 0 auto 0 0; 
+    }
 
     &__cardPhoto {
         display: flex;
@@ -37,101 +68,334 @@
     &__cardPhoto--photo1 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyPieterJones11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 1 / span 3;
+        grid-column: 1 / -1;
         grid-row: 1 / span 1;
     }
 
     &__cardPhoto--photo2 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyCornellLaurens04July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 4 / span 3;
-        grid-row: 1 / span 1; 
+        grid-column: 1 / -1;
+        grid-row: 2 / span 1; 
     }
 
     &__cardPhoto--photo3 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyPharmacistNinaBriel26June2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 1 / span 2;
-        grid-row: 2 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1; 
     }
 
     &__cardPhoto--photo4 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyAnzelleBritz26June2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 3 / span 2;
-        grid-row: 2 / span 1; 
+        grid-column: 4 / span 3;
+        grid-row: 3 / span 1; 
     }
 
     &__cardPhoto--photo5 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyCorneOlivier26June2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 5 / span 2;
-        grid-row: 2 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1; 
     }
 
     &__cardPhoto--photo6 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/Avatar.png"), $lingrad-cardPhotoBg;
     
-        grid-column: 1 / span 2;
-        grid-row: 3 / span 1; 
+        grid-column: 4 / span 3;
+        grid-row: 4 / span 1; 
     }
     &__cardPhoto--photo7 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyRinaPotgieter11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 3 / span 2;
-        grid-row: 3 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 1; 
     }
     &__cardPhoto--photo8 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyLudwigKieck11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 5 / span 2;
-        grid-row: 3 / span 1; 
+        grid-column: 4 / span 3;
+        grid-row: 5 / span 1; 
     }
 
     &__cardPhoto--photo9 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyStephnieEngelbrecht11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 1 / span 2;
-        grid-row: 4 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 6 / span 1; 
     }
     &__cardPhoto--photo10 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacySindyFourie11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 3 / span 2;
-        grid-row: 4 / span 1; 
+        grid-column: 4 / span 3;
+        grid-row: 6 / span 1; 
     }
     &__cardPhoto--photo11 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyMarlyneSethole26June2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 5 / span 2;
-        grid-row: 4 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 7 / span 1; 
     }
 
     &__cardPhoto--photo12 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyPietMogale26June2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 1 / span 2;
-        grid-row: 5 / span 1; 
+        grid-column: 4 / span 3;
+        grid-row: 7 / span 1; 
     }
     &__cardPhoto--photo13 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyJohannaMoshokwa11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 3 / span 2;
-        grid-row: 5 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 8 / span 1; 
     }
     &__cardPhoto--photo14 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacyAfrikaMaluleke11July2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 5 / span 2;
-        grid-row: 5 / span 1; 
+        grid-column: 4 / span 3;
+        grid-row: 8 / span 1; 
     }
 
     &__cardPhoto--photo15 {
         background-image: $lingrad-cardPhotoOl, url("../../img/staff/ProteaPharmacySammyMogale26June2023.webp"), $lingrad-cardPhotoBg;
     
-        grid-column: 1 / span 2;
-        grid-row: 6 / span 1; 
+        grid-column: 1 / span 3;
+        grid-row: 9 / span 1; 
     }
+
+    @include respond(tab-port) {
+        &__cardPhoto--photo1 {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo2 {
+            grid-column: 4 / span 3;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo3 {
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo4 {
+            grid-column: 3 / span 2;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo5 {
+            grid-column: 5 / span 2;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo6 {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo7 {
+            grid-column: 3 / span 2;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo8 {
+            grid-column: 5 / span 2;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo9 {
+            grid-column: 1 / span 2;
+            grid-row: 4 / span 1; 
+        }
+
+        &__cardPhoto--photo10 {
+            grid-column: 3 / span 2;
+            grid-row: 4 / span 1; 
+        }
+
+        &__cardPhoto--photo11 {
+            grid-column: 5 / span 2;
+            grid-row: 4 / span 1; 
+        }
+
+        &__cardPhoto--photo12 {
+            grid-column: 1 / span 2;
+            grid-row: 5 / span 1; 
+        }
+
+        &__cardPhoto--photo13 {
+            grid-column: 3 / span 2;
+            grid-row: 5 / span 1; 
+        }
+
+        &__cardPhoto--photo14 {
+            grid-column: 5 / span 2;
+            grid-row: 5 / span 1; 
+        }
+
+        &__cardPhoto--photo15 {
+            grid-column: 1 / span 2;
+            grid-row: 6 / span 1; 
+        }   
+    }
+
+    @include respond(tab-land) {
+        &__cardPhoto--photo1 {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2; 
+        }
+
+        &__cardPhoto--photo2 {
+            grid-column: 3 / span 2;
+            grid-row: 1 / span 2; 
+        }
+
+        &__cardPhoto--photo3 {
+            grid-column: 5 / span 1;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo4 {
+            grid-column: 6 / span 1;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo5 {
+            grid-column: 5 / span 1;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo6 {
+            grid-column: 6 / span 1;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo7 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo8 {
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo9 {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo10 {
+            grid-column: 4 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo11 {
+            grid-column: 3 / span 1;
+            grid-row: 4 / span 1; 
+        }
+
+        &__cardPhoto--photo12 {
+            grid-column: 5 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo13 {
+            grid-column: 2 / span 1;
+            grid-row: 4 / span 1; 
+        }
+
+        &__cardPhoto--photo14 {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1; 
+        }
+
+        &__cardPhoto--photo15 {
+            grid-column: 6 / span 1;
+            grid-row: 3 / span 1; 
+        }   
+    }
+
+    @include respond(desk) {
+        &__cardPhoto--photo1 {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2; 
+        }
+
+        &__cardPhoto--photo2 {
+            grid-column: 3 / span 2;
+            grid-row: 1 / span 2; 
+        }
+
+        &__cardPhoto--photo3 {
+            grid-column: 5 / span 1;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo4 {
+            grid-column: 6 / span 1;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo5 {
+            grid-column: 7 / span 1;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo6 {
+            grid-column: 8 / span 1;
+            grid-row: 1 / span 1; 
+        }
+
+        &__cardPhoto--photo7 {
+            grid-column: 5 / span 1;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo8 {
+            grid-column: 6 / span 1;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo9 {
+            grid-column: 7 / span 1;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo10 {
+            grid-column: 8 / span 1;
+            grid-row: 2 / span 1; 
+        }
+
+        &__cardPhoto--photo11 {
+            grid-column: 5 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo12 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo13 {
+            grid-column: 4 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo14 {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhoto--photo15 {
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1; 
+        }   
+    }
+
+
 
 }
 
