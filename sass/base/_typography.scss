@@ -345,6 +345,15 @@ body {
 	&--primary-white {
 		color: $cf-darkGreen;
 	}
+
+	&--cardPhotoBtn {
+		color: $cf-white;
+		font-size: clamp(1rem, 2vw, 2rem);
+
+		@include respond(tab-land) {
+			font-size: clamp(.20rem, 1.70vw, 1.20rem);
+		}
+	}
 }
 
 .navList {

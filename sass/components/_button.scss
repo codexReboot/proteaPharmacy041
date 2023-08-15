@@ -48,14 +48,27 @@
     &--cardPhotoBtn {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
         gap: .5rem;
 
-        background-color: rgba($cp-white, .15);
-        
-        margin-bottom: .45rem;
-        padding: .5em .75em;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+
+        width: fit-content;
+
+        padding: 0 0 .25rem;
+        margin: 0 auto 0 0;
+
+        cursor: pointer;
+        backface-visibility: hidden;
+        transition: all .2s;
+    }
+
+    &--cardPhotoBtn:hover {
+        box-shadow: none;
     }
 
 }
