@@ -1628,6 +1628,17 @@ body {
     grid-row: 3/span 1;
   }
 }
+.photoCollage__icon {
+  width: 1rem;
+  height: 1rem;
+}
+.photoCollage__icon2 {
+  width: 1rem;
+  height: 1rem;
+}
+.photoCollage button {
+  background-color: transparent;
+}
 
 .displayNone {
   display: none;
