@@ -396,17 +396,8 @@
     }
 
     &__icon {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    &__icon2 {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    button {
-        background-color: transparent;
+        height: clamp(calc(1.2rem + 1vw), 1.6vh, calc(2.5rem + 1vw));
+        width: clamp(calc(1.2rem + 1vw), 1.6vh, calc(2.5rem + 1vw));
     }
 
 

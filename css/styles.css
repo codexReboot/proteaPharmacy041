@@ -659,6 +659,16 @@ body {
 .btn--primary-white {
   background-color: rgba(240, 240, 240, 0.85);
 }
+.btn--cardPhotoBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(240, 240, 240, 0.15);
+  margin-bottom: 0.45rem;
+  padding: 0.5em 0.75em;
+}
+
 .cardPortfolio {
   background-color: #012e4c;
   border-radius: 0.25rem;
@@ -1629,15 +1639,8 @@ body {
   }
 }
 .photoCollage__icon {
-  width: 1rem;
-  height: 1rem;
-}
-.photoCollage__icon2 {
-  width: 1rem;
-  height: 1rem;
-}
-.photoCollage button {
-  background-color: transparent;
+  height: clamp(calc(1.2rem + 1vw), 1.6vh, calc(2.5rem + 1vw));
+  width: clamp(calc(1.2rem + 1vw), 1.6vh, calc(2.5rem + 1vw));
 }
 
 .displayNone {
