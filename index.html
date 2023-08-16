@@ -445,7 +445,9 @@
 
         <main class="main">
 
-            <section class="main__promotionSection promotionSection">
+            <!-- Promotion Section ONLY visible during promotion period -->
+
+            <!-- <section class="main__promotionSection promotionSection">
 
                 <div class="promotionSection__headingH2Container headingH2Container--promotion headingH2Container">
                     <div id="about" class="linkDiv"></div>
@@ -470,7 +472,7 @@
 
                 </div>
 
-            </section>
+            </section> -->
 
             <section class="main__aboutSection aboutSection">
 
@@ -2395,26 +2397,6 @@
         <!-- import an external script app.js -->
         <script src="app.js"></script>
 
-        <!-- import smtpjs.com api -->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-        <script>
-
-            function sendEmail() {
-                Email.send({
-                    SecureToken: "############################",
-                    To: 'schalk@schalkvandyk.com',
-                    From: 'schalk@schalkvandyk.com',
-                    Subject: "New Contact Form Enquiry",
-                    Body: "Name: " + document.getElementById("fullName").value
-                        + "<br> Email: " + document.getElementById("email").value
-                        + "<br> Subject: " + document.getElementById("subject").value
-                        + "<br> Message: " + document.getElementById("message").value
-                }).then(
-                    message => alert("Message sent successfully. Thank you.")
-                );
-            }
-        </script>
     </body>
 
 </html>
