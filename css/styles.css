@@ -489,6 +489,51 @@ body {
   font-weight: 900;
   text-align: left;
 }
+.paragraph--photoCollageCard {
+  color: #f0f0f0;
+  font-size: clamp(.8rem, 2.7vw, .9rem);
+  text-align: left;
+}
+@media (min-width: 37.5em) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.75rem, 1.5vw, .85rem);
+  }
+}
+@media (min-width: 650px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.85rem, 1.5vw, .95rem);
+  }
+}
+@media (min-width: 700px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.95rem, 1.5vw, .105rem);
+  }
+}
+@media (min-width: 750px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  }
+}
+@media (min-width: 750px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.75rem, 1.5vw, .85rem);
+  }
+}
+@media (min-width: 1000px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.85rem, 1.5vw, .95rem);
+  }
+}
+@media (min-width: 1100px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.95rem, 1.5vw, .105rem);
+  }
+}
+@media (min-width: 1200px) {
+  .paragraph--photoCollageCard {
+    font-size: clamp(.75rem, 1.5vw, .85rem);
+  }
+}
 
 .btn {
   font-size: clamp(calc(1.1rem + 1vw), 2.5vh, calc(1.6rem + 1vw));
@@ -652,8 +697,7 @@ body {
   text-decoration: none;
   transform: translateY(0px);
 }
-.btn:hover {
-  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.55);
+.photoCollage__cardPhoto:hover .btn {
   transform: translateY(-2px);
 }
 .btn:active {
@@ -671,7 +715,7 @@ body {
 .btn--cardPhotoBtn {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 0.5rem;
   background-color: transparent;
   border: none;
@@ -684,7 +728,7 @@ body {
   backface-visibility: hidden;
   transition: all 0.2s;
 }
-.btn--cardPhotoBtn:hover {
+.btn--cardPhoto:hover .btn__cardPhotoBtn {
   box-shadow: none;
 }
 
@@ -1385,16 +1429,296 @@ body {
     margin: 0 auto 0 0;
   }
 }
+.photoCollage__cardPhotoContainer {
+  perspective: 1200px;
+}
+.photoCollage__cardPhotoContainer--container1 {
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
+}
+.photoCollage__cardPhotoContainer--container2 {
+  grid-column: 1/-1;
+  grid-row: 2/span 1;
+}
+.photoCollage__cardPhotoContainer--container3 {
+  grid-column: 1/span 3;
+  grid-row: 3/span 1;
+}
+.photoCollage__cardPhotoContainer--container4 {
+  grid-column: 4/span 3;
+  grid-row: 3/span 1;
+}
+.photoCollage__cardPhotoContainer--container5 {
+  grid-column: 1/span 3;
+  grid-row: 4/span 1;
+}
+.photoCollage__cardPhotoContainer--container6 {
+  grid-column: 4/span 3;
+  grid-row: 4/span 1;
+}
+.photoCollage__cardPhotoContainer--container7 {
+  grid-column: 1/span 3;
+  grid-row: 5/span 1;
+}
+.photoCollage__cardPhotoContainer--container8 {
+  grid-column: 4/span 3;
+  grid-row: 5/span 1;
+}
+.photoCollage__cardPhotoContainer--container9 {
+  grid-column: 1/span 3;
+  grid-row: 6/span 1;
+}
+.photoCollage__cardPhotoContainer--container10 {
+  grid-column: 4/span 3;
+  grid-row: 6/span 1;
+}
+.photoCollage__cardPhotoContainer--container11 {
+  grid-column: 1/span 3;
+  grid-row: 7/span 1;
+}
+.photoCollage__cardPhotoContainer--container12 {
+  grid-column: 4/span 3;
+  grid-row: 7/span 1;
+}
+.photoCollage__cardPhotoContainer--container13 {
+  grid-column: 1/span 3;
+  grid-row: 8/span 1;
+}
+.photoCollage__cardPhotoContainer--container14 {
+  grid-column: 4/span 3;
+  grid-row: 8/span 1;
+}
+.photoCollage__cardPhotoContainer--container15 {
+  grid-column: 1/span 3;
+  grid-row: 9/span 1;
+}
+@media (min-width: 37.5em) {
+  .photoCollage__cardPhotoContainer--container1 {
+    grid-column: 1/span 3;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container2 {
+    grid-column: 4/span 3;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container3 {
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container4 {
+    grid-column: 3/span 2;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container5 {
+    grid-column: 5/span 2;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container6 {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container7 {
+    grid-column: 3/span 2;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container8 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container9 {
+    grid-column: 1/span 2;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container10 {
+    grid-column: 3/span 2;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container11 {
+    grid-column: 5/span 2;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container12 {
+    grid-column: 1/span 2;
+    grid-row: 5/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container13 {
+    grid-column: 3/span 2;
+    grid-row: 5/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container14 {
+    grid-column: 5/span 2;
+    grid-row: 5/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container15 {
+    grid-column: 1/span 2;
+    grid-row: 6/span 1;
+  }
+}
+@media (min-width: 56.25em) {
+  .photoCollage__cardPhotoContainer--container1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhotoContainer--container2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhotoContainer--container3 {
+    grid-column: 5/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container4 {
+    grid-column: 6/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container5 {
+    grid-column: 5/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container6 {
+    grid-column: 6/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container7 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container8 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container9 {
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container10 {
+    grid-column: 4/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container11 {
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container12 {
+    grid-column: 5/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container13 {
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container14 {
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container15 {
+    grid-column: 6/span 1;
+    grid-row: 3/span 1;
+  }
+}
+@media (min-width: 75em) {
+  .photoCollage__cardPhotoContainer--container1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhotoContainer--container2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+  }
+  .photoCollage__cardPhotoContainer--container3 {
+    grid-column: 5/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container4 {
+    grid-column: 6/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container5 {
+    grid-column: 7/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container6 {
+    grid-column: 8/span 1;
+    grid-row: 1/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container7 {
+    grid-column: 5/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container8 {
+    grid-column: 6/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container9 {
+    grid-column: 7/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container10 {
+    grid-column: 8/span 1;
+    grid-row: 2/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container11 {
+    grid-column: 5/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container12 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container13 {
+    grid-column: 4/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container14 {
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container15 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+  }
+}
 .photoCollage__cardPhoto {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+.photoCollage__cardPhotoFront, .photoCollage__cardPhotoBack {
+  border-radius: 5px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.photoCollage__cardPhotoFront {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  border-radius: 3px;
-  box-shadow: 0 0 9px 2px rgba(30, 32, 32, 0.5);
   background-size: cover;
-  background-position: center;
-  padding: 0.65rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 0.75rem;
+}
+.photoCollage__cardPhotoBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: centers;
+  align-items: flex-start;
+  gap: 0.45rem;
+  padding: 1rem;
+  background-image: linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
+}
+.photoCollage .rotateCard {
+  transform: rotateY(180deg);
+}
+.photoCollage__cardPhotoBack {
+  transform: rotateY(180deg);
 }
 .photoCollage__cardPhotoBtn {
   order: 1;
@@ -1412,275 +1736,59 @@ body {
   transform-origin: center;
   transition: transform 0s;
 }
-.photoCollage__cardPhotoBtn:hover::after {
+.photoCollage__cardPhoto:hover .photoCollage__cardPhotoBtn::after {
   transform: scaleX(1);
   transition: 0.4s ease-in;
 }
-.photoCollage__cardPhotoBtn:hover {
+.photoCollage__cardPhoto:hover {
   animation: animateNavLink 0.4s ease-in 1 forwards;
 }
-.photoCollage__cardPhoto--photo1 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPieterJones11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/-1;
-  grid-row: 1/span 1;
+.photoCollage__cardPhotoFront--photo1 {
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../../img/staff/ProteaPharmacyPieterJones11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
 }
-.photoCollage__cardPhoto--photo2 {
+.photoCollage__cardPhotoFront--photo2 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyCornellLaurens04July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/-1;
-  grid-row: 2/span 1;
 }
-.photoCollage__cardPhoto--photo3 {
+.photoCollage__cardPhotoFront--photo3 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPharmacistNinaBriel26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 3/span 1;
 }
-.photoCollage__cardPhoto--photo4 {
+.photoCollage__cardPhotoFront--photo4 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyAnzelleBritz26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 3/span 1;
 }
-.photoCollage__cardPhoto--photo5 {
+.photoCollage__cardPhotoFront--photo5 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyCorneOlivier26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 4/span 1;
 }
-.photoCollage__cardPhoto--photo6 {
+.photoCollage__cardPhotoFront--photo6 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/Avatar.png"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 4/span 1;
 }
-.photoCollage__cardPhoto--photo7 {
+.photoCollage__cardPhotoFront--photo7 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyRinaPotgieter11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 5/span 1;
 }
-.photoCollage__cardPhoto--photo8 {
+.photoCollage__cardPhotoFront--photo8 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyLudwigKieck11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 5/span 1;
 }
-.photoCollage__cardPhoto--photo9 {
+.photoCollage__cardPhotoFront--photo9 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyStephnieEngelbrecht11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 6/span 1;
 }
-.photoCollage__cardPhoto--photo10 {
+.photoCollage__cardPhotoFront--photo10 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacySindyFourie11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 6/span 1;
 }
-.photoCollage__cardPhoto--photo11 {
+.photoCollage__cardPhotoFront--photo11 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyMarlyneSethole26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 7/span 1;
 }
-.photoCollage__cardPhoto--photo12 {
+.photoCollage__cardPhotoFront--photo12 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPietMogale26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 7/span 1;
 }
-.photoCollage__cardPhoto--photo13 {
+.photoCollage__cardPhotoFront--photo13 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyJohannaMoshokwa11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 8/span 1;
 }
-.photoCollage__cardPhoto--photo14 {
+.photoCollage__cardPhotoFront--photo14 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyAfrikaMaluleke11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 4/span 3;
-  grid-row: 8/span 1;
 }
-.photoCollage__cardPhoto--photo15 {
+.photoCollage__cardPhotoFront--photo15 {
   background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacySammyMogale26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
-  grid-column: 1/span 3;
-  grid-row: 9/span 1;
 }
-@media (min-width: 37.5em) {
-  .photoCollage__cardPhoto--photo1 {
-    grid-column: 1/span 3;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo2 {
-    grid-column: 4/span 3;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo3 {
-    grid-column: 1/span 2;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo4 {
-    grid-column: 3/span 2;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo5 {
-    grid-column: 5/span 2;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo6 {
-    grid-column: 1/span 2;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo7 {
-    grid-column: 3/span 2;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo8 {
-    grid-column: 5/span 2;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo9 {
-    grid-column: 1/span 2;
-    grid-row: 4/span 1;
-  }
-  .photoCollage__cardPhoto--photo10 {
-    grid-column: 3/span 2;
-    grid-row: 4/span 1;
-  }
-  .photoCollage__cardPhoto--photo11 {
-    grid-column: 5/span 2;
-    grid-row: 4/span 1;
-  }
-  .photoCollage__cardPhoto--photo12 {
-    grid-column: 1/span 2;
-    grid-row: 5/span 1;
-  }
-  .photoCollage__cardPhoto--photo13 {
-    grid-column: 3/span 2;
-    grid-row: 5/span 1;
-  }
-  .photoCollage__cardPhoto--photo14 {
-    grid-column: 5/span 2;
-    grid-row: 5/span 1;
-  }
-  .photoCollage__cardPhoto--photo15 {
-    grid-column: 1/span 2;
-    grid-row: 6/span 1;
-  }
-}
-@media (min-width: 56.25em) {
-  .photoCollage__cardPhoto--photo1 {
-    grid-column: 1/span 2;
-    grid-row: 1/span 2;
-  }
-  .photoCollage__cardPhoto--photo2 {
-    grid-column: 3/span 2;
-    grid-row: 1/span 2;
-  }
-  .photoCollage__cardPhoto--photo3 {
-    grid-column: 5/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo4 {
-    grid-column: 6/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo5 {
-    grid-column: 5/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo6 {
-    grid-column: 6/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo7 {
-    grid-column: 1/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo8 {
-    grid-column: 2/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo9 {
-    grid-column: 3/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo10 {
-    grid-column: 4/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo11 {
-    grid-column: 3/span 1;
-    grid-row: 4/span 1;
-  }
-  .photoCollage__cardPhoto--photo12 {
-    grid-column: 5/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo13 {
-    grid-column: 2/span 1;
-    grid-row: 4/span 1;
-  }
-  .photoCollage__cardPhoto--photo14 {
-    grid-column: 1/span 1;
-    grid-row: 4/span 1;
-  }
-  .photoCollage__cardPhoto--photo15 {
-    grid-column: 6/span 1;
-    grid-row: 3/span 1;
-  }
-}
-@media (min-width: 75em) {
-  .photoCollage__cardPhoto--photo1 {
-    grid-column: 1/span 2;
-    grid-row: 1/span 2;
-  }
-  .photoCollage__cardPhoto--photo2 {
-    grid-column: 3/span 2;
-    grid-row: 1/span 2;
-  }
-  .photoCollage__cardPhoto--photo3 {
-    grid-column: 5/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo4 {
-    grid-column: 6/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo5 {
-    grid-column: 7/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo6 {
-    grid-column: 8/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhoto--photo7 {
-    grid-column: 5/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo8 {
-    grid-column: 6/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo9 {
-    grid-column: 7/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo10 {
-    grid-column: 8/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhoto--photo11 {
-    grid-column: 5/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo12 {
-    grid-column: 1/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo13 {
-    grid-column: 4/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo14 {
-    grid-column: 3/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhoto--photo15 {
-    grid-column: 2/span 1;
-    grid-row: 3/span 1;
-  }
-}
-.photoCollage__icon {
+.photoCollage__cardPhotoIcon {
   height: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));
   width: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));
 }
