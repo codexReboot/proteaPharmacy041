@@ -491,48 +491,31 @@ body {
 }
 .paragraph--photoCollageCard {
   color: #f0f0f0;
-  font-size: clamp(.8rem, 2.7vw, .9rem);
+  line-height: 1.4;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-align: left;
 }
 @media (min-width: 37.5em) {
   .paragraph--photoCollageCard {
-    font-size: clamp(.75rem, 1.5vw, .85rem);
+    font-size: clamp(.8rem, 2vw, 1.5rem);
   }
 }
-@media (min-width: 650px) {
+@media (min-width: 56.25em) {
   .paragraph--photoCollageCard {
-    font-size: clamp(.85rem, 1.5vw, .95rem);
+    font-size: clamp(.55rem, 1.15vw, 1.2rem);
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 75em) {
   .paragraph--photoCollageCard {
-    font-size: clamp(.95rem, 1.5vw, .105rem);
+    line-height: 1.125;
+    font-size: clamp(.7rem, .95vw, 1.2rem);
   }
 }
-@media (min-width: 750px) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
-  }
-}
-@media (min-width: 750px) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(.75rem, 1.5vw, .85rem);
-  }
-}
-@media (min-width: 1000px) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(.85rem, 1.5vw, .95rem);
-  }
-}
-@media (min-width: 1100px) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(.95rem, 1.5vw, .105rem);
-  }
-}
-@media (min-width: 1200px) {
-  .paragraph--photoCollageCard {
-    font-size: clamp(.75rem, 1.5vw, .85rem);
-  }
+.paragraph--photoCollageCardFirstAndSecond {
+  color: #f0f0f0;
+  line-height: 1.4;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-align: left;
 }
 
 .btn {
@@ -546,14 +529,25 @@ body {
 .btn--primary-white {
   color: #225f01;
 }
-.btn--cardPhotoBtn {
+.btn--cardPhotoButtonText {
   color: #f0f0f0;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
 }
 @media (min-width: 56.25em) {
-  .btn--cardPhotoBtn {
-    font-size: clamp(.20rem, 1.70vw, 1.20rem);
+  .btn--cardPhotoButtonText {
+    font-size: clamp(.8rem, 1.2vw, 2rem);
   }
+}
+@media (min-width: 75em) {
+  .btn--cardPhotoButtonText {
+    font-size: clamp(.75rem, 1.1vw, 1.4rem);
+  }
+}
+.btn--cardPhotoBackBtn {
+  color: #6CB347;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 0.3;
 }
 
 .navList__navLink {
@@ -730,6 +724,23 @@ body {
 }
 .btn--cardPhoto:hover .btn__cardPhotoBtn {
   box-shadow: none;
+}
+.btn--cardPhotoBackBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: fit-content;
+  padding: 0 0 0.25rem;
+  margin: 0 auto 0 0;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all 0.2s;
 }
 
 .cardPortfolio {
@@ -1390,42 +1401,42 @@ body {
 .photoCollage {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 100vw) repeat(7, 50vw);
+  grid-template-rows: repeat(2, 125vw) repeat(7, 65vw);
   gap: 2rem;
   width: 100%;
   height: 100%;
   padding: 1rem;
   margin: 0 auto;
 }
-@media (min-width: 320px) {
+@media (min-width: 350px) {
   .photoCollage {
-    grid-template-columns: repeat(6, 3rem);
-    grid-template-rows: repeat(2, 32rem) repeat(7, 16.5rem);
-    width: min(100%, 30rem);
+    grid-template-columns: repeat(6, 3.5rem);
+    grid-template-rows: repeat(2, 43.75rem) repeat(7, 22.5rem);
+    width: min(100%, 35rem);
     margin: 0 auto;
   }
 }
 @media (min-width: 37.5em) {
   .photoCollage {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 50vw) repeat(7, 25vw);
+    grid-template-rows: repeat(1, 60vw) repeat(7, 35vw);
     width: 100%;
     margin: 0 auto;
   }
 }
 @media (min-width: 56.25em) {
   .photoCollage {
-    grid-template-columns: repeat(6, clamp(11rem, 13vw, 15rem));
-    grid-template-rows: repeat(5, clamp(15rem, 17vw, 19rem));
+    grid-template-columns: repeat(6, clamp(12rem, 13.2vw, 16rem));
+    grid-template-rows: repeat(5, clamp(18rem, 22vw, 22rem));
     width: min(100%, 90rem);
     margin: 0 auto 0 0;
   }
 }
 @media (min-width: 75em) {
   .photoCollage {
-    grid-template-columns: repeat(8, clamp(10rem, 10vw, 14rem));
+    grid-template-columns: repeat(7, clamp(11rem, 11.25vw, 15rem));
     grid-template-rows: repeat(5, clamp(14rem, 14vw, 18rem));
-    width: min(100%, 90rem);
+    width: 100%;
     margin: 0 auto 0 0;
   }
 }
@@ -1638,43 +1649,43 @@ body {
     grid-row: 1/span 1;
   }
   .photoCollage__cardPhotoContainer--container6 {
-    grid-column: 8/span 1;
-    grid-row: 1/span 1;
-  }
-  .photoCollage__cardPhotoContainer--container7 {
     grid-column: 5/span 1;
     grid-row: 2/span 1;
   }
-  .photoCollage__cardPhotoContainer--container8 {
+  .photoCollage__cardPhotoContainer--container7 {
     grid-column: 6/span 1;
     grid-row: 2/span 1;
   }
-  .photoCollage__cardPhotoContainer--container9 {
+  .photoCollage__cardPhotoContainer--container8 {
     grid-column: 7/span 1;
     grid-row: 2/span 1;
   }
-  .photoCollage__cardPhotoContainer--container10 {
-    grid-column: 8/span 1;
-    grid-row: 2/span 1;
-  }
-  .photoCollage__cardPhotoContainer--container11 {
-    grid-column: 5/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhotoContainer--container12 {
+  .photoCollage__cardPhotoContainer--container9 {
     grid-column: 1/span 1;
     grid-row: 3/span 1;
   }
-  .photoCollage__cardPhotoContainer--container13 {
-    grid-column: 4/span 1;
+  .photoCollage__cardPhotoContainer--container10 {
+    grid-column: 2/span 1;
     grid-row: 3/span 1;
   }
-  .photoCollage__cardPhotoContainer--container14 {
+  .photoCollage__cardPhotoContainer--container11 {
+    grid-column: 7/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container12 {
     grid-column: 3/span 1;
     grid-row: 3/span 1;
   }
+  .photoCollage__cardPhotoContainer--container13 {
+    grid-column: 6/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container14 {
+    grid-column: 5/span 1;
+    grid-row: 3/span 1;
+  }
   .photoCollage__cardPhotoContainer--container15 {
-    grid-column: 2/span 1;
+    grid-column: 4/span 1;
     grid-row: 3/span 1;
   }
 }
@@ -1708,11 +1719,15 @@ body {
 .photoCollage__cardPhotoBack {
   display: flex;
   flex-direction: column;
-  justify-content: centers;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 0.45rem;
-  padding: 1rem;
   background-image: linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
+  padding: 1rem;
+}
+.photoCollage__cardPhotoBackFirstAndSecond {
+  justify-content: flex-start;
+  gap: 2rem;
 }
 .photoCollage .rotateCard {
   transform: rotateY(180deg);
@@ -1791,6 +1806,10 @@ body {
 .photoCollage__cardPhotoIcon {
   height: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));
   width: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));
+}
+.photoCollage__cardPhotoBackIcon {
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .displayNone {

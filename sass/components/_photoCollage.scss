@@ -6,7 +6,7 @@
     display: grid;
     
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 100vw) repeat(7, 50vw);
+    grid-template-rows: repeat(2, 125vw) repeat(7, 65vw);
 
     gap: 2rem;
     
@@ -16,35 +16,35 @@
     padding: 1rem;
     margin: 0 auto;
 
-    @media (min-width: 320px) {
-        grid-template-columns: repeat(6, 3rem);
-        grid-template-rows: repeat(2, 32rem) repeat(7, 16.5rem);
+    @media (min-width: 350px) {
+        grid-template-columns: repeat(6, 3.5rem);
+        grid-template-rows: repeat(2, 43.75rem) repeat(7, 22.5rem);
 
-        width: min(100%, 30rem); 
+        width: min(100%, 35rem); 
         margin: 0 auto;   
     }
 
     @include respond(tab-port) {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(1, 50vw) repeat(7, 25vw);
+        grid-template-rows: repeat(1, 60vw) repeat(7, 35vw);
 
         width: 100%;
         margin: 0 auto;   
     }
 
     @include respond(tab-land) {
-        grid-template-columns: repeat(6, clamp(11rem, 13vw, 15rem));
-        grid-template-rows: repeat(5, clamp(15rem, 17vw,  19rem));
+        grid-template-columns: repeat(6, clamp(12rem, 13.2vw, 16rem));
+        grid-template-rows: repeat(5, clamp(18rem, 22vw,  22rem));
 
         width: min(100%, 90rem); 
         margin: 0 auto 0 0; 
     }
 
     @include respond(desk) {
-        grid-template-columns: repeat(8, clamp(10rem, 10vw, 14rem));
+        grid-template-columns: repeat(7, clamp(11rem, 11.25vw, 15rem));
         grid-template-rows: repeat(5, clamp(14rem, 14vw,  18rem));
 
-        width: min(100%, 90rem); 
+        width: 100%; 
         margin: 0 auto 0 0; 
     }
 
@@ -308,52 +308,52 @@
         }
 
         &__cardPhotoContainer--container6 {
-            grid-column: 8 / span 1;
-            grid-row: 1 / span 1; 
-        }
-
-        &__cardPhotoContainer--container7 {
             grid-column: 5 / span 1;
             grid-row: 2 / span 1; 
         }
 
-        &__cardPhotoContainer--container8 {
+        &__cardPhotoContainer--container7 {
             grid-column: 6 / span 1;
             grid-row: 2 / span 1; 
         }
 
-        &__cardPhotoContainer--container9 {
+        &__cardPhotoContainer--container8 {
             grid-column: 7 / span 1;
             grid-row: 2 / span 1; 
         }
 
-        &__cardPhotoContainer--container10 {
-            grid-column: 8 / span 1;
-            grid-row: 2 / span 1; 
-        }
-
-        &__cardPhotoContainer--container11 {
-            grid-column: 5 / span 1;
-            grid-row: 3 / span 1; 
-        }
-
-        &__cardPhotoContainer--container12 {
+        &__cardPhotoContainer--container9 {
             grid-column: 1 / span 1;
             grid-row: 3 / span 1; 
         }
 
-        &__cardPhotoContainer--container13 {
-            grid-column: 4 / span 1;
+        &__cardPhotoContainer--container10 {
+            grid-column: 2 / span 1;
             grid-row: 3 / span 1; 
         }
 
-        &__cardPhotoContainer--container14 {
+        &__cardPhotoContainer--container11 {
+            grid-column: 7 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhotoContainer--container12 {
             grid-column: 3 / span 1;
             grid-row: 3 / span 1; 
         }
 
+        &__cardPhotoContainer--container13 {
+            grid-column: 6 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhotoContainer--container14 {
+            grid-column: 5 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
         &__cardPhotoContainer--container15 {
-            grid-column: 2 / span 1;
+            grid-column: 4 / span 1;
             grid-row: 3 / span 1; 
         }   
     }
@@ -398,13 +398,20 @@
     &__cardPhotoBack {
         display: flex;
         flex-direction: column;
-        justify-content: centers;
+        justify-content: space-between;
         align-items: flex-start;
 
         gap: .45rem;
 
-        padding: 1rem;
         background-image: $lingrad-cardPhotoBackBg;
+
+        padding: 1rem;
+    }
+
+    &__cardPhotoBackFirstAndSecond {
+        justify-content: flex-start;
+        gap: 2rem;
+        
     }
 
     .rotateCard {
@@ -505,6 +512,11 @@
     &__cardPhotoIcon {
         height: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));
         width: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));
+    }
+
+    &__cardPhotoBackIcon {
+        height: 1.8rem;
+        width: 1.8rem;
     }
 
 
