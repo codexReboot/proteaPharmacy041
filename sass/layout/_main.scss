@@ -17,52 +17,52 @@
     }
 }
 
-// .promotionSection {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: stretch;
+.promotionSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
 
-//     &__promotionTextAndFlipbookContainer {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
+    &__promotionTextAndFlipbookContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-//         gap: 2rem;
+        gap: 2rem;
         
-//         @include respond(tab-land) {
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: flex-start;
-//             align-items: stretch;
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
 
-//             gap: 4rem;
-//         }
-//     }
+            gap: 4rem;
+        }
+    }
 
-//     &__paragraph {
-//         margin: 3rem 0 3rem;
+    &__paragraph {
+        margin: 3rem 0 3rem;
 
-//         @include respond(tab-land) {
-//             flex: 0 0 30%;
-//         }
-//     } 
+        @include respond(tab-land) {
+            flex: 0 0 30%;
+        }
+    } 
 
-//     &__promotionContainer {
-//         margin-bottom: 3rem;
+    &__promotionContainer {
+        margin-bottom: 3rem;
 
-//         @media (min-width: 500px) {
-//             margin: 0 auto 3rem;
-//             max-width: min(80%, 650px);
-//         }
+        @media (min-width: 500px) {
+            margin: 0 auto 3rem;
+            max-width: min(80%, 650px);
+        }
 
-//         @include respond(tab-land) {
-//             max-width: 500px;
-//             margin: 3rem auto 0 0;
-//         }
-//     }
-// }
+        @include respond(tab-land) {
+            max-width: 500px;
+            margin: 3rem auto 0 0;
+        }
+    }
+}
 
 .aboutSection {
     display: flex;

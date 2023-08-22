@@ -1419,7 +1419,7 @@ body {
 @media (min-width: 37.5em) {
   .photoCollage {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 60vw) repeat(7, 35vw);
+    grid-template-rows: repeat(1, 60vw) repeat(5, 35vw);
     width: 100%;
     margin: 0 auto;
   }
@@ -1427,7 +1427,7 @@ body {
 @media (min-width: 56.25em) {
   .photoCollage {
     grid-template-columns: repeat(6, clamp(12rem, 13.2vw, 16rem));
-    grid-template-rows: repeat(5, clamp(18rem, 22vw, 22rem));
+    grid-template-rows: repeat(4, clamp(18rem, 22vw, 22rem));
     width: min(100%, 90rem);
     margin: 0 auto 0 0;
   }
@@ -1435,7 +1435,7 @@ body {
 @media (min-width: 75em) {
   .photoCollage {
     grid-template-columns: repeat(7, clamp(11rem, 11.25vw, 15rem));
-    grid-template-rows: repeat(5, clamp(14rem, 14vw, 18rem));
+    grid-template-rows: repeat(3, clamp(14rem, 14vw, 18rem));
     width: 100%;
     margin: 0 auto 0 0;
   }
@@ -1816,6 +1816,14 @@ body {
   display: none;
 }
 
+.promotionContainer {
+  min-height: 45rem;
+}
+.promotionContainer a {
+  width: min(100%, 450px);
+  margin: 0 auto;
+}
+
 .openAndCloseIcons {
   display: inline-block;
   margin-left: 1.2rem;
@@ -1952,6 +1960,52 @@ body {
     padding: 2rem 4rem 0;
   }
 }
+.promotionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.promotionSection__promotionTextAndFlipbookContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 56.25em) {
+  .promotionSection__promotionTextAndFlipbookContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 4rem;
+  }
+}
+.promotionSection__paragraph {
+  margin: 3rem 0 3rem;
+}
+@media (min-width: 56.25em) {
+  .promotionSection__paragraph {
+    flex: 0 0 30%;
+  }
+}
+.promotionSection__promotionContainer {
+  margin-bottom: 3rem;
+}
+@media (min-width: 500px) {
+  .promotionSection__promotionContainer {
+    margin: 0 auto 3rem;
+    max-width: min(80%, 650px);
+  }
+}
+@media (min-width: 56.25em) {
+  .promotionSection__promotionContainer {
+    max-width: 500px;
+    margin: 3rem auto 0 0;
+  }
+}
+
 .aboutSection {
   display: flex;
   flex-direction: column;
