@@ -20,7 +20,7 @@
 
 ### Screenshot
 
-![](./img/ScreenShotProteaPharmacy041.jpg)
+![](./img/backgroundImages/ScreenShotProteaPharmacy041.jpg)
 
 ### Links
 
