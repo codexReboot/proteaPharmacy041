@@ -1,0 +1,36 @@
+.notification {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      background-color: rgba(255, 255, 255, .98);
+      padding: 3rem;
+      min-height: 100vh;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+
+      &__textContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+      }
+
+      &__notificationCloseButton {
+            border: 2px solid red;
+            background-color: rgba(200, 200, 200, 1);
+            padding: 1rem 2.5rem;
+      }
+}
+.displayNone {
+      display: none;
+}
+.displayBlock {
+      display: flex;
+}
