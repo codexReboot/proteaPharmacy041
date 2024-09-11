@@ -358,6 +358,9 @@ body {
 		font-size: clamp(1.4rem, 2.5vw, 1.8rem);
 		text-align: left;
 	}
+	&--notificationParagraph {
+		text-align: center;
+	}
 }
 
 .btn {
