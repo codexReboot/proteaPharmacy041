@@ -345,13 +345,13 @@ for(let item of navItems) {
 
 ///////////////////////////////////////////////////////////////////////
 // website notification
-const notification = document.querySelector('.notification');
-const notificationCloseBtn = document.querySelector('.notificationCloseButton');
-notification.classList.remove('displayNone');
-notification.classList.add('displayBlock');
-notificationCloseBtn.addEventListener('click', function(){
-  notification.classList.remove('displayBlock');
-  notification.classList.add('displayNone');
-})
+// const notification = document.querySelector('.notification');
+// const notificationCloseBtn = document.querySelector('.notificationCloseButton');
+// notification.classList.remove('displayNone');
+// notification.classList.add('displayBlock');
+// notificationCloseBtn.addEventListener('click', function(){
+//   notification.classList.remove('displayBlock');
+//   notification.classList.add('displayNone');
+// })
 
 
