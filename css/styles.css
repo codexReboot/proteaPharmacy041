@@ -199,15 +199,15 @@ body {
 }
 
 .logo {
-  font-size: clamp(calc(1.2rem + .5vw), 1.5vh, calc(1.7rem + .5vw));
+  font-size: 1.1rem;
   line-height: 1;
   font-weight: 900;
 }
 .logo__text--prot {
-  color: #CD4536;
+  color: #f0f0f0;
 }
 .logo__text--phar {
-  color: #6CB347;
+  color: #f0f0f0;
 }
 
 .primaryHeading {
@@ -1083,17 +1083,20 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
+  position: relative;
 }
 .logo__img {
+  order: 2;
   display: block;
   height: auto;
-  width: clamp(calc(3.75rem + 1.8vw), 3.5vh, calc(4.75rem + 1.8vw));
+  width: 10rem;
 }
 .logo__text {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 0.5rem;
+  margin-left: 1rem;
 }
 
 .logoAndNumbers {

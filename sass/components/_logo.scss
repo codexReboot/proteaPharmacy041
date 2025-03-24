@@ -6,13 +6,15 @@
 
     gap: .25rem;
 
-    // position: relative;
+    position: relative;
     // z-index: 100;
 
-    &__img {        
+    &__img { 
+        order: 2;       
         display: block;
         height: auto;
-        width: clamp(calc(3.75rem + 1.8vw), 3.5vh, calc(4.75rem + 1.8vw));
+        // width: clamp(calc(3.75rem + 1.8vw), 3.5vh, calc(4.75rem + 1.8vw));
+        width: 10rem;
     }
 
     &__text {
@@ -21,5 +23,11 @@
         align-items: flex-start;
 
         gap: .5rem;
+        margin-left: 1rem;
+
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // z-index: 100;
     }
 }

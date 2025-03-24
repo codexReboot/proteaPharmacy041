@@ -18,16 +18,17 @@ body {
 }
 
 .logo {
-	font-size: clamp(calc(1.2rem + .5vw), 1.5vh, calc(1.7rem + .5vw));
+	// font-size: clamp(calc(1.2rem + .5vw), 1.5vh, calc(1.7rem + .5vw));
+	font-size: 1.1rem;
 	line-height: 1;
 	font-weight: 900;
 	
 	&__text--prot { 
-		color: $cf-red;
+		color: $cf-white;
 	}
 
 	&__text--phar {
-		color: $cf-green;
+		color: $cf-white;
 	}
 }
 
