@@ -26,7 +26,7 @@ const footer = document.querySelector('.footer');
 
 const hero = document.querySelector('.heroSection');
 
-
+const copyrightDate = document.querySelector('.footer__copyrightDate');
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // cardPhoto variables
@@ -354,4 +354,8 @@ for(let item of navItems) {
 //   notification.classList.add('displayNone');
 // })
 
+////////////////////////////////////////////////////////////////////////
+// copyright date logic
 
+const updatedCopyrightYear = new Date().getFullYear();
+copyrightDate.textContent = updatedCopyrightYear;
