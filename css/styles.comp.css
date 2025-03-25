@@ -199,7 +199,7 @@ body {
 }
 
 .logo {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1;
   font-weight: 900;
 }
@@ -223,10 +223,11 @@ body {
   text-transform: capitalize;
 }
 .primaryHeading__headlineText {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 900;
   letter-spacing: 2px;
   line-height: 1;
+  margin-left: 1rem;
 }
 .primaryHeading__headlineText--prot {
   color: #f0f0f0;
@@ -1099,7 +1100,7 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   gap: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 0.25rem;
 }
 
 .logoAndNumbers {
@@ -1524,28 +1525,28 @@ body {
   grid-row: 6/span 1;
 }
 .photoCollage__cardPhotoContainer--container10 {
-  grid-column: 4/span 3;
+  grid-column: 1/span 3;
   grid-row: 6/span 1;
 }
 .photoCollage__cardPhotoContainer--container11 {
-  grid-column: 1/span 3;
-  grid-row: 7/span 1;
+  grid-column: 4/span 3;
+  grid-row: 6/span 1;
 }
 .photoCollage__cardPhotoContainer--container12 {
-  grid-column: 4/span 3;
+  grid-column: 1/span 3;
   grid-row: 7/span 1;
 }
 .photoCollage__cardPhotoContainer--container13 {
-  grid-column: 1/span 3;
-  grid-row: 8/span 1;
+  grid-column: 4/span 3;
+  grid-row: 7/span 1;
 }
 .photoCollage__cardPhotoContainer--container14 {
-  grid-column: 4/span 3;
+  grid-column: 1/span 3;
   grid-row: 8/span 1;
 }
 .photoCollage__cardPhotoContainer--container15 {
-  grid-column: 1/span 3;
-  grid-row: 9/span 1;
+  grid-column: 4/span 3;
+  grid-row: 8/span 1;
 }
 @media (min-width: 37.5em) {
   .photoCollage__cardPhotoContainer--container1 {
@@ -1585,28 +1586,28 @@ body {
     grid-row: 4/span 1;
   }
   .photoCollage__cardPhotoContainer--container10 {
-    grid-column: 3/span 2;
+    grid-column: 1/span 2;
     grid-row: 4/span 1;
   }
   .photoCollage__cardPhotoContainer--container11 {
-    grid-column: 5/span 2;
+    grid-column: 3/span 2;
     grid-row: 4/span 1;
   }
   .photoCollage__cardPhotoContainer--container12 {
-    grid-column: 1/span 2;
-    grid-row: 5/span 1;
+    grid-column: 5/span 2;
+    grid-row: 4/span 1;
   }
   .photoCollage__cardPhotoContainer--container13 {
-    grid-column: 3/span 2;
+    grid-column: 1/span 2;
     grid-row: 5/span 1;
   }
   .photoCollage__cardPhotoContainer--container14 {
-    grid-column: 5/span 2;
+    grid-column: 3/span 2;
     grid-row: 5/span 1;
   }
   .photoCollage__cardPhotoContainer--container15 {
-    grid-column: 1/span 2;
-    grid-row: 6/span 1;
+    grid-column: 5/span 2;
+    grid-row: 5/span 1;
   }
 }
 @media (min-width: 56.25em) {
@@ -1647,12 +1648,12 @@ body {
     grid-row: 3/span 1;
   }
   .photoCollage__cardPhotoContainer--container10 {
-    grid-column: 4/span 1;
+    grid-column: 3/span 1;
     grid-row: 3/span 1;
   }
   .photoCollage__cardPhotoContainer--container11 {
-    grid-column: 3/span 1;
-    grid-row: 4/span 1;
+    grid-column: 4/span 1;
+    grid-row: 3/span 1;
   }
   .photoCollage__cardPhotoContainer--container12 {
     grid-column: 5/span 1;
@@ -1709,27 +1710,27 @@ body {
     grid-row: 3/span 1;
   }
   .photoCollage__cardPhotoContainer--container10 {
-    grid-column: 2/span 1;
+    grid-column: 1/span 1;
     grid-row: 3/span 1;
   }
   .photoCollage__cardPhotoContainer--container11 {
-    grid-column: 7/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhotoContainer--container12 {
-    grid-column: 3/span 1;
-    grid-row: 3/span 1;
-  }
-  .photoCollage__cardPhotoContainer--container13 {
     grid-column: 6/span 1;
     grid-row: 3/span 1;
   }
-  .photoCollage__cardPhotoContainer--container14 {
+  .photoCollage__cardPhotoContainer--container12 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container13 {
     grid-column: 5/span 1;
     grid-row: 3/span 1;
   }
-  .photoCollage__cardPhotoContainer--container15 {
+  .photoCollage__cardPhotoContainer--container14 {
     grid-column: 4/span 1;
+    grid-row: 3/span 1;
+  }
+  .photoCollage__cardPhotoContainer--container15 {
+    grid-column: 3/span 1;
     grid-row: 3/span 1;
   }
 }
@@ -1803,49 +1804,49 @@ body {
   animation: animateNavLink 0.4s ease-in 1 forwards;
 }
 .photoCollage__cardPhotoFront--photo1 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPieterJones11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPieterJones11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo2 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyCornellLaurens04July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyCornellLaurens04July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo3 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPharmacistNinaBriel26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPharmacistNinaBriel26June2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo4 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyAnzelleBritz26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyAnzelleBritz26June2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo5 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyCorneOlivier26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyCorneOlivier26June2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo6 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyJoleneRautenbach16Aug2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyJoleneRautenbach16Aug2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo7 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyRinaPotgieter11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyRinaPotgieter11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo8 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyLudwigKieck11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyLudwigKieck11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo9 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyStephnieEngelbrecht11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyStephnieEngelbrecht11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo10 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacySindyFourie11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacySindyFourie11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo11 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyMarlyneSethole26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyMarlyneSethole26June2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo12 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPietMogale26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyPietMogale26June2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo13 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyJohannaMoshokwa11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyJohannaMoshokwa11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo14 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyAfrikaMaluleke11July2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacyAfrikaMaluleke11July2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoFront--photo15 {
-  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacySammyMogale26June2023.webp"), linear-gradient(155deg, #3e6629 5%, #6cb347 35%, #f0f0f0 75%);
+  background-image: linear-gradient(0deg, rgba(30, 32, 32, 0.75) 8%, rgba(30, 32, 32, 0.45) 25%, transparent 50%), url("../img/staff/ProteaPharmacySammyMogale26June2023.webp"), linear-gradient(135deg, #012e4c 35%, rgba(1, 46, 76, 0.85) 55%, rgba(1, 46, 76, 0.65) 75%, rgba(1, 46, 76, 0.45) 85%, rgba(240, 240, 240, 0.25));
 }
 .photoCollage__cardPhotoIcon {
   height: clamp(calc(1rem + .8vw), 1.3vh, calc(2.4rem + 1vw));

@@ -98,33 +98,33 @@
     }
 
     &__cardPhotoContainer--container10 {
-        grid-column: 4 / span 3;
+        grid-column: 1 / span 3;
         grid-row: 6 / span 1;
     }
 
     &__cardPhotoContainer--container11 {
-        grid-column: 1 / span 3;
-        grid-row: 7 / span 1;
+        grid-column: 4 / span 3;
+        grid-row: 6 / span 1;
     }
 
     &__cardPhotoContainer--container12 {
-        grid-column: 4 / span 3;
+        grid-column: 1 / span 3;
         grid-row: 7 / span 1;
     }
 
     &__cardPhotoContainer--container13 {
-        grid-column: 1 / span 3;
-        grid-row: 8 / span 1;
+        grid-column: 4 / span 3;
+        grid-row: 7 / span 1;
     }
 
     &__cardPhotoContainer--container14 {
-        grid-column: 4 / span 3;
+        grid-column: 1 / span 3;
         grid-row: 8 / span 1;
     }
 
     &__cardPhotoContainer--container15 {
-        grid-column: 1 / span 3;
-        grid-row: 9 / span 1;
+        grid-column: 4 / span 3;
+        grid-row: 8 / span 1;
     }
 
     @include respond(tab-port) {
@@ -174,33 +174,33 @@
         }
 
         &__cardPhotoContainer--container10 {
-            grid-column: 3 / span 2;
+            grid-column: 1 / span 2;
             grid-row: 4 / span 1; 
         }
 
         &__cardPhotoContainer--container11 {
-            grid-column: 5 / span 2;
+            grid-column: 3 / span 2;
             grid-row: 4 / span 1; 
         }
 
         &__cardPhotoContainer--container12 {
-            grid-column: 1 / span 2;
-            grid-row: 5 / span 1; 
+            grid-column: 5 / span 2;
+            grid-row: 4 / span 1; 
         }
 
         &__cardPhotoContainer--container13 {
-            grid-column: 3 / span 2;
+            grid-column: 1 / span 2;
             grid-row: 5 / span 1; 
         }
 
         &__cardPhotoContainer--container14 {
-            grid-column: 5 / span 2;
+            grid-column: 3 / span 2;
             grid-row: 5 / span 1; 
         }
 
         &__cardPhotoContainer--container15 {
-            grid-column: 1 / span 2;
-            grid-row: 6 / span 1; 
+            grid-column: 5 / span 2;
+            grid-row: 5 / span 1; 
         }   
     }
 
@@ -251,13 +251,13 @@
         }
 
         &__cardPhotoContainer--container10 {
-            grid-column: 4 / span 1;
+            grid-column: 3 / span 1;
             grid-row: 3 / span 1; 
         }
 
         &__cardPhotoContainer--container11 {
-            grid-column: 3 / span 1;
-            grid-row: 4 / span 1; 
+            grid-column: 4 / span 1;
+            grid-row: 3 / span 1; 
         }
 
         &__cardPhotoContainer--container12 {
@@ -328,32 +328,32 @@
         }
 
         &__cardPhotoContainer--container10 {
-            grid-column: 2 / span 1;
+            grid-column: 1 / span 1;
             grid-row: 3 / span 1; 
         }
 
         &__cardPhotoContainer--container11 {
-            grid-column: 7 / span 1;
-            grid-row: 3 / span 1; 
-        }
-
-        &__cardPhotoContainer--container12 {
-            grid-column: 3 / span 1;
-            grid-row: 3 / span 1; 
-        }
-
-        &__cardPhotoContainer--container13 {
             grid-column: 6 / span 1;
             grid-row: 3 / span 1; 
         }
 
-        &__cardPhotoContainer--container14 {
+        &__cardPhotoContainer--container12 {
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhotoContainer--container13 {
             grid-column: 5 / span 1;
             grid-row: 3 / span 1; 
         }
 
-        &__cardPhotoContainer--container15 {
+        &__cardPhotoContainer--container14 {
             grid-column: 4 / span 1;
+            grid-row: 3 / span 1; 
+        }
+
+        &__cardPhotoContainer--container15 {
+            grid-column: 3 / span 1;
             grid-row: 3 / span 1; 
         }   
     }
