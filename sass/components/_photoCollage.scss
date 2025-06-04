@@ -6,7 +6,7 @@
   display: grid;
 
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 125vw) repeat(7, 65vw);
+  grid-template-rows: repeat(2, 125vw) repeat(6, 65vw);
 
   gap: 2rem;
 
@@ -18,7 +18,7 @@
 
   @media (min-width: 350px) {
     grid-template-columns: repeat(6, 3.5rem);
-    grid-template-rows: repeat(2, 43.75rem) repeat(7, 22.5rem);
+    grid-template-rows: repeat(2, 43.75rem) repeat(6, 22.5rem);
 
     width: min(100%, 35rem);
     margin: 0 auto;
@@ -26,7 +26,7 @@
 
   @include respond(tab-port) {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 60vw) repeat(5, 35vw);
+    grid-template-rows: repeat(1, 60vw) repeat(4, 35vw);
 
     width: 100%;
     margin: 0 auto;
